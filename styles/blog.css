@@ -1,5 +1,10 @@
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url(fonts/fontawesome/css/all.css);
+@font-face {
+	font-family: "Inter";
+	src: url("fonts/Inter-VariableFont_opsz,wght.ttf");
+}
 
 @media only screen and (orientation : landscape)
 {
@@ -29,8 +34,8 @@
 		background-color: #1f1f1f;
 		box-shadow: 0px 0px 40px 10px #000;
 		color: #e7e7e7;
-		font-family: 'Iosevka';
-		font-size: 0.85em;
+		font-family: 'Inter';
+		font-size: 1.2em;
 		line-height: 1.5em;
 		max-width: 900px;
 		min-height: 100%;
@@ -60,13 +65,13 @@
 
 	a:link
 	{
-		color: #e8a642;
+		color: #fd9dd9;
 		text-decoration: none;
 	}
 
 	a:hover
 	{
-		color: #ffc266;
+		color: #ffcdf0;
 		text-decoration: underline;
 	}
 
@@ -78,9 +83,10 @@
 
 	table
 	{
-		background-color: #383830;
+		background-color: #2a252c;
 		border-radius: 8px;
-		border: #383830;
+		border: #2a252c;
+		box-shadow: 0px 0px 7px 2px #000;
 	}
 
 	.imagebox
@@ -107,19 +113,11 @@
 		width: 96px;
 	}
 
-	.socialtable
-	{
-		background-color: transparent;
-		border: none;
-		float: left;
-		padding: none;
-	}
-
 	figure
 	{
-		background-color: #383830;
+		background: linear-gradient(0deg, rgba(26,7,33,1) 0%, rgba(102,1,143,1) 100%);
 		border-radius: 8px;
-		border: #383830;
+		border: #2a252c;
 		margin: 11px;
 		margin-left: auto;
 		margin-right: auto;
@@ -151,31 +149,32 @@
 	figcaption
 	{
 		text-align: center;
+		font-style: italic;
 	}
 
 	header
 	{
-		background-color: #383830;
+		background-color: #2a252c;
 		border-radius: 8px;
-		border: #383830;
+		border: #2a252c;
 		margin: 12px;
 		padding: 12px;
 	}
 
 	aside
 	{
-		background-color: #383830;
+		background-color: #2a252c;
 		border-radius: 8px;
-		border: #383830;
+		border: #2a252c;
 		margin: 12px;
 		padding: 12px;
 	}
 
 	section
 	{
-		background-color: #383830;
+		background-color: #2a252c;
 		border-radius: 8px;
-		border: #383830;
+		border: #2a252c;
 		margin: 12px;
 		padding: 12px;
 	}
@@ -218,7 +217,7 @@
 	hr
 	{
 		border-radius: 5px;
-		border: 3px solid #383830;
+		border: 3px solid #2a252c;
 		margin: 16px;
 	}
 }
@@ -304,9 +303,9 @@
 
 	table
 	{
-		background-color: #383830;
+		background-color: #2a252c;
 		border-radius: 8px;
-		border: #383830;
+		border: #2a252c;
 	}
 
 	.imagebox
@@ -334,20 +333,6 @@
 		padding-right: 8px;
 	}
 
-	.socialicon
-	{
-		filter: invert(64%) sepia(62%) saturate(417%) hue-rotate(357deg) brightness(94%) contrast(100%);
-		width: 96px;
-	}
-
-	.socialtable
-	{
-		background-color: transparent;
-		border: none;
-		float: left;
-		padding: none;
-	}
-
 	.tablefucker
 	{
 		display: block;
@@ -361,9 +346,9 @@
 
 	figure
 	{
-		background-color: #383830;
+		background-color: #2a252c;
 		border-radius: 8px;
-		border: #383830;
+		border: #2a252c;
 		margin-left: auto;
 		margin-right: auto;
 		margin: 0;
@@ -396,27 +381,27 @@
 
 	header
 	{
-		background-color: #383830;
+		background-color: #2a252c;
 		border-radius: 8px;
-		border: #383830;
+		border: #2a252c;
 		margin: 12px;
 		padding: 12px;
 	}
 
 	aside
 	{
-		background-color: #383830;
+		background-color: #2a252c;
 		border-radius: 8px;
-		border: #383830;
+		border: #2a252c;
 		margin: 12px;
 		padding: 12px;
 	}
 
 	section
 	{
-		background-color: #383830;
+		background-color: #2a252c;
 		border-radius: 8px;
-		border: #383830;
+		border: #2a252c;
 		margin: 12px;
 		padding: 12px;
 	}
@@ -459,7 +444,7 @@
 	hr
 	{
 		border-radius: 5px;
-		border: 3px solid #383830;
+		border: 3px solid #2a252c;
 		margin: 16px;
 	}
 
