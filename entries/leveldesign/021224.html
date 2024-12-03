@@ -1,0 +1,129 @@
+<html>
+    <head>
+     <title>Versus Unreal - REFLECTION</title>
+     <link href="../../styles/blog.css" rel="stylesheet" type="text/css" media="all">
+     <link rel="icon" type="images/x-icon" href="../../images/favicon.ico">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta property="og:type" content="website">
+     <meta property="og:title" content="Blog">
+     <style>
+        body 
+  {
+    @media only screen and (orientation : landscape)
+    {
+      background: url("../../images/back/main.jpg") no-repeat center center fixed; background-size:cover;
+    }
+  }
+     </style>   
+    </head>
+    <body>
+        <div class="content">
+            <p style="text-align: center;">
+                <img src="../../images/headers/021224.png" alt="YOU ARE NOT SUPPOSED TO SEE THIS." title="YOU ARE NOT SUPPOSED TO SEE THIS.">
+            </p>
+            <div class="blogheader">
+              <h3>Entry Started: 02nd December 2024</h3>
+            </div>
+            <p>It has been a long, long while since my last post on this blog and in that time I have been constructing the level that I have planned along with writing my critical analysis of No Mercy.</p>
+            <p>The construction of the level has been filled with some minor trials and tribulations but looking back, it has been a suprisingly smooth experience, apart from some lulls in production due to pure boredom because making modern levels take a while.</p>
+            <p>But I didn't just start constructing this level with no plan, as mentioned before I was planning this level alongside my critical analysis and the fruits of this planning can be viewed as a "Pre-Production Document" available <a href="https://docs.google.com/document/d/1_4xbX73E5MDB0F9x23KaVq6LXEB-91mz27BNptamWjI/edit?usp=sharing">here.</a></p>
+            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+              <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">ROADS PATHED WITH GOOD INTENTIONS</p>
+            </aside>
+            <p>Development of this level, which I have titled "Getting out of Dodge", started with the roads and pathways, mainly as a way to get the route finalized before the construction of the buildings both used by the Player and NPCs and those which act as decoration.</p>
+            <p>Later on in the construction of these pathways, I did attempt to include some changes in elevation outside of the buildings that the Player traverses through, as a final bit of dynamism after traversing primarily flat/level roads.</p>
+            <p>After the roads came the buildings, outside of the ones that the Player and the NPCs go through, these were of fairly simple construction.</p>
+            <figure>
+              <img src="../../images/screenies/GooD/gifs/roadConstruct.gif" alt="Building Blocks." width="720px">
+              <figcaption>Animated Image showing the gradual construction of the Roads and Buildings.</figcaption>
+            </figure>
+            <p>When looking at both the plans that I had made and the level that came out of those plans, I'd say that the final level is close enough to what I had initially envisioned, even in this super early state that you can see above.</p>
+            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+              <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">CONSIDERATE OF OTHERS</p>
+            </aside>
+            <p>Early on in production, I wanted to try methods of both optimisation and cutting down on workload, one of these methods was creating two types of building, one "complex" and one "simple", the noticable difference being the ceiling of the buildings, but the construction of the "simple" buildings are also only made out of two cubes rather than around 6 cubes for the "complex" buildings.</p>
+            <figure>
+              <img src="../../images/screenies/GooD/SimpleComplex.png" alt="There's two of them!" width="720px">
+              <figcaption>Screenshot showing both a "complex" and a "simple" building.</figcaption>
+            </figure>
+            <p>I also wanted to try some form of subtle/invisible guidance with the placement of buildings, especially with turns where I have the buildings of reduced height down the intended direction, will the Player notice? Most likely not. Did I do it anyway? Yes I did.</p>
+            <figure>
+              <img src="../../images/screenies/GooD/DownHeight.png" alt="Going down!" width="720px">
+              <figcaption>Screenshot showing buildings of decreasing height.</figcaption>
+            </figure>
+            <p>But I did put more overt guidance within the level, often implemented as a way to prevent the Player from going the wrong way such as having a curved path of fences that are placed after the first scaffold.</p>
+            <figure>
+              <img src="../../images/screenies/GooD/OuvertGuidance.png" alt="Please go over there I'm begging you." width="720px">
+              <figcaption>Screenshot showing a more obvious form of guidance.</figcaption>
+            </figure>
+            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+              <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">TRUTH WITH LIGHT</p>
+            </aside>
+            <p>There were some changes that I had made to the level during development, the biggest change being the change of the time of day from sunset to nighttime, which introduced a knock-on problem where now the Player couldn't see jack.</p>
+            <figure>
+              <img src="../../images/screenies/GooD/Darkness.png" alt="I can't see!" width="720px">
+              <figcaption>Screenshot showing the level now in near complete darkness.</figcaption>
+            </figure>
+            <p>This, obviously necessitated the addition of lights, I opted to create a street light actor to place throughout the streets, I also took the time to add the ability to change how the light looks, whether it'll be fully on, flicker, or be turned off, a decision made to attempt to keeps elements of the level within the original worldbuilding brief provided to us.</p>
+            <figure>
+              <img src="../../images/screenies/GooD/gifs/StreetLights.gif" alt="I can see!" width="720px">
+              <figcaption>Animated Image showcasing the flickering Streetlights.</figcaption>
+            </figure>
+            <p>Another form of lighting that I have utilized that also fit the world building brief, are the flaming barrels, these barrels are used in areas where having streetlights may not make any sense, such as alleyways or abandoned buildings.</p>
+            <figure>
+              <img src="../../images/screenies/GooD/gifs/FlamingBarrels.gif" alt="FIRE!" width="720px">
+              <figcaption>Animated Image showcasing the flaming barrels.</figcaption>
+            </figure>
+            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+              <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">DISK UTILITY</p>
+            </aside>
+            <p>Having all of these lights within a Level in the Unreal Engine, usually leads to the problem where, eventually, the lighting will need to be rebuilt, however, when the time came to build the level's lighting, the engine crashed, no matter what, didn't matter how many lights there were, how many objects that needed rebuilt lighting, every time a rebuild attempt was made, the engine crashed.</p>
+            <p>Luckily, there was a way around the issue, setting every light entity to "Moveable" rather than "Static" or "Stationary", with this move, the need to rebuild lights disappeared. But, there was now a new problem, "Moveable" lights are not the best for performance, I'd now need to find a way to optimize this level and I found it thanks to Unreal Engine 5's new "World Partition" system.</p>
+            <figure>
+              <img src="../../images/screenies/GooD/DLContent.png" alt="Da Data." width="720px">
+              <figcaption>Screenshot showing the level's World Partition Data Layers within the Content Browser.</figcaption>
+            </figure>
+            <p>Using the World Partition, I'm able to select and add actors and objects to what is called "Data Layers" and be able to toggle which of these layers are currently active at a time, using a trigger volume actor that I had created myself.</p>
+            <figure>
+              <img src="../../images/screenies/GooD/DLBlueprint1.png" alt="Da Data." width="720px">
+              <figcaption>Screenshot showing the blueprint of the custom-made Data Layer trigger volume actor.</figcaption>
+            </figure>
+            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+              <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">UNALLOCATED SPACE</p>
+            </aside>
+            <p>Late in development came time for Playtesting, where various people had to opportunity to test my level in an early state. This playtesting proved to be very useful to identify issues that I completely passed me by because I know my level and how to get through it, but others don't. One of the bigger issues that these others have brought up was the issue that most of the streets are fairly barren with nothing short of buildings and street lights within them.</p>
+            <p>This is a problem as it leads to Players getting lost, turned around and simply not being able to complete the level, so this problem had to be addressed, but how can I address this issue without breaking immersion/fitting within the environment of the level?</p>
+            <p>I settled on using cars with headlights, a measure similiar to the one used in Left 4 Dead's No Mercy.</p>
+            <figure>
+              <img src="../../images/screenies/GooD/gifs/CarLights.gif" alt="Da Cars." width="720px">
+              <figcaption>Animated Image showing various cars with headlights.</figcaption>
+            </figure>
+            <p>The lights of the cars, point to the intended direction for the Player to follow, I also used both the aforementioned the flaming barrels and regular lights also as a way to guide the Player down a particular direction.</p>
+            <figure>
+              <img src="../../images/screenies/GooD/LightGuide.png" alt="Da Data." width="720px">
+              <figcaption>Screenshot showing guiding lights.</figcaption>
+            </figure>
+            <table width="100%" border="0">
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="#">
+                      <i class="fa-solid fa-up-long" aria-hidden="true"></i>
+                      Back to Top
+                      <i class="fa-solid fa-up-long" aria-hidden="true"></i>
+                    </a>
+                  </td>
+                  <td align="right">
+                    <a href="../../index.html">
+                      <i class="fa-solid fa-house" aria-hidden="true"></i>
+                      Back to Home Page
+                      <i class="fa-solid fa-house" aria-hidden="true"></i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+    </body>
+</html>
