@@ -128,6 +128,38 @@
                 </video>
                 <figcaption>Video from much later in development showcasing the dog distraction and the starter pistol.</figcaption>
             </figure>
+            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">ASSETS FOR SALE, BUYER TO COLLECT</p>
+            </aside>
+            <p>With a majority of the work done on mechanics, I decided to scout for assets to use for the project to replace the test objects and primitives that I have been using up until this point, and some quick searching on Sketchfab yielded results, I was able to find assets for the <a href="https://sketchfab.com/3d-models/stylized-trash-garbage-bags-low-poly-6a554baa60574b1eb524709a06224be1">Garbage Bag</a>, <a href="https://sketchfab.com/3d-models/green-recycle-waste-bin-120l-rigged-low-poly-60116f426a8448a3bf3a3e9091bc2a7b">Garbage Bins</a>, <a href="https://sketchfab.com/3d-models/handheld-metal-detector-247209543f2f4b5b9900e938c117162b">Metal Detector</a> and <a href="https://sketchfab.com/3d-models/minx-toy-pistol-model-low-poly-65b14c3daaee4657b8219669f33aebc6">Starter Pistol</a>.</p>
+            <p>So with a new hole burned in my wallet, I begun the process of implementing the assets into the project.</p>
+            <figure>
+                <img src="../../images/screenies/EEGD/OldAssets.png" alt="Da Assets." width="720px">
+                <figcaption>Screenshot showing all of the fresly bought assets in the test level.</figcaption>
+            </figure>
+            <p>Now not all of these assets were a simple drop in replacement for the old test assets, some such as the bags, bins and starter pistol required some modification both before and after implementation into the Engine.</p>
+            <p>For the bags, since the asset came in a bag of different looking bags, I decided to include them all and re-use the code for selecting a random garbage type to select a random garbage bag look.</p>
+            <p>The Starter Pistol required the texture to be modified to actually look like a starter pistol which was done in Blender, using the texture paint tool.</p>
+            <p>And lastly for the bins, the model only came in one colour, and I wanted four to signify the four, later five different garbage types, so that requires modification to the texture to make it greyscale, so that I can modify it via material instances within the Unreal Engine.</p>
+            <figure>
+                <img src="../../images/screenies/EEGD/Nodes/BinMatNode.png" alt="Da Material." width="720px">
+                <figcaption>Screenshot showing part of the Material Node Graph for the Garbage Bin's material.</figcaption>
+            </figure>
+            <p>This "binTint" parameter would be use to create material instances for each of the garbage types, simply by changing the colour value within this parameter, and then using the code of the bin actors to select the colour alongside the garbage type.</p>
+            <figure>
+                <img src="../../images/screenies/EEGD/Nodes/BinMatVar.png" alt="Da Material." width="720px">
+                <figcaption>Screenshot showing the modification of the binTint parameter.</figcaption>
+            </figure>
+            <figure>
+                <img src="../../images/screenies/EEGD/Nodes/BinColNode.png" alt="Da Material." width="720px">
+                <figcaption>Screenshot of the Bin actor's node graph showing how the garbage type determines the colour/material that the Bin inherits.</figcaption>
+            </figure>
+            <p>To go even further, I wanted to give the bins a little animation for whenever a bag makes it inside, to give a little bit of visual feedback for the Player and so I got to work.</p>
+            <p>I opted to use Unreal Engine's own animation tools to do this so that I could stay within the Unreal Editor and as an excuse to try features of the Editor that I hadn't already tried yet.</p>
+            <figure>
+                <img src="../../images/screenies/EEGD/gifs/BinAnim.gif" alt="Da Bin." width="720px">
+                <figcaption>Animated image showcasing the animation for when a Garbage Bag lands in a Garbage Bin.</figcaption>
+            </figure>
             <table width="100%" border="0">
               <tbody>
                 <tr>
