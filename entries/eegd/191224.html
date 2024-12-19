@@ -1,0 +1,153 @@
+<html>
+    <head>
+     <title>Versus Unreal - EXPERIMENTAL GAME DESIGN</title>
+     <link href="../../styles/blog.css" rel="stylesheet" type="text/css" media="all">
+     <link rel="icon" type="images/x-icon" href="../../images/favicon.ico">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta property="og:type" content="website">
+     <meta property="og:title" content="Blog">
+     <style>
+        body 
+  {
+    @media only screen and (orientation : landscape)
+    {
+      background: url("../../images/back/EEGD.png") no-repeat center center fixed; background-size:cover;
+    }
+  }
+     </style>   
+    </head>
+    <body>
+        <div class="content">
+            <p style="text-align: center;">
+                <img src="../../images/headers/191224.png" alt="YOU ARE NOT SUPPOSED TO SEE THIS." title="YOU ARE NOT SUPPOSED TO SEE THIS.">
+            </p>
+            <div class="blogheader">
+              <h3>Entry Started: 19th December 2024</h3>
+            </div>
+            <div class="blogheader">
+              <h3>Last Edited: 19th December 2024</h3>
+            </div>
+            <p>In this entry, I'll be documenting my role and contributions for the Extended and Experimental Game Design project titled: "Annual Garbage Throwing Competition", a Virtual Reality title centered around throwing bags of garbage.</p>
+            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">WHITEBOARD</p>
+            </aside>
+            <p>The project begun with a brainstorming session done via Miro, where myself and my two other team members rapid fired ideas for Mobile, VR and AR projects that we could work on and assembled them onto a table, one member having assigned themselves a column to fill with myself having the VR column.</p>
+            <figure>
+                <img src="../../images/screenies/EEGD/MiroTable.png" alt="Da Table." width="720px">
+                <figcaption>Screenshot showing the table of ideas on Miro.</figcaption>
+            </figure>
+            <p>After which, we decided to do a VR game and begun to expand on a few ideas with suggestions/ideas as to how they'll play.</p>
+            <figure>
+                <img src="../../images/screenies/EEGD/VRExpansion.png" alt="Da Table." width="720px">
+                <figcaption>Screenshot showing expansion of 3 VR game ideas.</figcaption>
+            </figure>
+            <p>As seen in this screenshot, we had the choice of three VR games that could become our first VR project, ultimately deciding to pursue the Garbage Throwing game idea, with our team's designated Level Designer drafting up ideas for the level, while myself and the other remaining team member begun work on the pitch presentation.</p>
+            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">THE ROUND TABLE</p>
+            </aside>
+            <p>While making the pitch presentation our team had assigned ourselves the roles with myself taking on the role of programming/scripting, meaning that I would have the opportunity to go fully hands-on with VR development within the Unreal Engine and carry the burden of lugging around a big box of expensive equipment to home and back to campus.</p>
+            <p>Working on the pitch presentation allowed for me to come up with both the core and pillars of the project and have an idea of how the key mechanics can/should work, such as the Player having to shake garbage bags in order to determine what type of garbage is inside in order to throw it into the correct garbage bin.</p>
+            <figure>
+                <img src="../../images/screenies/EEGD/CorePilliars.png" alt="Da Core." width="720px">
+                <figcaption>Slide from the pitch presentation showing the core and pillars of the project.</figcaption>
+            </figure>
+            <p>If you wish to view the pitch presentation for the project you can do so <a href="https://docs.google.com/presentation/d/1A7FD07tH8c6ErKNBB5Bl1SfeWS_V2QD8x6Ywho1bdZs/edit?usp=sharing">here.</a></p>
+            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">WETWORK</p>
+            </aside>
+            <p>With the pitch out of the way, I set about bringing the VR headset home and setting up a GitHub repository for all three of us to work on the project at home and also on campus to ensure we all have an up-to-date version.</p>
+            <figure>
+                <img src="../../images/screenies/EEGD/GitHub1.png" alt="Da Git." width="720px">
+                <figcaption>Screenshot of the project's GitHub repository.</figcaption>
+            </figure>
+            <p>I also went about creating a private Discord Server for the team so that we can talk outside of campus and also have a live feed to the GitHub repository so we know if any changes have been made that we'd need to pull.</p>
+            <figure>
+                <img src="../../images/screenies/EEGD/Discord1.png" alt="Da Discord." width="720px">
+                <figcaption>Screenshot of the team's Discord Server.</figcaption>
+            </figure>
+            <p>With all of that out of the way, I grabbed my laptop and begun setting up the development environment that I would be in for the next couple of weeks.</p>
+            <figure>
+                <img src="../../images/screenies/EEGD/setup.png" alt="Da Setup." width="720px">
+                <figcaption>Photograph of the extremely sophisticated setup for the project's development, with the in-dev blog on-screen for a nice 4th wall break.</figcaption>
+            </figure>
+            <p>With this setup, I loaded up the VR Template project that comes with the Unreal Engine, had a bit of fun with it and then had a look in the content to see how various elements worked and begun to incorporate it into the "Annual Garbage Throwing Competition", creating a test map to rapid prototype and implement the mechanics which included the bag shaking, randomized garbage and multiple garbage bin types, etc.</p>
+            <p>By far the hardest mechanic to implement was the bag shaking as there is no easy way for the bags to detect that they were being shaken, largely due to grabbed objects in VR having no real velocity, so I had to find a workaround and I found it in the form of keeping a vector variable of where the bag was grabbed and detecting whether it was moved even slightly from that vector, which would typically indicate that it was being shaken.</p>
+            <p>This method was so hacky I shoved most of it into a collapsed node so that I wouldn't have to look at it for any longer than I needed, I would later use these collapsed nodes to clean up other areas of code as well.</p>
+            <figure>
+                <img src="../../images/screenies/EEGD/Nodes/BagVel1.png" alt="Da Nodes." width="720px">
+                <figcaption>Screenshot showing part of the code that checks if the bag is being shaken, collapsed node in view.</figcaption>
+            </figure>
+            <figure>
+                <img src="../../images/screenies/EEGD/Nodes/BagVel2.png" alt="Da Nodes." width="720px">
+                <figcaption>Screenshot showing the inside of the collapsed node.</figcaption>
+            </figure>
+            <p>But with that, the bag works about as is expected, getting damaged while being shaken, eventually despawning.</p>
+            <figure>
+                <img src="../../images/screenies/EEGD/gifs/BagShake1.gif" alt="Da Bag." width="720px">
+                <figcaption>Animated image showing the test bag losing health when being shaken.</figcaption>
+            </figure>
+            <p>This talk about the trials and tribulations about getting the bag shaking mechanic to work brings me to another issue with VR development in the Unreal Engine.</p>
+            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">THROWING IN VR SUCKS</p>
+            </aside>
+            <p>Throwing in VR sucks.</p>
+            <p>Since Unreal doesn't track the velocity of grabbed actors, it leads to an issue where Players attempt to throw the bag, only to have it fall straight down without any forward momentum.</p>
+            <figure>
+                <img src="../../images/screenies/EEGD/gifs/BagThrowFail.gif" alt="Da Bag." width="720px">
+                <figcaption>Animated image showing the test bag falling when trying to throw.</figcaption>
+            </figure>
+            <p>Very fun, no problems whatsoever.</p>
+            <p>But later on in development, I decided to try and make the Player de-prioritize using over-arm throws as those are the most likely to encounter this issue, Players who opt for more realistic under-arm throws or "push throwing" have a much easier time with the bags.</p>
+            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">WETWORK CONTINUED</p>
+            </aside>
+            <p>With that out of my system, back to the rest of development, where after implementing bag shaking, came time to implement the different garbage types and different garbage bins which was surprisingly simple, making usage of two enumerator blueprints, one for the bag, one for the bins and checking if the current "byte" of the two are matching when the Player throws a bag into a bin, if so, they're awarded 10 points, if the throw it into the wrong bin, just 1 point.</p>
+            <figure>
+                <img src="../../images/screenies/EEGD/gifs/MetalBagWin.gif" alt="Da Bag." width="720px">
+                <figcaption>Animated image showing the garbage bag with metal garbage going into the garbage bin designed for metal garbage...garbage.</figcaption>
+            </figure>
+            <figure>
+                <img src="../../images/screenies/EEGD/Nodes/GarbageType.png" alt="Da Nodes." width="720px">
+                <figcaption>Screenshot showing the node graph for the garbage bag selecting a random garbage type when being spawned in.</figcaption>
+            </figure>
+            <p>One thing that I have neglected to mention up until now is that after the team gave the pitch presentation, the lecturers gave us some suggestions as to how we can make this project better by adding more than the currently existing mechanics, these suggestions included auditory distractions to make things more challenging and a way to get rid of said distractions.</p>
+            <p>With that suggestion, I came up with the idea of the Player having to fire a blank, starter pistol to scare away nearby cardboard cutouts of dogs.</p>
+            <p>I also implemented a metal detector actor that the Player can use to detect metal garbage bags, they emit a sound and also trigger vibrations on the Player's controller if it detects metal.</p>
+            <figure>
+                <video width="720" height="576" controls>
+                  <source src="../../videos/AGTC_MetalDetector.mp4" type="video/mp4">
+                  Your Browser does not support the video type (somehow).
+                </video>
+                <figcaption>Video showcasing the metal detector and its sound effect.</figcaption>
+            </figure>
+            <figure>
+                <video width="720" height="576" controls>
+                  <source src="../../videos/AGTC_dog1.mp4" type="video/mp4">
+                  Your Browser does not support the video type (somehow).
+                </video>
+                <figcaption>Video from much later in development showcasing the dog distraction and the starter pistol.</figcaption>
+            </figure>
+            <table width="100%" border="0">
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="#">
+                      <i class="fa-solid fa-up-long" aria-hidden="true"></i>
+                      Back to Top
+                      <i class="fa-solid fa-up-long" aria-hidden="true"></i>
+                    </a>
+                  </td>
+                  <td align="right">
+                    <a href="../../index.html">
+                      <i class="fa-solid fa-house" aria-hidden="true"></i>
+                      Back to Home Page
+                      <i class="fa-solid fa-house" aria-hidden="true"></i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+    </body>
+</html>
