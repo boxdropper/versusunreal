@@ -87,6 +87,10 @@
                 <img src="../../images/screenies/EEGD/gifs/BagShake1.gif" alt="Da Bag." width="720px">
                 <figcaption>Animated image showing the test bag losing health when being shaken.</figcaption>
             </figure>
+            <figure>
+                <img src="../../images/screenies/EEGD/gifs/BagHealth.gif" alt="Da Bag." width="720px">
+                <figcaption>Animated image from later in development showing the test bag losing health and tinting red.</figcaption>
+            </figure>
             <p>This talk about the trials and tribulations about getting the bag shaking mechanic to work brings me to another issue with VR development in the Unreal Engine.</p>
             <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
                 <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">THROWING IN VR SUCKS</p>
@@ -159,6 +163,95 @@
             <figure>
                 <img src="../../images/screenies/EEGD/gifs/BinAnim.gif" alt="Da Bin." width="720px">
                 <figcaption>Animated image showcasing the animation for when a Garbage Bag lands in a Garbage Bin.</figcaption>
+            </figure>
+            <p>Alongside creating an animation for the bin, I also went about sourcing sound effects for the Bag, Bin, Metal Detector, Starter Pistol, etc.</p>
+            <p>Luckily I had the perfect source in the form of <a href="https://freesound.org/">freesound.org</a>, where a majority of the sounds come from.</p>
+            <figure>
+                <img src="../../images/screenies/EEGD/freesounds.png" alt="Da Sounds." width="720px">
+                <figcaption>Screenshot of the content drawer showing various sounds pulled from freesound.</figcaption>
+            </figure>
+            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">FRESH LEVELS FOR VALENTINES DAY</p>
+            </aside>
+            <p>With the bin animations done and sound effects sourced, my end of the bargain was more or less complete at that point and it just came done to testing and potential refinement of my implemented mechanics while waiting for the other two members of the team to get their work for both the Levels and UI done.</p>
+            <p>Eventually there came a point where we started getting our work together within the GitHub Repository and I was able to test and tinker with the others' work.</p>
+            <p>One immediate problem that I had noticed was that a lot of the environment was far to large for Seated VR Players, which is the VR Playstyle that I have been using for testing and the one that we had agreed would be the preferred way to play, so I had to quickly scale all of that down and then found time to properly test and implement any mechanics that were missing within the levels.</p>
+            <figure>
+                <img src="../../images/screenies/EEGD/OldMap1.png" alt="Da Map." width="720px">
+                <figcaption>Screenshot showing the main map with mechanics implemented both by myself and the level designer.</figcaption>
+            </figure>
+            <p>One of these mechanics that I have implemented into this map which you can't quite see here is the distraction, how does it work, how does it spawn, well it has to do with that Target Point seen behind the Player Start Point.</p>
+            <p>I created an actor which spawns the distraction at the target point every 45 seconds from the start of the level, using an editable array variable to set the spawn point(s)</p>
+            <figure>
+                <img src="../../images/screenies/EEGD/Nodes/NoiseNodes.png" alt="Da Nodes." width="720px">
+                <figcaption>Screenshot showing the node graph for the distraction/noise maker spawning actor.</figcaption>
+            </figure>
+            <p>This setup is scalable as I can place multiple target points around the level and the distraction will spawn at all of them, which will be useful way later.</p>
+            <p>And if you're wondering about the conveyor belts, I didn't make 'em, so they aint getting any further mention here.</p>
+            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">ROUND ONE ROUNDUP</p>
+            </aside>
+            <p>With the levels implemented and the mechanics refined as much a I could withing the time frame, it came time to round up all of our work and record a gameplay video, which I did, at home, late at night, taking multiple attempts to provide a proper look at the gameplay and our collective progress.</p>
+            <figure>
+                <iframe width="720" height="576" src="https://www.youtube.com/embed/oITRS5m7xys" title="AGTC - Gameplay Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <figcaption>Gameplay Video of the then current build.</figcaption>
+            </figure>
+            <p>With this gameplay video recorded and presented to lecturers, we got our first round of feedback, while the overall opinion of the game was positive, there were a few areas where they believed that the game could be improved, such as bringing elements of the main level closer together to prevent the player from moving around so much and to consider implementing other forms of movement, feedback of which, we would act on soon enough.</p>
+            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">THIS AIN'T YOUR DADDY'S GAMECUBE PORT</p>
+            </aside>
+            <p style="text-align: center;">
+                <img src="../../images/headers/191224_2.png" alt="YOU ARE NOT SUPPOSED TO SEE THIS." title="YOU ARE NOT SUPPOSED TO SEE THIS.">
+            </p>
+            <p>"Annual Garbage Throwing Competition DX", a name that I quickly came up with as a joke/reference towards the 2003 GameCube port of the 1999 Dreamcast game, "Sonic Adventure", titled "Sonic Adventure DX: Director's Cut", is an expanded and enhanced version of the original "Annual Garbage Throwing Competition", featuring overhauled visuals, improved controls, accessibility features, etc.</p>
+            <p>The first bit of new content added to this new version was an option for a "Colour-Blind Awareness" mode that changes various object colours to make the bin colours more distinct and also adds better visual cues in the form of additional icons on each bin to make them all more visually distinct for colour blind players.</p>
+            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">SHAPES AND DULLED COLOURS</p>
+            </aside>
+            <p>My first attempt at implementing a colour-blind mode into the project made use of a <a href="https://elias-wick.com/portfolio/shaders/material-functions/color-blindness">material function pack created by Elias Wick</a>, which used Post-Process volumes to simulate the three main types of colour blindness, Deuteranopia, Protanopia & Tritanopia.</p>
+            <figure>
+                <video width="720" height="576" controls>
+                  <source src="../../videos/AGTCDX_CBSim.mp4" type="video/mp4">
+                  Your Browser does not support the video type (somehow).
+                </video>
+                <figcaption>Video showcasing the usage of the Material Function pack.</figcaption>
+            </figure>
+            <p>This worked but there was a problem, this is just a <em>simulation</em> of colour blindness, not something that would actually assist Colour Blind Players.</p>
+            <p>For an actual colour-blind mode, colours have to be changed so that they can be distinct enough for a Colour Blind Player to tell them apart, but what is the problem with the current bin colours?</p>
+            <figure>
+                <img src="../../images/screenies/EEGD/OldBinCols.png" alt="Da Bins." width="720px">
+                <figcaption>Screenshot showing the current bin colours.</figcaption>
+            </figure>
+            <p>Well if we were to take this image and lower the saturation by about 90%...</p>
+            <figure>
+                <img src="../../images/screenies/EEGD/OldBinColsCB.png" alt="Da Bins." width="720px">
+                <figcaption>Screenshot showing the current bin colours with 10% saturation.</figcaption>
+            </figure>
+            <p>While you can still make out some if not all of the current colours, someone who is colour blind will have a much harder time. So not only will I have to change the bin colours to ones that can be more easily differentiated when colour blind, using the method of desaturating an image by 90% to test, but to also add more visual indicators for the bins, to be more specific, a large icon below the label which tells the player what type of garbage it takes, which you can already see, I have added, it uses the same enum as the garbage type to determine what icon is shown in-game.</p>
+            <figure>
+                <img src="../../images/screenies/EEGD/OldBinIcos.png" alt="Da Bins." width="720px">
+                <figcaption>Screenshot showing normal bins with the correct icons.</figcaption>
+            </figure>
+            <figure>
+                <img src="../../images/screenies/EEGD/OldBinCB.png" alt="Da Bins." width="720px">
+                <figcaption>Screenshot showing the bins with colour blind assistance enabled.</figcaption>
+            </figure>
+            <p>Nice, now comes the other major addition that I have made to the project, the ability for the Player to traverse via Twin-Stick controls rather than teleportation.</p>
+            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">GOLDENEYE'S CONTROLS ARE FINE, ACTUALLY</p>
+            </aside>
+            <p>To add Twin-Stick controls, I followed a <a href="https://www.youtube.com/watch?v=6GKBXl7Jul4">video tutorial by "Werewolven"</a> with a minor modification as I wanted to allow for the Player to choose between Teleportation and Twin-Stick movement.</p>
+            <figure>
+                <img src="../../images/screenies/EEGD/Nodes/DXTwinStick.png" alt="Da Nodes." width="720px">
+                <figcaption>Screenshot showing the Node Graph for the Movement Input.</figcaption>
+            </figure>
+            <p>Later on, I would make a custom Game Instance Blueprint that saved this setting so that Player's wouldn't have to keep going into the settings to change their traversal method.</p>
+            <figure>
+                <video width="720" height="576" controls>
+                  <source src="../../videos/AGTCDX_TS1.mp4" type="video/mp4">
+                  Your Browser does not support the video type (somehow).
+                </video>
+                <figcaption>Video showcasing the Twin-Stick movement setting.</figcaption>
             </figure>
             <table width="100%" border="0">
               <tbody>
