@@ -289,6 +289,47 @@
                 <figcaption>Gameplay Video of the then current build of DX.</figcaption>
             </figure>
             <p>Following this video showcase came another round of feedback that would be acted upon, the level would be condensed again, the spawning rate of the garbage bags was lowered, the containers were made larger and the level's countdown timer was lengthened to make the game overall easier.</p>
+            <figure>
+                <iframe frameborder="0" class="juxtapose" width="720" height="576" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=75f69228-c14e-11ef-9397-d93975fe8866"></iframe>
+                <figcaption>Interactive element showing the before and after of acting on the feedback.</figcaption>
+            </figure>
+            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">IT ISN'T A DREAMCAST</p>
+            </aside>
+            <p>You may have seen in the above gameplay video a perculiar sight, a GameCube that the Player can throw like a regular garbage bag, this is a "secret" garbage bag mesh that has a 1 in 77 chance of being selected, this also forces the garbage type to be Metal, this was surprising easy to implement, just by adding to the existing garbage bag code to roll a random integer when spawning in.</p>
+            <figure>
+                <img src="../../images/screenies/EEGD/Nodes/BagGameCube.png" alt="Da Nodes." width="720px">
+                <figcaption>Screenshot showing the Node Graph for the GameCube Roll.</figcaption>
+            </figure>
+            <p>The GameCube mesh itself was <a href="https://sketchfab.com/3d-models/low-poly-nintendo-gamecube-34ca13c57463417b825cf72604eda75d">downloaded from Sketchfab</a> and modified to only be the console and to attempt to adjust the normal shading.</p>
+            <figure>
+                <img src="../../images/screenies/EEGD/AGTCDX_GameCube.png" alt="Da Cube." width="720px">
+                <figcaption>Screenshot showing the GameCube in-Engine.</figcaption>
+            </figure>
+            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">WITH A FILLING OF CHERENKOV RADIATION</p>
+            </aside>
+            <p>One of the other features added in DX that I have neglected to mention up until now is an extended grab radius/reach, Players will now be more able to easily grab objects such as the bags that they've accidentally dropped, but with this comes a problem, how do we tell the Player that they can now grab an object within the extended range?</p>
+            <p>The solution was simple, having an eligble object be given a bright outline when within range, to do this was surprisingly easy, <a href="https://www.youtube.com/watch?v=4-a8QZIf1Dc">using a tutorial by Unreal University</a>, I created a new material that will serve as the color of the glowing outline.</p>
+            <figure>
+                <img src="../../images/screenies/EEGD/Nodes/OutlineMat.png" alt="Da Mat." width="720px">
+                <figcaption>Screenshot showing the Material Node Graph of the Outline.</figcaption>
+            </figure>
+            <p>Then this new material can be set as the eligble actor's "Overlay Material" which, as the name implies, will overlay on top of the current mesh.</p>
+            <figure>
+                <video width="720" height="576" controls>
+                  <source src="../../videos/AGTCDX_Outline.mp4" type="video/mp4">
+                  Your Browser does not support the video type (somehow).
+                </video>
+                <figcaption>Video showcasing the outline on the Garbage Bags.</figcaption>
+            </figure>
+            <p>This object detection is done my firing a sphere trace every tick out from the Player's hands, and having whatever actor is hit by these traces be given the outline material as its overlay.</p>
+            <p>You may notice it blinking a fair bit, that is a side effect of an attempt to address the issue that when an actor is given the outline, there's no easy way to remove it without a custom event/function within the actor's blueprints to automatically remove the overlay material after a fraction of a second.</p>
+            <p>It may look weird, but in the words of Jackal:</p>
+            <figure>
+                <img src="../../images/screenies/asLongAsItWorks.png" alt="Da Jackal." width="720px">
+                <figcaption>Jackal.</figcaption>
+            </figure>
             <table width="100%" border="0">
               <tbody>
                 <tr>
