@@ -110,6 +110,11 @@
                 <figcaption>Animated screenshot showing the dummy sprites in Editor.</figcaption>
               </figure>
               <p>The Dialogue system can then be modified to play a specified animation for whenever the characters are talking, which should add some extra life to them when inside the game world.</p>
+              <p>With that, I decided that it was time to create a video for the other members of the Game Design team documenting how to use the system themselves.</p>
+              <figure>
+                <iframe width="720" height="576" src="https://www.youtube.com/embed/5ib1l_IWW4I" title="LT Dialogue Documentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <figcaption>Self-made Video documenting the Dialogue System.</figcaption>
+            </figure>
               <p>Speaking of animations, I would need to give at least a tentative list of animations that the animation team would have to create for all the characters that will be featured, including some ones unique to the Player Character to make them stand out.</p>
               <p>Back to the Miro Board, I and the other members of the Game Design team went to work on a rough game design document, my contributions to it being detailing mechanics such as the dialogue system and character animations.</p>
               <figure>
@@ -128,6 +133,53 @@
                 <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">PARTY OF PAIN</p>
               </aside>
               <p>The Party System was both a pain and somehow also not that hard to implement, mainly because I had seen <a href="https://www.youtube.com/watch?v=nMOganG-YqU">this tutorial by Josh Clark</a> and figured that I can use parts of it to make a system where the Player can interact with an NPC, ask the NPC to follow them and later telling them to go back to where they were initially.</p>
+              <p>When you get down to it, a potential party member consists of these components.</p>
+              <p><li>A Character Actor for the idle/non-party NPC.</li>
+              <li>A separate Character Class for the version of the NPC that is in the Player's Party.</li>
+              <li>A Struct that contains variables that drive various aspects of the Party Member, including their name, sprite and animation blueprint.</li>
+              <li>A Pawn Blueprint that acts as a spawner for the Party Version of the NPC, which works via communication with the Level Blueprint.</li>
+              <li>A Blueprint Interface that acts as a way for other blueprints to communicate with the Level Blueprint using a Name Input, similar to the Dialogue System and its branches.</li>
+              <li>An AI Controller that makes the AI follow the Player by going to their current location with a distance buffer so that they don't clip into the Player.</li></p>
+              <p>With all of that, we now have an NPC that can follow the Player on request, and also return to their original position on request.</p>
+              <figure>
+                <video width="720" height="576" controls>
+                  <source src="../../videos/LT_PartyMember.mp4" type="video/mp4">
+                  Your Browser does not support the video type (somehow).
+                </video>
+                <figcaption>Video showcasing the Party System in action.</figcaption>
+              </figure>
+              <p>What's that? You want to see the code?</p>
+              <p>Ok, fine...</p>
+              <figure>
+                <img src="../../images/screenies/lt/nodes/partyNPC_1partynpcpossess.png" alt="Da Sound List." width="720px">
+                <figcaption>Screenshot showing partial code for the Party Version of the NPC being possessed by the AI Controller.</figcaption>
+              </figure>
+              <figure>
+                <iframe width="720" height="576" src="https://blueprintue.com/render/fkub1fc2/" scrolling="no" allowfullscreen></iframe>
+                <figcaption>Interactive Element showing the primary funtion for the Pawn Spawner class.</figcaption>
+              </figure>
+              <figure>
+                <iframe width="720" height="576" src="https://blueprintue.com/render/ppx17bif/" scrolling="no" allowfullscreen></iframe>
+                <figcaption>Interactive Element showing the Level Blueprint code both spawning the Party NPC and hiding the original by forcing it into the floor.</figcaption>
+              </figure>
+              <figure>
+                <iframe width="720" height="576" src="https://blueprintue.com/render/e5bjmecn/" scrolling="no" allowfullscreen></iframe>
+                <figcaption>Interactive Element showing the code for the AI Controller.</figcaption>
+              </figure>
+              <p>While this new party system/mechanic works fine, I recognized an issue rather quickly, how would it hand the Player being teleported to another area, or if the go to a new level entirely?</p>
+              <p>Well, the latter issue can be solved buy just keeping the game on one level, using the World Partition system to load and unload areas as necessary, and the first issue is also solved rather easily.</p>
+              <p>The "AI MoveTo" node that you can see in the AI Controller's code has an output that fires whenever the AI's pathfinding fails, so we can just use that to teleport the NPC to the Player if they can't path to them, with some offset to prevent any clipping.</p>
+              <figure>
+                <iframe width="720" height="576" src="https://blueprintue.com/render/xy35fa01/" scrolling="no" allowfullscreen></iframe>
+                <figcaption>Interactive Element showing the new code for the AI Controller.</figcaption>
+              </figure>
+              <figure>
+                <video width="720" height="576" controls>
+                  <source src="../../videos/LT_AITeleport.mp4" type="video/mp4">
+                  Your Browser does not support the video type (somehow).
+                </video>
+                <figcaption>Video showcasing the World Partition and AI Teleportation.</figcaption>
+              </figure>
             <table width="100%" border="0">
               <tbody>
                 <tr>
