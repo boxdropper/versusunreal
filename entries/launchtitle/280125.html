@@ -22,6 +22,12 @@
             <p style="text-align: center;">
                 <img src="../../images/headers/TEMPLATE.png" alt="YOU ARE NOT SUPPOSED TO SEE THIS." title="YOU ARE NOT SUPPOSED TO SEE THIS.">
             </p>
+            <div class="blogheader">
+              <h3>Entry Started: 28th January 2025</h3>
+            </div>
+            <div class="blogheader">
+              <h3>Last Edited: 13th March 2025</h3>
+            </div>
             <p>For a while now, I've had this...fascination with old, long dead online games, it ties in to my love of the "old internet" in general. In the current age of social media algorithms finding new and exciting ways to bruise my soul, it's at the very least comforting to be able to see what people on the internet used to use to make conversation, whether it'll be IRC, web forums and in this case, "massively multiplayer online" games (MMOs).</p>
             <figure>
               <img src="../../images/screenies/lt/hardcore-wow-is-a-true-mmo-v0-44j3hmwrnwbd1.webp" alt="Da League." width="720px">
@@ -179,6 +185,62 @@
                   Your Browser does not support the video type (somehow).
                 </video>
                 <figcaption>Video showcasing the World Partition and AI Teleportation.</figcaption>
+              </figure>
+              <p>Although, don't get too attached to this "Party" System, I'll get to why later.</p>
+              <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">EAR CANDY</p>
+              </aside>
+              <p>Around the same time that I solved the AI Teleportation conundrum, our Sound Designer had completed and subsequently provided us with a batch of sound effects, most of which were intended for the User Interface, so I set about implementing a few for now, just to get a feel for how they'll preform in-game.</p>
+              <figure>
+                <video width="720" height="576" controls>
+                  <source src="../../videos/LT_Sounds1.mp4" type="video/mp4">
+                  Your Browser does not support the video type (somehow).
+                </video>
+                <figcaption>Video from later in development showcasing some of the implemented sound effects.</figcaption>
+              </figure>
+              <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">STOCKPILE</p>
+              </aside>
+              <p>In the rough Game Design Document that the team had made on Miro, there was mention of the Player needing to buy a new Fishing Rod (The In-Game Explanation being that they're an NPC that mans a fishing minigame), so I thought, how about adding an Inventory system?</p>
+              <p>Especially if there is ever a need for the Player to find more items to progress, we can use the system to check if the Player has a required item.</p>
+              <p>Using a <a href="https://www.youtube.com/watch?v=b2atcZWYi3E">tutorial by Unreal University</a>, I had an Inventory implemented for the Player, using components and a spearate interaction system, that's right there are now two interaction systems working in unison, one that was initially created for the Dialogue System and now one for any Inventory Items that the Player could collect, very cool, definitely not cursed at all.</p>
+              <figure>
+                <img src="../../images/screenies/lt/InventorySystem.gif" alt="Da Inventory." width="720px">
+                <figcaption>Animated image showing the Inventory System in action.</figcaption>
+              </figure>
+              <p>But don't get attached to this system either because...</p>
+              <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">PRIORITY SHIFT</p>
+              </aside>
+              <p>After the Inventory System was implemented, I spent a week ironing out a few bugs that I had noticed with all of the systems interacting with one another, the key problem was with Player input, there were various instances of the game no longer accepting inputs after interacting with nothing, if the Player was moving when going to talk to someone then they would keep moving even without any key presses, etc.</p>
+              <p>But after that, the middle of the semester came running out from behind the bushes with a knife, screaming, and before I knew it, I was thrust into doing a presentation for the lecturers.</p>
+              <p>During this mid-semester presentation with the lecturers, which was done a half team capacity but don't worry about it, the main concern that the lecturers had was that our priorities were going in the wrong direction, with my especially drifting towards adding systems such as the "Party" and Inventory instead of prototyping any of the mechanics that the Player would be using to progress.</p>
+              <p>So after that presentation, I and the other members in attendance that day went to the Miro board and began hashing out a "Beat Sheet", which gives a play-by-play of how the story and gameplay will pan out from beginning to the end.</p>
+              <p>Also with this Beat Sheet came the opportunity for us to decide what to work on, what not to work on, and what to scrap. This included the "Party" and the Inventory systems, for the former, the new Beat Sheet outlined a game where you wouldn't need to drag along any other NPCs and the latter because I could accomplish essentially the same goals using Unreal's "Gameplay Tag" system, wherein I can apply tags to the Player and other actors and trigger events based on which tags are currently applied, such as the Player having a Tag for whenever they're talking or having their Fishing Rod, etc.</p>
+              <p>With the Beat Sheet more or less complete, I got back to work.</p>
+              <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">GONE FISHING</p>
+              </aside>
+              <p>To start, I begun work on creating a Trello Board for the purpose of project management and so that we could more easily keep track of each others progress.</p>
+              <figure>
+                <img src="../../images/screenies/lt/Trello1.png" alt="Da Trello." width="720px">
+                <figcaption>Screenshot of the Trello Board.</figcaption>
+              </figure>
+              <p>Now back to the game, I decided to begin working on prototyping the main mechanic for the Player outside of the Dialogue System, their character's fishing rod and it being uses as a method of solving puzzles.</p>
+              <p>My idea for implementation is not unlike point-and-click adventure games, where you'd click on an item or press a keybind and then click on the element that you wish to interact with, luckily this is relatively easy to implement.</p>
+              <p>For starters, I needed a way for the Player to switch between the state of using the fishing rod and not using the fishing rod, which was done with an Enumerator and a Function that can be called inside the Player's Blueprint, in the state where the Player is using the fishing rod, their cursor is made to appear and they can click wherever on the screen to try and use their fishing rod.</p>
+              <p>Like those point-and-click games, I also wanted the elements to glow/gain an outline to indicate that they can be interacted with using the fishing rod, with the creation of a new Player Controller class that has mouse hover events enabled, it was possible by just having the intended actor have an "Overlay Material" applied to them whenever the Player's mouse hovered over.</p>
+              <figure>
+                <video width="720" height="576" controls>
+                  <source src="../../videos/LT_RodProto.mp4" type="video/mp4">
+                  Your Browser does not support the video type (somehow).
+                </video>
+                <figcaption>Video showcasing the Fishing Rod in action.</figcaption>
+              </figure>
+              <p>There was also the matter of using the Gameplay Tag system to make sure that Players can't use the Fishing Rod while Talking to other actors, or if they have no Fishing Rod.</p>
+              <figure>
+                <iframe width="720" height="576" src="https://blueprintue.com/render/k19gmjlb/" scrolling="no" allowfullscreen></iframe>
+                <figcaption>Interactive Element showing the code within the Player Blueprint for both switching states and using the Fishing Rod.</figcaption>
               </figure>
             <table width="100%" border="0">
               <tbody>
