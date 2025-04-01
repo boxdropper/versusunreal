@@ -26,7 +26,7 @@
               <h3>Entry Started: 28th January 2025</h3>
             </div>
             <div class="blogheader">
-              <h3>Last Edited: 13th March 2025</h3>
+              <h3>Last Edited: 1st April 2025</h3>
             </div>
             <p>For a while now, I've had this...fascination with old, long dead online games, it ties in to my love of the "old internet" in general. In the current age of social media algorithms finding new and exciting ways to bruise my soul, it's at the very least comforting to be able to see what people on the internet used to use to make conversation, whether it'll be IRC, web forums and in this case, "massively multiplayer online" games (MMOs).</p>
             <figure>
@@ -36,7 +36,7 @@
             <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
               <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">NO PLAYERS ONLINE</p>
             </aside>
-            <p>But as mentioned above, there's been a lesser need for these types of games to exist for the purpose of meeting people online and as such, most drift off into obscruity and obsolescence, forever buried under aging code that's at risk of becoming incompatible with each OS update or worse, the Master Servers themselves being permanently taken offline so that their corporate paymasters can use the resources to fund the payments their 5th yacht, only a few that have managed to keep up with the rapidly changing online world still remain today, but their best days are long behind them.</p>
+            <p>But as mentioned above, there's been a lesser need for these types of games to exist for the purpose of meeting people online and as such, most drift off into obscruity and obsolescence, forever buried under aging code that's at risk of becoming incompatible with each OS update or worse, the Master Servers themselves being permanently taken offline so that their corporate paymasters can use the resources to fund the payments of their 5th yacht, only a few that have managed to keep up with the rapidly changing online world still remain today, but their best days are long behind them.</p>
             <figure>
               <img src="../../images/screenies/lt/MxOSit.gif" alt="Da Matrix." width="720px">
               <figcaption>Don't let this NPC fool you, The Matrix Online is long dead and while a fan master server emulator does exist, no one came on when I went to gather this footage.</figcaption>
@@ -241,6 +241,129 @@
               <figure>
                 <iframe width="720" height="576" src="https://blueprintue.com/render/k19gmjlb/" scrolling="no" allowfullscreen></iframe>
                 <figcaption>Interactive Element showing the code within the Player Blueprint for both switching states and using the Fishing Rod.</figcaption>
+              </figure>
+              <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">OVERLAYING WITH A BIG SPLINED STEP</p>
+              </aside>
+              <p>Following the scrapping of the Inventory and "Party" systems, our Sound Designer had sent over some sound effects to use for footsteps, with different sounding steps corresponding to different materials, these materials being based on what we had came to a general idea as to what type of surfaces the Player Character would be walking on.</p>
+              <p>To actually implement these sounds into Unreal with the intended functionality, I had to make usage of the Surface Types and Physical Material tools that come with the Unreal Engine.</p>
+              <p>First, I had to define what surfaces will be used by the Physical Materials within the Project Settings.</p>
+              <figure>
+                <img src="../../images/screenies/lt/PhysSurfaces.png" alt="Da Surfaces." width="720px">
+                <figcaption>Screenshot of the Physical Surface Types listed in the Project Settings.</figcaption>
+              </figure>
+              <p>After that, came the creation of Physical Material Blueprints that link to these Surface Types.</p>
+              <figure>
+                <img src="../../images/screenies/lt/PhysMatContentDrawer.png" alt="Da Mats." width="720px">
+                <figcaption>Screenshot of the Physical Materials within the Content Drawer.</figcaption>
+              </figure>
+              <p>Then with the Player's Animation Blueprint, I can send a Notify Signal that will fire a line trace to the ground from the Player's current position, get the Surface Type of a Material after assigning it an appropriate Physical Material and then play the sound effect associated with that Surface Type.</p>
+              <figure>
+                <iframe width="720" height="576" src="https://blueprintue.com/render/2xb-csvj/" scrolling="no" allowfullscreen></iframe>
+                <figcaption>Interactive Element showing the notify code that allows for the footstep sounds to play.</figcaption>
+              </figure>
+              <figure>
+                <video width="720" height="576" controls>
+                  <source src="../../videos/LT_OverlayFootstepsSpline.mp4" type="video/mp4">
+                  Your Browser does not support the video type (somehow).
+                </video>
+                <figcaption>Video showcasing the Footstep Sounds (and other elements that have yet to be mentioned) in action.</figcaption>
+              </figure>
+              <p>You may have noticed that the camera in the beginning of the video is a lot more mobile than it was in previous videos you've seen so far.</p>
+              <p>Now that's because in the middle of implementing both the footstep sounds and the UI Overlay that you can also see in the above video, a thought had come to me, what if some of the locations in the game end up being too big for a simple static camera?</p>
+              <p>The answer to that problem was a "Spline-Based" Camera, wherein a Camera moves along a Spline Path, moving to the point that is the closest to the Player.</p>
+              <figure>
+                <img src="../../images/screenies/lt/SplineActor.png" alt="Da Spline." width="720px">
+                <figcaption>Screenshot of the Spline within the Test Level.</figcaption>
+              </figure>
+              <p>Within the Player Blueprint, I have it so every tick, the Camera is attached to the Spline and always moving to the point closest to the Player.</p>
+              <figure>
+                <iframe width="720" height="576" src="https://blueprintue.com/render/uw6-sq16/" scrolling="no" allowfullscreen></iframe>
+                <figcaption>Interactive Element showing the code for the Player's Camera being attached to the Spline.</figcaption>
+              </figure>
+              <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">AYY MAMA</p>
+              </aside>
+              <p>After a good amount of work, one of the members of the Animation team had produced a 3D modelled interior of a Restaurant, the home domain of one of the NPC characters, in this case, "Lobby" the Lobster.</p>
+              <p>With haste, I begun work on getting this interior model implemented into the Test Level so that we can test scale, lighting and other aspects.</p>
+              <p>One issue with this Interior was that that all of the objects in the interior was exported as separate static meshes which wasn't ideal and would thankfull be rectified later when we got a more final model.</p>
+              <figure>
+                <img src="../../images/screenies/lt/TestRestaurantModel1.png" alt="Da Restaurant." width="720px">
+                <figcaption>Screenshot of the Restaurant Interior implemented in-engine.</figcaption>
+              </figure>
+              <p>After that was all said and done, I decided to replace that ugly dummy sprite for the Player with one of our actual Player Character, Olive, quickly grabbing one of the sketches from the Animation team and slapping it on in place of the dummy sprite as I await for the actual sprites to be completed.</p>
+              <figure>
+                <img src="../../images/screenies/lt/TestRestaurantModel2.png" alt="Da Restaurant." width="720px">
+                <figcaption>Screenshot showing the new temp Player sprite.</figcaption>
+              </figure>
+              <p>At one point, a lecturer made a pass by me working and made a comment about the lighting seen in the Restaurant's interior and suggested that something should be done to make the shadows appear less harsh, luckily I knew just the thing, a Post-Process Material that brightens up any meshes with a Custom Render Depth to them.</p>
+              <figure>
+                <img src="../../images/screenies/lt/TestRestaurantModel3.png" alt="Da Restaurant." width="720px">
+                <figcaption>Screenshot showing the Post-Process Material in action (and a new temp Olive sprite, he's got colour now!).</figcaption>
+              </figure>
+              <p>Don't worry it'll look better with acutal textures, trust me.</p>
+              <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">CABLE MANAGEMENT</p>
+              </aside>
+              <p>To expand on the Player's fishing mechanic, a lecturer gave me the suggestion to add a cable to the fishing rod mechanic, that way there is a more visual representation of what the Player Character is striking with their fishing rod, as well as addressing a potential issue that may rise with the Player's Animations not exactly lining up with the Player's Actions</p>
+              <p>To achieve this, a "Cable Component" is created by the intenedd actor that attaches its end point to the Player.</p>
+              <figure>
+                <img src="../../images/screenies/lt/CableComponent.png" alt="Da Cable." width="720px">
+                <figcaption>Screenshot showing the Cable Component being attached to both the Fishable Actor and the Player.</figcaption>
+              </figure>
+              <p>It was a bit of a pain to get this working the way that I wanted, initially it was the Player that would create the Cable Component and attach it to the intended actor, but when attempting to destroy the component whenever the actor's function is completed, it would not and would instead remain on the Player and Actor.</p>
+              <p>This is largely due to the fact that components can only be destroyed by the actor that is creating it, even when attempting to destroy the component inside the Player's blueprint, there was no easy way to find and destroy the component, but, having the Actor create and destroy the component instead of the Player worked flawlessly.</p>
+              <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">INTO YOUR FACES</p>
+              </aside>
+              <p>I've made only a brief mention of UI just above, but at this point in development, I decided to put more focus behind it, especially after the other Game Design and Animation team members got done cooking up some wireframes in Figma.</p>
+              <figure>
+                <img src="../../images/screenies/lt/UIWireframe1.png" alt="Da UI." width="720px">
+                <figcaption>UI Wireframe created by another Game Design Team Member.</figcaption>
+              </figure>
+              <p>I started with the portrait that you can see in the bottom left corner, I wanted this to both act as the location as to where the Speaker Images will reside as well as a button that the Player can click to enter the state where they're using the fishing rod.</p>
+              <p>Slight problem, the area in the UI Overlay isn't a complete circle, there are some parts that give it a more abstract shape, luckily this is easy to adapt to.</p>
+              <p>In Unreal's Widget Tools, the "Retainer Box" has the option for an "Effect Material" which will apply an effect to whatever is inside, in this case, a mask which will dictate how the image is displayed.</p>
+              <p>Creating a Black and White mask in the shape of the desired area, where the white area indicates where the image will be drawn and turning it into a User Interface Material, I was able to add it to a retainer box and the image(s) are displayed properly within the UI.</p>
+              <figure>
+                <img src="../../images/screenies/lt/nodes/ProfileMaterial.png" alt="Da Material." width="720px">
+                <figcaption>Screenshot of the code behind the Mask/Effect Material.</figcaption>
+              </figure>
+              <figure>
+                <img src="../../images/screenies/lt/ProfileMatWidget.png" alt="Da Widget." width="720px">
+                <figcaption>Screenshot of the Effect Material being used inside a Retainer Box.</figcaption>
+              </figure>
+              <figure>
+                <img src="../../images/screenies/lt/ProfileMatAction.png" alt="Da Widget." width="720px">
+                <figcaption>Screenshot of the Effect Material in action.</figcaption>
+              </figure>
+              <p>I also took the opportunity to shuffle around the other elements of the Dialogue window to better match the wireframes.</p>
+              <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">CAT WALKS INTO DINER</p>
+              </aside>
+              <p>During the week where I implemented the Effect Material for the UI, the Animation team was kicking into high gear as I was given a suite of walking animations for the Player Character and a brand-spanking-new Restaurant interior model.</p>
+              <figure>
+                <img src="../../images/screenies/lt/MC_-_Olive_walk.gif" alt="Da Widget." width="480px">
+                <figcaption>Animation of the Player Character (Olive)'s left facing walk cycle.</figcaption>
+              </figure>
+              <p>I was provided with a set of walking animations that face in two different directions, using PaperZD's Animation Blueprints, I can set it so the correct directional animation is used based on the direction the Player is moving.</p>
+              <figure>
+                <img src="../../images/screenies/lt/DirectionalAnimation.png" alt="Da Directional Animation." width="720px">
+                <figcaption>Screenshot of the Player Animation Blueprint showing the setup of the Directional Animation.</figcaption>
+              </figure>
+              <figure>
+                <img src="../../images/screenies/lt/nodes/OliveWalkState.png" alt="Da State Machine." width="720px">
+                <figcaption>Screenshot of the State Machine code that drives the directional animation.</figcaption>
+              </figure>
+              <figure>
+                <img src="../../images/screenies/lt/oliveWalk.gif" alt="Da Walk." width="720px">
+                <figcaption>Animated Image of the State Machine in action.</figcaption>
+              </figure>
+              <p>Now let's talk about that new Restaurant interior, for starters, it was exported as one whole model this time which greatly helps with keeping the file structure of the project clean and the textures for it were finalized and were also sent over for me to convert into Unreal's material system.</p>
+              <p>And the result...</p>
+              <figure>
+                <img src="../../images/screenies/lt/newRestaurant.png" alt="Da Restaurant." width="720px">
+                <figcaption>Screenshot of the new Restaurant Interior...and a temp sprite of its owner.</figcaption>
               </figure>
             <table width="100%" border="0">
               <tbody>
