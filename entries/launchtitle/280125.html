@@ -359,11 +359,47 @@
                 <img src="../../images/screenies/lt/oliveWalk.gif" alt="Da Walk." width="720px">
                 <figcaption>Animated Image of the State Machine in action.</figcaption>
               </figure>
+              <p>Taking notes from other titles such as the 2D Pokemon games, the Player Character's animation blueprint was modified to slow down the animation whenever they're running up against a wall, to give the player character more of an existence within the game world, being affected by walls that would realistically slow them down.</p>
+              <p>To do this, I had to change the code of the Animation Blueprint that you can see above, instead of using state machines, all animations would be handled within the main Animation Blueprint graph.</p>
+              <figure>
+                <img src="../../images/screenies/lt/nodes/AnimBPNew.png" alt="Da Nodes." width="720px">
+                <figcaption>Screenshot of the new Animation Blueprint.</figcaption>
+              </figure>
+              <p>This new Animation Blueprint make usage of both a newly created boolean variable and pure function made within the Player's Blueprint, the boolean is set to true whenever the Player presses a movement key and the pure function checks if the Player is pressing a movement key but their velocity value is lower than a threshold of 50 units/s.</p>
+              <p>If the function returns true, then the play rate of the Player's walking animation is slowed down, producing the desired result.</p>
+              <figure>
+                <img src="../../images/screenies/lt/walkIntoWall.gif" alt="Da Walk." width="720px">
+                <figcaption>Animated image of the result of the Animation Blueprint changes.</figcaption>
+              </figure>
               <p>Now let's talk about that new Restaurant interior, for starters, it was exported as one whole model this time which greatly helps with keeping the file structure of the project clean and the textures for it were finalized and were also sent over for me to convert into Unreal's material system.</p>
               <p>And the result...</p>
               <figure>
                 <img src="../../images/screenies/lt/newRestaurant.png" alt="Da Restaurant." width="720px">
                 <figcaption>Screenshot of the new Restaurant Interior...and a temp sprite of its owner.</figcaption>
+              </figure>
+              <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">FEAR AND LOATHING</p>
+              </aside>
+              <p>After the Restaurant, came the Gear Shop, owned and ran by the apathy-filled racoon named Rocco.</p>
+              <p>Like the Restaurant, the interior was made by members of the Animation team and I was handling the implementation, which went off without a hitch!</p>
+              <figure>
+                <img src="../../images/screenies/lt/newGearShop.png" alt="Da Gear Shop." width="720px">
+                <figcaption>Screenshot of the Gear Shop Interior with some (censored) temp dialogue from the owner, Rocco.</figcaption>
+              </figure>
+              <p>It was around this time where we and other groups were doing playtesting of each others games. For these sessions, I had to quickly create both temporary dialogue for both Lobby and Rocco, as well as implement ways for the Player to access their interiors and experience most if not all of the mechanics that were currently implemented.</p>
+              <p>We knew that after these sessions, we would have people from the industry coming down to playtest, so the current test map would not be enough to be worthy of being presented.</p>
+              <p>With that in mind, I had set out a short list of aspects of the game that I believe should be complete by the time of the industry playtest, with aspects such as the main hub level at the very least, implemented and playable in time.</p>
+              <p>One of the Level Designers had a small issue with working within Unreal as for one, they didn't have the right version installed (5.5) and for some reason weren't able to correct that, so had to create the level in Unreal 5.4, when they sent the level files over, it opened...</p>
+              <figure>
+                <img src="../../images/screenies/lt/bigOlNothing.png" alt="Da Nothing." width="720px">
+                <figcaption>Screenshot of the "Hub ""Level""".</figcaption>
+              </figure>
+              <p>A great, big, wad of nothing!</p>
+              <p>Luckily, this was easy to address, instead of sending me the level files, they were able to send me the project that they used to create the level in order to convert it to an Unreal 5.5 project and then import the level into the project, which worked a lot better.</p>
+              <p>After rescaling the level to properly fit the Player's size, the Hub level was implemented!</p>
+              <figure>
+                <img src="../../images/screenies/lt/HubLevel1.png" alt="Da Hub." width="720px">
+                <figcaption>Screenshot of the untextured Hub Level.</figcaption>
               </figure>
             <table width="100%" border="0">
               <tbody>
