@@ -26,7 +26,7 @@
               <h3>Entry Started: 28th January 2025</h3>
             </div>
             <div class="blogheader">
-              <h3>Last Edited: 5th April 2025</h3>
+              <h3>Last Edited: 5th May 2025</h3>
             </div>
             <p>For a while now, I've had this...fascination with old, long dead online games, it ties in to my love of the "old internet" in general. In the current age of social media algorithms finding new and exciting ways to bruise my soul, it's at the very least comforting to be able to see what people on the internet used to use to make conversation, whether it'll be IRC, web forums and in this case, "massively multiplayer online" games (MMOs).</p>
             <figure>
@@ -401,6 +401,38 @@
                 <img src="../../images/screenies/lt/HubLevel1.png" alt="Da Hub." width="720px">
                 <figcaption>Screenshot of the untextured Hub Level.</figcaption>
               </figure>
+              <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">DAMN THIS BLOG IS LONG</p>
+              </aside>
+              <p>After the Hub level was implemented, I quickly put some teleport triggers to the Restaurant and Gear Shop interiors so that the people coming in from the industry playtest would have more than just the Hub level to walk around.</p>
+              <p>The feedback given from the industry playtests did give some insight as to how to approach the game's development with the current timeframe, mainly just getting at least the first third of the game complete and seeing what can be done from there.</p>
+              <p>After the playtest, one of the animators had finally finished the walking and idle animations for all of the NPCs, so I quickly go to work implementing them, giving them Character Blueprints and implementing them into the level, no dialogue components yet, I wanted to leave that up to the member doing the narrative.</p>
+              <figure>
+                <img src="../../images/screenies/lt/newNPCs.png" alt="Da Hub." width="720px">
+                <figcaption>Screenshot from later in development showing 2 of the newly implemented NPCs.</figcaption>
+              </figure>
+              <p>After the rest of the NPCs were implemented, another Animation team member had more exterior models, this time of the Fishing Dock/Port that the Player starts in and the exterior model of the Lobster's Restaurant, although before they came back with newer, much better models of the two locations, I had only implemented the fishing dock.</p>
+              <figure>
+                <img src="../../images/screenies/lt/blenderOldDock.png" alt="Da Dock." width="720px">
+                <figcaption>Screenshot of the now old Fishing Dock model within Blender.</figcaption>
+              </figure>
+              <p>Due to the Player's capsule collider, I had to keep requesting that the dock be made wider so that the Player would stop getting snagged on the fence or end up phasing through it some how, luckily this was addressed when the newer model came in and was implemented.</p>
+              <figure>
+                <img src="../../images/screenies/lt/newDock.png" alt="Da Dock." width="720px">
+                <figcaption>Screenshot of the new Dock model in-game.</figcaption>
+              </figure>
+              <p>I also implemented the Restaurant's exterior model after getting the Dock in the game, initially there was an issue where the Animation team member had sent me the wrong file but that was quickly addressed and was easily implemented and linked with the rest of the exterior parts of the level.</p>
+              <figure>
+                <img src="../../images/screenies/lt/newTown.png" alt="Da Town." width="720px">
+                <figcaption>Screenshot of the new Restaurant Exterior/Town/Whatever model in-game.</figcaption>
+              </figure>
+              <p>When showing off these new exteriors in-game, the Animation team member responsible raised a concern where the Post-Processing caused the exterior to appear to bright.</p>
+              <p>To attempt to address this concern, I disabled the exterior model's "Custom RenderDepth Pass" which leaves it unaffected by the post-processing and begun fumbling around with the Directional Light and its associated values.</p>
+              <figure>
+                <img src="../../images/screenies/lt/newTownDarker.png" alt="Da Town." width="720px">
+                <figcaption>Screenshot of the darker lighting.</figcaption>
+              </figure>
+              <p>But, ultimately it came down to the Animation team member deciding to de-saturate the Base Colour of their exterior models and sending the modified textures to me to replace the original.</p>
             <table width="100%" border="0">
               <tbody>
                 <tr>
