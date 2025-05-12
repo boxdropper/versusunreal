@@ -26,7 +26,7 @@
               <h3>Entry Started: 28th January 2025</h3>
             </div>
             <div class="blogheader">
-              <h3>Last Edited: 10th May 2025</h3>
+              <h3>Last Edited: 12th May 2025</h3>
             </div>
             <p>For a while now, I've had this...fascination with old, long dead online games, it ties in to my love of the "old internet" in general. In the current age of social media algorithms finding new and exciting ways to bruise my soul, it's at the very least comforting to be able to see what people on the internet used to use to make conversation, whether it'll be IRC, web forums and in this case, "massively multiplayer online" games (MMOs).</p>
             <figure>
@@ -453,6 +453,35 @@
             <figure>
                 <iframe width="720" height="576" src="https://www.youtube.com/embed/IixIjukMzz0" title="Closure - Launch Title - Sound Team Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <figcaption>Video recorded for the Sound Team.</figcaption>
+            </figure>
+            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
+                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">INSERT JOKING WORDPLAY ABOUT BUSTS</p>
+            </aside>
+            <p>After those videos were created, one of the Animation team members had make new versions of the little speaker images that you've been seeing in the bottom right corner of the screen, these new ones are special in the sense that they extend past the boundary of the overlay.</p>
+            <figure>
+                <img src="../../images/screenies/lt/newSpeakerAnimation.gif" alt="Da Speaker." width="720px">
+                <figcaption>Concept animation of the new Speaker UI animation in action, provided by the Animation team.</figcaption>
+            </figure>
+            <p>To implement this into the game require some modifications to the Dialogue Component so that it can support the animations, which were implemented by ways of making a spritesheet out of the frames of each speaker's talking animation and creating a User Interface Material that goes through the spritesheet, much like how the regular Flipbook animations are made.</P>
+            <figure>
+                <img src="../../images/screenies/lt/nodes/speakerUIMAT.png" alt="Da Speaker." width="720px">
+                <figcaption>Screenshot of the User Interface Material for the Speaker Image Animation.</figcaption>
+            </figure>
+            <p>For the modifications made the Dialogue Component, I added an input for the Add Dialogue function that allows for I or other members to select a Material for the Speaker Image, similiar to the original Speaker Image system you saw all the back at the start of this blog. I then had to update almost all of the existing child components to take advantage of the new system, yay...</p>
+            <figure>
+                <img src="../../images/screenies/lt/newSpeakerInGame.gif" alt="Da Speaker." width="720px">
+                <figcaption>Animated Image of the new Speaker Images implemented In-Game.</figcaption>
+            </figure>
+            <p>It is currently the 12th of May, as of writing this part, I've just finished giving the last of the implemented NPCs a "temporary" dialogue component so at least you can talk to everyone in the game, which is nice.</p>
+            <p>I don't think I've mentioned this yet, but I've had a "Countdown to Destruction" implemented since the start of the project, it's just that I haven't found any way to communicate it naturally to the Player until those working on the UI had implemented a menu which displays a newspaper that's meant to act as news about the In-Game world but also takes inspiration as to how some games may try to format their update posts like newspapers/posts.</p>
+            <figure>
+                <img src="../../images/screenies/lt/Newspaper__1_.PNG" alt="Da Paper." width="720px">
+                <figcaption>Image of the Newspaper that can be displayed in the UI.</figcaption>
+            </figure>
+            <p>Using this, I placed the Countdown where the 00:00 can be seen in the above image, and have it start counting down and have the newspaper show when the game starts up, giving the Player immediate context as to what is going on and given the stakes as they're being timed.</p>
+            <figure>
+                <img src="../../images/screenies/lt/newspaperINGAME.gif" alt="Da Paper." width="720px">
+                <figcaption>Animated Image of the Newspaper working In-Game.</figcaption>
             </figure>
             <table width="100%" border="0">
               <tbody>
