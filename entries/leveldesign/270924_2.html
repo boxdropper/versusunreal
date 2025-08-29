@@ -1,215 +1,203 @@
 <html>
     <head>
      <title>Versus Unreal - No Mercy</title>
+     <!-- Bootstrap Core CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <link href="../../styles/blog.css" rel="stylesheet" type="text/css" media="all">
      <link rel="icon" type="images/x-icon" href="../../images/favicon.ico">
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta property="og:type" content="website">
-     <meta property="og:title" content="Blog">
-     <style>
-        body 
-  {
-    @media only screen and (orientation : landscape)
-    {
-      background: url("../../images/back/NoMercy.jpg") no-repeat center center fixed; background-size:cover;
-    }
-  }
-     </style>   
+     <meta property="og:title" content="Blog">  
     </head>
     <body>
-        <div class="content">
-            <p style="text-align: center;">
-                <img src="../../images/headers/270924_1.png" alt="YOU ARE LEFT 4 DEAD." title="YOU ARE LEFT 4 DEAD.">
-            </p>
-            <div class="blogheader">
-              <h3>Entry Started: 27th September 2024</h3>
+        <div class="px-4 text-center" style="background-image: url(../../images/back/NoMercy.webp); background-repeat: no-repeat; background-size: auto; background-attachment: fixed;">
+          <div class="container px-5 shadow-lg" style="background-color: #1f1f1f; filter: drop-shadow(0 0 0.75rem black);">
+            <img class="img-fluid mb-4" src="../../images/headers/270924_1.png" alt="Versus Unreal" loading="lazy">
+            <h3 class="text-light fw-bold">Entry Started: 27th September 2024</h3>
+            <h3 class="text-light fw-bold">Last Edited: 26th October 2024</h3>
+            <br>
+            <p class="text-light text-start fs-5">For this entry, I will be conducting an Analysis from a Level/Chapter of a Video Game. In this case, I will be analysing the famous "No Mercy" campaign of the original Left 4 Dead (2008).</p>
+            <p class="text-light text-start fs-5">This analysis will primarily cover the following techniques used by Valve and Turtle Rock Studios when designing the campaign which are but not limited to:</p>
+            <li class="text-light text-start fs-5">Leading Lines/Guiding the Player</li>
+            <li class="text-light text-start fs-5">The Usage of Verticality to show progression</li>
+            <li class="text-light text-start fs-5">Usage of Enemy Spawn Locations by the Game Director System</li>
+            <li class="text-light text-start fs-5">Using Items and Enemies to facilitate Flow</li>
+            <li class="text-light text-start fs-5">The Usage of Hordes to indicate progress and assist with pacing</li>
+            <li class="text-light text-start fs-5">Various Worldbuilding Elements</li>
+            <p class="text-light text-start fs-5">and so on, so forth. Let's get started!</p>
+            <br>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">DOWN AND UP AGAIN</h3>
             </div>
-            <div class="blogheader">
-              <h3>Last Edited: 26th October 2024</h3>
-            </div>
-            <p>For this entry, I will be conducting an Analysis from a Level/Chapter of a Video Game. In this case, I will be analysing the famous "No Mercy" campaign of the original Left 4 Dead (2008).</p>
-            <p>This analysis will primarily cover the following techniques used by Valve and Turtle Rock Studios when designing the campaign which are but not limited to:</p>
-            <li>Leading Lines/Guiding the Player</li>
-            <li>The Usage of Verticality to show progression</li>
-            <li>Usage of Enemy Spawn Locations by the Game Director System</li>
-            <li>Using Items and Enemies to facilitate Flow</li>
-            <li>The Usage of Hordes to indicate progress and assist with pacing</li>
-            <li>Various Worldbuilding Elements</li>
-            <p>and so on, so forth. Let's get started!</p>
-            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-              <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">DOWN AND UP AGAIN</p>
-            </aside>
-            <p>The usage of verticality in Level Design is a good way to diegetically tell the Player that they're making progress through a level, climbing up a long ladder, going up a large flight of stairs, heading up an elevator, etc.</p>
-            <p>What makes this technique special is how the Level Designer can make this progress feel more impactful/encouraging, for example, in the Elevator, the designer can have one end of it be a large window, showing how the Player is ascending up whatever structure they're in, or when they're already at the top, having the Player see the streets below that they may have once traversed earlier on.</p>
-            <p>This works doubly so if whatever's at the top is the objective, like in No Mercy, where the objective is to reach the top of Mercy Hospital.</p>
-            <figure>
+            <br>
+            <p class="text-light text-start fs-5">The usage of verticality in Level Design is a good way to diegetically tell the Player that they're making progress through a level, climbing up a long ladder, going up a large flight of stairs, heading up an elevator, etc.</p>
+            <p class="text-light text-start fs-5">What makes this technique special is how the Level Designer can make this progress feel more impactful/encouraging, for example, in the Elevator, the designer can have one end of it be a large window, showing how the Player is ascending up whatever structure they're in, or when they're already at the top, having the Player see the streets below that they may have once traversed earlier on.</p>
+            <p class="text-light text-start fs-5">This works doubly so if whatever's at the top is the objective, like in No Mercy, where the objective is to reach the top of Mercy Hospital.</p>
+            <figure class="figure">
               <img src="../../images/screenies/l4d/MercyRoofOBJ.png" alt="It's like a whiteboard." width="720px">
-              <figcaption>Screenshot showing the Mercy Hospital building, this is your objective.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Screenshot showing the Mercy Hospital building, this is your objective.</figcaption>
             </figure>
-            <p>The way that verticality is used in the No Mercy campaign is also very encouraging in my experience, to start with, you don't start No Mercy at the bottom, instead you start somewhere in the middle, on top of another building of which you'll make your way down.</p>
-            <p>All the way down into the sewers, the lowest point in the campaign.</p>
-            <figure>
+            <p class="text-light text-start fs-5">The way that verticality is used in the No Mercy campaign is also very encouraging in my experience, to start with, you don't start No Mercy at the bottom, instead you start somewhere in the middle, on top of another building of which you'll make your way down.</p>
+            <p class="text-light text-start fs-5">All the way down into the sewers, the lowest point in the campaign.</p>
+            <figure class="figure">
               <img src="../../images/screenies/l4d/GoingDown.png" alt="Woah." width="720px">
-              <figcaption>Collage of screenshots showing us going from a rooftop, down to street level then the sewers and back up.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Collage of screenshots showing us going from a rooftop, down to street level then the sewers and back up.</figcaption>
             </figure>
-            <p>This kind of progression shows that the progression quality of vertically can also work in reverse, instead of the player going up, they go down and in fact, No Mercy does both, here's where the encouragement comes in, as your reward from coming out of the sewers is...</p>
-            <p>The Entrance to Mercy Hospital!</p>
-            <figure>
+            <p class="text-light text-start fs-5">This kind of progression shows that the progression quality of vertically can also work in reverse, instead of the player going up, they go down and in fact, No Mercy does both, here's where the encouragement comes in, as your reward from coming out of the sewers is...</p>
+            <p class="text-light text-start fs-5">The Entrance to Mercy Hospital!</p>
+            <figure class="figure">
               <img src="../../images/screenies/l4d/500_20240927184958_1.png" alt="There is is." width="720px">
-              <figcaption>Oh yeah baby, home stretch is here, I can feel it!</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Oh yeah baby, home stretch is here, I can feel it!</figcaption>
             </figure>
-            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-              <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">LIGHTS, LINES, WHAT'S THE DIFFERENCE?</p>
-            </aside>
-            <p>"Leading Lines" are a common practice in Level Design and are used to guide the Player in a particular direction, these lines are given to the Player in a variety of ways, mainly depending on the style that Game Designers and/or Environment Artists are aiming for.</p>
-            <p>The usage of Power Lines as leading lines is a very common practice in Town and City environments and No Mercy is...No Different <em>[Insert Laugh Track]</em></p>
-            <p>When you first get down to street level, you can see a set of power lines leading you down the street.</p>
-            <figure>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">LIGHTS, LINES, WHAT'S THE DIFFERENCE?</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">"Leading Lines" are a common practice in Level Design and are used to guide the Player in a particular direction, these lines are given to the Player in a variety of ways, mainly depending on the style that Game Designers and/or Environment Artists are aiming for.</p>
+            <p class="text-light text-start fs-5">The usage of Power Lines as leading lines is a very common practice in Town and City environments and No Mercy is...No Different <em>[Insert Laugh Track]</em></p>
+            <p class="text-light text-start fs-5">When you first get down to street level, you can see a set of power lines leading you down the street.</p>
+            <figure class="figure">
               <img src="../../images/screenies/l4d/LeadingLines_1.png" alt="Da Lines." width="720px">
-              <figcaption>Screenshot of street level, looking at the power lines.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of street level, looking at the power lines.</figcaption>
             </figure>
-            <p>Following these power lines, round the corner, we're greeted with more power lines but on a knocked down pole, angling the power lines downward, the pole itself almost seeming like its own leading line.</p>
-            <figure>
+            <p class="text-light text-start fs-5">Following these power lines, round the corner, we're greeted with more power lines but on a knocked down pole, angling the power lines downward, the pole itself almost seeming like its own leading line.</p>
+            <figure class="figure">
               <img src="../../images/screenies/l4d/LeadingLines_2.png" alt="Da Lines." width="720px">
-              <figcaption>Screenshot of street level, looking at knocked down power line pole.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of street level, looking at knocked down power line pole.</figcaption>
             </figure>
-            <p>And what do we see when we follow these lines?</p>
-            <figure>
+            <p class="text-light text-start fs-5">And what do we see when we follow these lines?</p>
+            <figure class="figure">
               <img src="../../images/screenies/l4d/500_20240927184053_1.png" alt="Da Lines." width="720px">
-              <figcaption>Screenshot of street level, looking at knocked down power line pole and the subway entrance.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of street level, looking at knocked down power line pole and the subway entrance.</figcaption>
             </figure>
-            <p>The Entrance to the Subway, big contrasting orange light in there, can't miss it.</p>
-            <p>That mention of the light leads into another point of mine, how No Mercy uses light sources to guide the Player, if the Player follows the light, they'll get to where they need to go.</p>
-            <p>There are more examples of this "Follow the Light" approach throughout the Subway and Sewer sections of No Mercy, starting in the Subway, while traversing down, the Player eventually comes to a fork in the road.</p>
-            <figure>
+            <p class="text-light text-start fs-5">The Entrance to the Subway, big contrasting orange light in there, can't miss it.</p>
+            <p class="text-light text-start fs-5">That mention of the light leads into another point of mine, how No Mercy uses light sources to guide the Player, if the Player follows the light, they'll get to where they need to go.</p>
+            <p class="text-light text-start fs-5">There are more examples of this "Follow the Light" approach throughout the Subway and Sewer sections of No Mercy, starting in the Subway, while traversing down, the Player eventually comes to a fork in the road.</p>
+            <figure class="figure">
               <img src="../../images/screenies/l4d/500_20240927184305_1.png" alt="Da Lights." width="720px">
-              <figcaption>Screenshot of the Subway, showing a fork in the road...and Francis ruining the shot, thanks man, real cool.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the Subway, showing a fork in the road...and Francis ruining the shot, thanks man, real cool.</figcaption>
             </figure>
-            <p>If the Player was to follow the Light, in this case, on the right, they'll be going the right way. Later on in the Subway, the Player finds themselves in another dark area. But if they follow the light, they'll quickly be out of there and on their way!</p>
-            <figure>
+            <p class="text-light text-start fs-5">If the Player was to follow the Light, in this case, on the right, they'll be going the right way. Later on in the Subway, the Player finds themselves in another dark area. But if they follow the light, they'll quickly be out of there and on their way!</p>
+            <figure class="figure">
               <img src="../../images/screenies/l4d/500_20240927184331_1.png" alt="Da Lights." width="720px">
-              <figcaption>Screenshot of a dark basement near the Subway.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of a dark basement near the Subway.</figcaption>
             </figure>
-            <p>Sewer sections in Video Games are often derided as being more maze like than standard levels that can prove frustrating on repeat playthroughs, No Mercy avoids this by again, applying the Follow The Light technique. (While also combining it with the Leading Power Lines to give a reason as to why there would be lights in a sewer)</p>
-            <figure>
+            <p class="text-light text-start fs-5">Sewer sections in Video Games are often derided as being more maze like than standard levels that can prove frustrating on repeat playthroughs, No Mercy avoids this by again, applying the Follow The Light technique. (While also combining it with the Leading Power Lines to give a reason as to why there would be lights in a sewer)</p>
+            <figure class="figure">
               <img src="../../images/screenies/l4d/500_20240927184902_1.png" alt="Da Lights." width="720px">
-              <figcaption>Screenshot of inside the Sewer showing the Light and Power Line.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of inside the Sewer showing the Light and Power Line.</figcaption>
             </figure>
-            <p>You may be wondering why I am currently talking about lights in a Level Design analysis, but I believe that these provided examples show that Lighting is just as important to Level Design as the other facets, at least in regards to guiding the player.</p>
-            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-              <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">REMIND ME WHY I'M HERE</p>
-            </aside>
-            <p>Keeping the Player motivated is a must in Video Games and this can be accomplished in various ways, in No Mercy, the Level Designer made it a point to try and have Mercy Hospital be visible at various points throughout the campaign, turning it into a landmark, similar to the usage of the Citadel in Valve's previous game, Half-Life 2.</p>
-            <figure>
+            <p class="text-light text-start fs-5">You may be wondering why I am currently talking about lights in a Level Design analysis, but I believe that these provided examples show that Lighting is just as important to Level Design as the other facets, at least in regards to guiding the player.</p>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">REMIND ME WHY I'M HERE</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">Keeping the Player motivated is a must in Video Games and this can be accomplished in various ways, in No Mercy, the Level Designer made it a point to try and have Mercy Hospital be visible at various points throughout the campaign, turning it into a landmark, similar to the usage of the Citadel in Valve's previous game, Half-Life 2.</p>
+            <figure class="figure">
               <img src="../../images/screenies/l4d/MercyHospital.png" alt="Da Hospital." width="720px">
-              <figcaption>Collage of screenshots showing the Player at closer and closer distances to Mercy Hospital.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Collage of screenshots showing the Player at closer and closer distances to Mercy Hospital.</figcaption>
             </figure>
-            <p>The closer the Player gets to Mercy Hospital, the more motivated they get.</p>
-            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-              <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">TEMPTED WITH THE PROMISE OF MEDICINE</p>
-            </aside>
-            <p>Another way of keeping the Player motivated and driving them forward is with the careful placement of Items/Weapons throughout a level, without either this, the previous landmark technique or any other form of Player motivation, then the Player has no reason to leave their current position, and the Level has no Flow.</p>
-            <p>Throughout No Mercy and all other campaigns in Left 4 Dead, outside of escaping the location you're currently in, what drives the Player forward is the promise of more weapons, ammo, health items, etc. This can be seen in No Mercy with the table of ammo alongside 3 of the strongest weapons in the game.</p>
-            <figure>
+            <p class="text-light text-start fs-5">The closer the Player gets to Mercy Hospital, the more motivated they get.</p>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">TEMPTED WITH THE PROMISE OF MEDICINE</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">Another way of keeping the Player motivated and driving them forward is with the careful placement of Items/Weapons throughout a level, without either this, the previous landmark technique or any other form of Player motivation, then the Player has no reason to leave their current position, and the Level has no Flow.</p>
+            <p class="text-light text-start fs-5">Throughout No Mercy and all other campaigns in Left 4 Dead, outside of escaping the location you're currently in, what drives the Player forward is the promise of more weapons, ammo, health items, etc. This can be seen in No Mercy with the table of ammo alongside 3 of the strongest weapons in the game.</p>
+            <figure class="figure">
               <img src="../../images/screenies/l4d/500_20240928111137_1.png" alt="Da Weapons." width="720px">
-              <figcaption>Screenshots showing an ammo and weapon cache.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Screenshots showing an ammo and weapon cache.</figcaption>
             </figure>
-            <p>This gives the Player opportunity to either quickly replenish any lost ammo and/or grab any new weapons that they want to try, but this isn't the only way that No Mercy rewards the Player for pressing on.</p>
-            <p>In various points throughout No Mercy, there are multiple opportunities for the Player to take a slight detour off the intended path, taking these detours are often rewarded with either more zombies to kill, a throwable, a healing item, or a combination of all three.</p>
-            <figure>
+            <p class="text-light text-start fs-5">This gives the Player opportunity to either quickly replenish any lost ammo and/or grab any new weapons that they want to try, but this isn't the only way that No Mercy rewards the Player for pressing on.</p>
+            <p class="text-light text-start fs-5">In various points throughout No Mercy, there are multiple opportunities for the Player to take a slight detour off the intended path, taking these detours are often rewarded with either more zombies to kill, a throwable, a healing item, or a combination of all three.</p>
+            <figure class="figure">
               <img src="../../images/screenies/l4d/500_20240928111657_1.png" alt="Da Detour." width="720px">
-              <figcaption>Screenshots showing the common reward for taking detours.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Screenshots showing the common reward for taking detours.</figcaption>
             </figure>
-            <p>But I'd be remiss talking about motivating factors in a Left 4 Dead campaign if I didn't talk about the biggest form of motivation...The Safehouses.</p>
-            <figure>
+            <p class="text-light text-start fs-5">But I'd be remiss talking about motivating factors in a Left 4 Dead campaign if I didn't talk about the biggest form of motivation...The Safehouses.</p>
+            <figure class="figure">
               <img src="../../images/screenies/l4d/500_20240928110903_1.png" alt="Da Safehouse." width="720px">
-              <figcaption>Screenshots showing the graffiti used to signify a safehouse.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Screenshots showing the graffiti used to signify a safehouse.</figcaption>
             </figure>
-            <p>The Safehouses are the proverbial carrot on a stick that keeps the Player moving to the final chapter, every time they see one, it is a rush of relief and direct confirmation that progress is being made as they act as chapter dividers within every Left 4 Dead campaign.</p>
-            <p>And inside those chapter dividers comes an ammo cache, weapons and a case of healing items for the Player to stock up, heal up, swap weapons if they feel like it, etc.</p>
-            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-              <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">HERE THEY COME</p>
-            </aside>
-            <p>The Horde mechanic seen in the Left 4 Dead series has ties to the design of the Levels/Campaigns, in either the middle or near end of a chapter, the Player is faced with an obstacle such as a locked shutter door, or a generator powered mechanism, anything that produces a loud enough sound to attract a full on assault of infected.</p>
-            <figure>
+            <p class="text-light text-start fs-5">The Safehouses are the proverbial carrot on a stick that keeps the Player moving to the final chapter, every time they see one, it is a rush of relief and direct confirmation that progress is being made as they act as chapter dividers within every Left 4 Dead campaign.</p>
+            <p class="text-light text-start fs-5">And inside those chapter dividers comes an ammo cache, weapons and a case of healing items for the Player to stock up, heal up, swap weapons if they feel like it, etc.</p>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">HERE THEY COME</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">The Horde mechanic seen in the Left 4 Dead series has ties to the design of the Levels/Campaigns, in either the middle or near end of a chapter, the Player is faced with an obstacle such as a locked shutter door, or a generator powered mechanism, anything that produces a loud enough sound to attract a full on assault of infected.</p>
+            <figure class="figure">
               <img src="../../images/screenies/l4d/500_20240927184356_1.png" alt="Da Horde." width="720px">
-              <figcaption>Screenshot showing the UI Element warning of the Horde that will come as a result of interacting with the outlined object.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Screenshot showing the UI Element warning of the Horde that will come as a result of interacting with the outlined object.</figcaption>
             </figure>
-            <p>These Hordes act as a quick change of pace during campaigns as prior to these encounters, the Player is more or less moving at <em>their own</em> pace, while there may be points where there'll be a larger group of infected than most but there's nothing that really shakes things up, spikes adrenaline, etc.</p>
-            <p>The Horde encounters are that change in pace that the campaigns need, when activating one, all other priorities go out the airlock, all that matters now is to keep moving.</p>
-            <figure>
+            <p class="text-light text-start fs-5">These Hordes act as a quick change of pace during campaigns as prior to these encounters, the Player is more or less moving at their own pace, while there may be points where there'll be a larger group of infected than most but there's nothing that really shakes things up, spikes adrenaline, etc.</p>
+            <p class="text-light text-start fs-5">The Horde encounters are that change in pace that the campaigns need, when activating one, all other priorities go out the airlock, all that matters now is to keep moving.</p>
+            <figure class="figure">
               <img src="../../images/screenies/l4d/500_20240928111801_1.png" alt="Da Horde." width="720px">
-              <figcaption>Screenshot showing the Horde coming down from the rooftops!</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Screenshot showing the Horde coming down from the rooftops!</figcaption>
             </figure>
-            <p>These Hordes also act as great indicators of progress as where there is a horde, a safehouse is not far ahead.</p>
-            <p>With this and the chapter structure of the No Mercy campaign allows for a quick visualisation of a "beat chart" of a chapter, starting low and steadily climbing, spiking during a horde and coming right back down when at a safehouse.</p>
-            <figure>
+            <p class="text-light text-start fs-5">These Hordes also act as great indicators of progress as where there is a horde, a safehouse is not far ahead.</p>
+            <p class="text-light text-start fs-5">With this and the chapter structure of the No Mercy campaign allows for a quick visualisation of a "beat chart" of a chapter, starting low and steadily climbing, spiking during a horde and coming right back down when at a safehouse.</p>
+            <figure class="figure">
               <img src="../../images/screenies/Screenshot_418.png" alt="Da Beat." width="720px">
-              <figcaption>Screenshot a quick beat chart for a typical No Mercy chapter.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Screenshot a quick beat chart for a typical No Mercy chapter.</figcaption>
             </figure>
-            <p>But this isn't a static beat for each chapter, Left 4 Dead's Game Director system ensures that no two playthroughs are alike, so this beat chart can have changes in both spikes and dips.</p>
-            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-              <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">DIRECTOR'S CUT</p>
-            </aside>
-            <p>Speaking of the Game Director System, what is it exactly?</p>
-            <p>The Game Director acts as a digital "gamemaster" for those familiar with table-top RPGs, an arbitrator that determines where weapons, items and even both amount of and type of infected that spawn.</p>
-            <p>With this Director, no two playthroughs of a Campaign are alike, there will always be a variable number of common and special infected, weapons and items. One playthrough may be a breeze and the other chucks multiple special infected your way because the Director determined that you were having too much fun.</p>
-            <figure>
+            <p class="text-light text-start fs-5">But this isn't a static beat for each chapter, Left 4 Dead's Game Director system ensures that no two playthroughs are alike, so this beat chart can have changes in both spikes and dips.</p>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">DIRECTOR'S CUT</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">Speaking of the Game Director System, what is it exactly?</p>
+            <p class="text-light text-start fs-5">The Game Director acts as a digital "gamemaster" for those familiar with table-top RPGs, an arbitrator that determines where weapons, items and even both amount of and type of infected that spawn.</p>
+            <p class="text-light text-start fs-5">With this Director, no two playthroughs of a Campaign are alike, there will always be a variable number of common and special infected, weapons and items. One playthrough may be a breeze and the other chucks multiple special infected your way because the Director determined that you were having too much fun.</p>
+            <figure class="figure">
               <img src="../../images/screenies/l4d/500_20240928111137_1.png" alt="Da Director." width="720px">
-              <figcaption>This table of weapons may be empty on your next playthrough!</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">This table of weapons may be empty on your next playthrough!</figcaption>
             </figure>
-            <p>The randomized infected spawns also means that the Player and co. will most likely have to slightly shift how they approach certain parts of a Campaign, either speeding through areas or having to slow down and clear the way when there are lots of nearby infected, the Director having to balance these encounters around the Player's current performance, position, loadout, etc.</p>
-            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-              <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">WRITING ON THE WALLS</p>
-            </aside>
-            <p>In Left 4 Dead, you're never really shown how the infection all started, you're thrust into the middle of it, after nearly everyone else has either escaped, died, got infected, or a combination of the three.</p>
-            <p>What remains of the people that came before you, both literally and not.</p>
-            <figure>
+            <p class="text-light text-start fs-5">The randomized infected spawns also means that the Player and co. will most likely have to slightly shift how they approach certain parts of a Campaign, either speeding through areas or having to slow down and clear the way when there are lots of nearby infected, the Director having to balance these encounters around the Player's current performance, position, loadout, etc.</p>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">WRITING ON THE WALLS</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">In Left 4 Dead, you're never really shown how the infection all started, you're thrust into the middle of it, after nearly everyone else has either escaped, died, got infected, or a combination of the three.</p>
+            <p class="text-light text-start fs-5">What remains of the people that came before you, both literally and not.</p>
+            <figure class="figure">
               <img src="../../images/screenies/l4d/500_20240928111230_1.png" alt="Da World." width="720px">
-              <figcaption>Screenshot of a dead body covered within the subway.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of a dead body covered within the subway.</figcaption>
             </figure>
-            <p>Other groups definitely came before yours but weren't as lucky or as efficient as you, suffering losses as those losses were left behind, the rest of the group just hoping that their dead wouldn't eventually turn.</p>
-            <p>Another example of previous people walking the same paths you took are the various pieces of wall graffiti, primarily seen within the safehouses.</p>
-            <figure>
+            <p class="text-light text-start fs-5">Other groups definitely came before yours but weren't as lucky or as efficient as you, suffering losses as those losses were left behind, the rest of the group just hoping that their dead wouldn't eventually turn.</p>
+            <p class="text-light text-start fs-5">Another example of previous people walking the same paths you took are the various pieces of wall graffiti, primarily seen within the safehouses.</p>
+            <figure class="figure">
               <img src="../../images/screenies/l4d/500_20240928110949_1.png" alt="Da World." width="720px">
-              <figcaption>Screenshot showing some very uplifting graffiti.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Screenshot showing some very uplifting graffiti.</figcaption>
             </figure>
-            <p>Nihilism has taken over this land, words of discouragement, messages to those potentially left behind, some graffiti covers government posters that warn of the infection, chains-of-command have broken down and no one follows orders anymore.</p>
-            <figure>
+            <p class="text-light text-start fs-5">Nihilism has taken over this land, words of discouragement, messages to those potentially left behind, some graffiti covers government posters that warn of the infection, chains-of-command have broken down and no one follows orders anymore.</p>
+            <figure class="figure">
               <img src="../../images/screenies/l4d/500_20240928110953_1.png" alt="Da World." width="720px">
-              <figcaption>Screenshot various messages in graffiti.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Screenshot various messages in graffiti.</figcaption>
             </figure>
-            <figure>
+            <figure class="figure">
               <img src="../../images/screenies/l4d/500_20240928111015_1.png" alt="Da World." width="720px">
-              <figcaption>Screenshot showing graffiti covering a CEDA poster.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Screenshot showing graffiti covering a CEDA poster.</figcaption>
             </figure>
-            <p>Every man for themselves.</p>
-            <p>There are also more broad/mid-level worldbuilding elements seen throughout No Mercy, when you first get to the street, most if not all streetlights are either damaged, destroyed or just simply don't work, same with most buildings having little to no light. Major infrastructure has been rocked by the outbreak and most people resort to unconventional methods such as using car headlights and lighting large fires.</p>
-            <figure>
+            <p class="text-light text-start fs-5">Every man for themselves.</p>
+            <p class="text-light text-start fs-5">There are also more broad/mid-level worldbuilding elements seen throughout No Mercy, when you first get to the street, most if not all streetlights are either damaged, destroyed or just simply don't work, same with most buildings having little to no light. Major infrastructure has been rocked by the outbreak and most people resort to unconventional methods such as using car headlights and lighting large fires.</p>
+            <figure class="figure">
               <img src="../../images/screenies/l4d/500_20240927184016_1.png" alt="Da World." width="720px">
-              <figcaption>Screenshot showing car headlights being used to light the way.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Screenshot showing car headlights being used to light the way.</figcaption>
             </figure>
-            <table width="100%" border="0">
-              <tbody>
-                <tr>
-                  <td>
-                    <a href="#">
-                      <i class="fa-solid fa-up-long" aria-hidden="true"></i>
-                      Back to Top
-                      <i class="fa-solid fa-up-long" aria-hidden="true"></i>
-                    </a>
-                  </td>
-                  <td align="right">
-                    <a href="../../index.html">
-                      <i class="fa-solid fa-house" aria-hidden="true"></i>
-                      Back to Home Page
-                      <i class="fa-solid fa-house" aria-hidden="true"></i>
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="row p-0 pb-0 pe-lg-0 pt-lg-1 pb-lg-1 align-items-center rounded-3 shadow" style="background-color: #2a252c;">
+              <a class="fs-5 fw-bold" href="../../index.html"><i class="fa-solid fa-house"></i>HEAD BACK HOME<i class="fa-solid fa-house"></i></a>
+            </div>
+            <br>
+          </div>
         </div>
     </body>
 </html>
