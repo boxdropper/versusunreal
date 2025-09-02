@@ -1,522 +1,558 @@
 <html>
     <head>
      <title>Versus Unreal - CLOSURE IN TEN</title>
+     <!-- Bootstrap Core CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <link href="../../styles/blog.css" rel="stylesheet" type="text/css" media="all">
      <link rel="icon" type="images/x-icon" href="../../images/favicon.ico">
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta property="og:type" content="website">
-     <meta property="og:title" content="Blog">
-     <style>
-        body 
-  {
-    @media only screen and (orientation : landscape)
-    {
-      background: url("../../images/back/LT.png") no-repeat center center fixed; background-size:cover;
-    }
-  }
-     </style>   
+     <meta property="og:title" content="Blog">  
     </head>
     <body>
-        <div class="content">
-            <p style="text-align: center;">
-                <img src="../../images/headers/280125.png" alt="Closure Development Blog" title="Closure Development Blog">
-            </p>
-            <div class="blogheader">
-              <h3>Entry Started: 28th January 2025</h3>
-            </div>
-            <div class="blogheader">
-              <h3>Last Edited: 13th May 2025</h3>
-            </div>
-            <p>For a while now, I've had this...fascination with old, long dead online games, it ties in to my love of the "old internet" in general. In the current age of social media algorithms finding new and exciting ways to bruise my soul, it's at the very least comforting to be able to see what people on the internet used to use to make conversation, whether it'll be IRC, web forums and in this case, "massively multiplayer online" games (MMOs).</p>
-            <figure>
+        <div class="px-4 text-center" style="background-image: url(../../images/back/LT.webp); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+          <div class="container px-5 shadow-lg" style="background-color: #1f1f1f; filter: drop-shadow(0 0 0.75rem black);">
+            <img class="img-fluid mb-4" src="../../images/headers/280125.png" alt="Closure!" loading="lazy">
+            <h3 class="text-light fw-bold">Entry Started: 28th January 2025</h3>
+            <h3 class="text-light fw-bold">Last Edited: 13th May 2025</h3>
+            <br>
+            <p class="text-light text-start fs-5">For a while now, I've had this...fascination with old, long dead online games, it ties in to my love of the "old internet" in general. In the current age of social media algorithms finding new and exciting ways to bruise my soul, it's at the very least comforting to be able to see what people on the internet used to use to make conversation, whether it'll be IRC, web forums and in this case, "massively multiplayer online" games (MMOs).</p>
+            <figure class="figure">
               <img src="../../images/screenies/lt/hardcore-wow-is-a-true-mmo-v0-44j3hmwrnwbd1.webp" alt="Da League." width="720px">
-              <figcaption>Screenshot of the classic World of Warcraft.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the classic World of Warcraft.</figcaption>
             </figure>
-            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-              <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">NO PLAYERS ONLINE</p>
-            </aside>
-            <p>But as mentioned above, there's been a lesser need for these types of games to exist for the purpose of meeting people online and as such, most drift off into obscurity and obsolescence, forever buried under aging code that's at risk of becoming incompatible with each OS update or worse, the Master Servers themselves being permanently taken offline so that their corporate paymasters can use the resources to fund the payments of their 5th yacht, only a few that have managed to keep up with the rapidly changing online world still remain today, but their best days are long behind them.</p>
-            <figure>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">NO PLAYERS ONLINE</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">But as mentioned above, there's been a lesser need for these types of games to exist for the purpose of meeting people online and as such, most drift off into obscurity and obsolescence, forever buried under aging code that's at risk of becoming incompatible with each OS update or worse, the Master Servers themselves being permanently taken offline so that their corporate paymasters can use the resources to fund the payments of their 5th yacht, only a few that have managed to keep up with the rapidly changing online world still remain today, but their best days are long behind them.</p>
+            <figure class="figure">
               <img src="../../images/screenies/lt/MxOSit.gif" alt="Da Matrix." width="720px">
-              <figcaption>Don't let this NPC fool you, The Matrix Online is long dead and while a fan master server emulator does exist, no one came on when I went to gather this footage.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Don't let this NPC fool you, The Matrix Online is long dead and while a fan master server emulator does exist, no one came on when I went to gather this footage.</figcaption>
             </figure>
-            <p>Gets even more tragic when I bring up the amount of MMOs that were made for children, set up as dedicated safe spaces for them online, nowadays being either long dead as well or shells of their former selves, leaving children with no real online safe spaces anymore, they have to go to Twitter now, a horrifying reality.</p>
-            <p>So when the new semester came around and I got the opportunity to share this fascination and how it can be turned into an interesting, narrative driven game with a group of fellow game design students, I was excited.</p>
-            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-              <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">OUTSIDERS WELCOME</p>
-            </aside>
-            <p>Within my team of game designers, I have elected to give myself the role of scripting, due to my work for the previous "Extended & Experimental Game Design" module also because I believed that being the one that would understand how the game would be made/prototyped, should give me a way to give the game an appropriate scope. But the team didn't just consist of game design students like myself, we were also joined by three animation students so there's also the need to make sure the intended content of the game does not overtake their skill level.</p>
-            <p>As the majority of our animation members feel as if they have better experience with 2D animation, the decision to try and lean into create a "2.5D" Game as created a full, complete, 2D game in the Unreal Engine is no easy task, but I'm getting ahead of myself.</p>
-            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-              <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">WILL IT BLEND?</p>
-            </aside>
-            <p>My idea of a game set in an abandoned or soon to be abandoned online game was only one of many ideas that I and the other game designers on our team had come up with and slammed into a Miro Board with sticky notes.</p>
-            <p>The idea was to pick a few ideas from the list, find commonalities between them and see how those commonalities would work when compiled together into a single game. The primary inspirations for our ideas came from emotions and the types that we wish for the Player to express during play, metaphors for mental/emotional issues, various robot/AI stories, etc.</p>
-            <figure>
+            <p class="text-light text-start fs-5">Gets even more tragic when I bring up the amount of MMOs that were made for children, set up as dedicated safe spaces for them online, nowadays being either long dead as well or shells of their former selves, leaving children with no real online safe spaces anymore, they have to go to Twitter now, a horrifying reality.</p>
+            <p class="text-light text-start fs-5">So when the new semester came around and I got the opportunity to share this fascination and how it can be turned into an interesting, narrative driven game with a group of fellow game design students, I was excited.</p>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">OUTSIDERS WELCOME</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">Within my team of game designers, I have elected to give myself the role of scripting, due to my work for the previous "Extended & Experimental Game Design" module also because I believed that being the one that would understand how the game would be made/prototyped, should give me a way to give the game an appropriate scope. But the team didn't just consist of game design students like myself, we were also joined by three animation students so there's also the need to make sure the intended content of the game does not overtake their skill level.</p>
+            <p class="text-light text-start fs-5">As the majority of our animation members feel as if they have better experience with 2D animation, the decision to try and lean into create a "2.5D" Game as created a full, complete, 2D game in the Unreal Engine is no easy task, but I'm getting ahead of myself.</p>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">WILL IT BLEND?</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">My idea of a game set in an abandoned or soon to be abandoned online game was only one of many ideas that I and the other game designers on our team had come up with and slammed into a Miro Board with sticky notes.</p>
+            <p class="text-light text-start fs-5">The idea was to pick a few ideas from the list, find commonalities between them and see how those commonalities would work when compiled together into a single game. The primary inspirations for our ideas came from emotions and the types that we wish for the Player to express during play, metaphors for mental/emotional issues, various robot/AI stories, etc.</p>
+            <figure class="figure">
               <img src="../../images/screenies/lt/miro_ideas.png" alt="Da Miro." width="720px">
-              <figcaption>Screenshot showing the list of ideas on the Miro Board.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Screenshot showing the list of ideas on the Miro Board.</figcaption>
             </figure>
-            <p>The three sticky notes coloured green are the three ideas that we, as a whole team picked out and begun to find pieces in common to form a whole.</p>
-            <p>With the help of the lecturers, we were able to narrow down what the game will be like, a narrative-driven game where you play as a NPC in an unpopular online game that is expected to shutdown soon, before the shutdown, you find and converse with other NPCs, growing closer with them and finding comfort in the face of the end, while also keeping your end of game up and running.</p>
-            <figure>
+            <p class="text-light text-start fs-5">The three sticky notes coloured green are the three ideas that we, as a whole team picked out and begun to find pieces in common to form a whole.</p>
+            <p class="text-light text-start fs-5">With the help of the lecturers, we were able to narrow down what the game will be like, a narrative-driven game where you play as a NPC in an unpopular online game that is expected to shutdown soon, before the shutdown, you find and converse with other NPCs, growing closer with them and finding comfort in the face of the end, while also keeping your end of game up and running.</p>
+            <figure class="figure">
               <img src="../../images/screenies/lt/miro_ideas2.png" alt="Da Miro." width="720px">
-              <figcaption>Screenshot of the Miro Board showing expansion on the selected ideas.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the Miro Board showing expansion on the selected ideas.</figcaption>
             </figure>
-            <p>While the rest of the team continued with idea refinement for the then upcoming presentation, I kept a close eye on how those ideas were being developed as, being a scripter, I had to worry about the actual implementation of our ideas into the Unreal Engine, so I also did some research by watching a few tutorials on YouTube about dialogue systems, working with 2D sprites using a plugin named "PaperZD", etc.</p>
-            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-              <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">WELL SPOKEN</p>
-            </aside>
-            <p>To begin the project in Unreal, <a href="https://www.youtube.com/playlist?list=PLcwVLBaUNnHp363AcMujYllSAmhJ2XMwK">I started by following this tutorial series by Michael Pattison which showcases how to make an in-depth dialogue system.</a> Although, I had make some changes to what was done in the tutorial for a few reasons.</p>
-            <figure>
+            <p class="text-light text-start fs-5">While the rest of the team continued with idea refinement for the then upcoming presentation, I kept a close eye on how those ideas were being developed as, being a scripter, I had to worry about the actual implementation of our ideas into the Unreal Engine, so I also did some research by watching a few tutorials on YouTube about dialogue systems, working with 2D sprites using a plugin named "PaperZD", etc.</p>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">WELL SPOKEN</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">To begin the project in Unreal, <a href="https://www.youtube.com/playlist?list=PLcwVLBaUNnHp363AcMujYllSAmhJ2XMwK">I started by following this tutorial series by Michael Pattison which showcases how to make an in-depth dialogue system.</a> Although, I had make some changes to what was done in the tutorial for a few reasons.</p>
+            <figure class="figure">
               <img src="../../images/screenies/lt/TestConvo1.png" alt="Da Dialogue." width="720px">
-              <figcaption>Screenshot showing the dialogue system in action.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Screenshot showing the dialogue system in action.</figcaption>
             </figure>
-            <p>The first change was the design of the UI for the dialogue system, making it more of a horizontal design, similar to that of visual novels. This was done as looking at the UI concepts/"scamps" that other members of the team created, a majority of them have the dialogue box placed at the bottom of the screen with a horizontal design.</p>
-            <p>The second change, or more appropriate, addition was made to the dialogue system came later, since the system that was featured in the tutorial was surprisingly easy to understand, it was easy to make additions to the code, in this case, adding in an image that can correspond to the actor currently speaking.</p>
-            <figure>
+            <p class="text-light text-start fs-5">The first change was the design of the UI for the dialogue system, making it more of a horizontal design, similar to that of visual novels. This was done as looking at the UI concepts/"scamps" that other members of the team created, a majority of them have the dialogue box placed at the bottom of the screen with a horizontal design.</p>
+            <p class="text-light text-start fs-5">The second change, or more appropriate, addition was made to the dialogue system came later, since the system that was featured in the tutorial was surprisingly easy to understand, it was easy to make additions to the code, in this case, adding in an image that can correspond to the actor currently speaking.</p>
+            <figure class="figure">
               <img src="../../images/screenies/lt/TestConvo2.png" alt="Da Dialogue." width="720px">
-              <figcaption>Screenshot showing the added speaker image.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Screenshot showing the added speaker image.</figcaption>
             </figure>
-            <p>This system also works on a per-dialogue basis, meaning that this image can change between pieces of dialogue, allowing for characters to change expressions on the fly without having to start a whole new conversation.</p>
-            <figure>
+            <p class="text-light text-start fs-5">This system also works on a per-dialogue basis, meaning that this image can change between pieces of dialogue, allowing for characters to change expressions on the fly without having to start a whole new conversation.</p>
+            <figure class="figure">
               <img src="../../images/screenies/lt/nodes/dialogueCreateSpeakerImage.png" alt="Da Nodes." width="720px">
-              <figcaption>Screenshot showing the function for adding dialogue to the UI, showing the option to select the speaker's image, the node also features options for sound effects and animations.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Screenshot showing the function for adding dialogue to the UI, showing the option to select the speaker's image, the node also features options for sound effects and animations.</figcaption>
             </figure>
-            <p>To go further into the features of this dialogue system, there is also the feature of dialogue "branches".</p>
-            <figure>
-              <img src="../../images/screenies/lt/TestConvo2.png" alt="Da Dialogue." width="720px">
-              <figcaption>Screenshot showing the code that changes the dialogue branch using a "Switch on Name" node.</figcaption>
+            <p class="text-light text-start fs-5">To go further into the features of this dialogue system, there is also the feature of dialogue "branches".</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/nodes/branchSwitch.png" alt="Da Branches." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot showing the code that changes the dialogue branch using a "Switch on Name" node.</figcaption>
             </figure>
-            <p>This allows for the system to easily change branches of dialogue between conversations, meaning that all of an actors dialogue can be within one component instead of multiple for each intended branch. To further this example, say an Actor has their default branch be a simple greeting to the Player, the Player then selects an option to continue the default branch's dialogue and when the Player eventually ends the conversation then returns to the Actor, the Actor now has a completely different branch of dialogue.</p>
-            <p>These branch switches can either be triggered within the dialogue event after the Player selects a dialogue option or via external triggers by casting to the actor's dialogue component.</p>
-            <figure>
+            <p class="text-light text-start fs-5">This allows for the system to easily change branches of dialogue between conversations, meaning that all of an actors dialogue can be within one component instead of multiple for each intended branch. To further this example, say an Actor has their default branch be a simple greeting to the Player, the Player then selects an option to continue the default branch's dialogue and when the Player eventually ends the conversation then returns to the Actor, the Actor now has a completely different branch of dialogue.</p>
+            <p class="text-light text-start fs-5">These branch switches can either be triggered within the dialogue event after the Player selects a dialogue option or via external triggers by casting to the actor's dialogue component.</p>
+            <figure class="figure">
               <img src="../../images/screenies/lt/ConvoBranchSwitching.gif" alt="Da Dialogue." width="720px">
-              <figcaption>Animated image showing a single dialogue component with multiple branches, that are switched based on the option that the Player selects.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Animated image showing a single dialogue component with multiple branches, that are switched based on the option that the Player selects.</figcaption>
             </figure>
-            <p>Speaking of triggers, the dialogue system is also capable of triggering events within the component, to create an example, I had the Actor change their Skeletal Mesh when the Player selects a specific option.</P>
-              <figure>
-                <video width="720" height="576" controls>
+            <p class="text-light text-start fs-5">Speaking of triggers, the dialogue system is also capable of triggering events within the component, to create an example, I had the Actor change their Skeletal Mesh when the Player selects a specific option.</p>
+            <figure class="figure">
+              <video width="720" height="576" controls="">
                   <source src="../../videos/LT_Makoto.mp4" type="video/mp4">
                   Your Browser does not support the video type (somehow).
                 </video>
-                <figcaption>Video showcasing the Skeletal Mesh swap.</figcaption>
-              </figure>
-              <figure>
-                <img src="../../images/screenies/lt/nodes/makoto1.png" alt="Da Nodes." width="720px">
-                <figcaption>Screenshot showing part of the code for the mesh swap, when the Player selects dialogue option "0"/the first option available, the mesh is swapped by getting the component's owner and their skeletal mesh.</figcaption>
-              </figure>
-              <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">A FLAT SOUND</p>
-              </aside>
-              <p>I knew from the presentation (and from what you may have read above) that the game would consist of animated 2D characters so I set about learning a key plugin for the Unreal Engine that would help facilitate that, PaperZD.</p>
-              <p>PaperZD is a plugin that greatly expands the capabilities of Unreal's existing 2D toolset, for example, allowing for the creation of sprite actors with animation blueprints, similar to regular skeletal meshes, a feature that I would make use of to create dummy/test sprites for now, until the animation team get some proper character sprites done.</p>
-              <figure>
-                <img src="../../images/screenies/lt/dummySprites.gif" alt="Da Sprites." width="720px">
-                <figcaption>Animated screenshot showing the dummy sprites in Editor.</figcaption>
-              </figure>
-              <p>The Dialogue system can then be modified to play a specified animation for whenever the characters are talking, which should add some extra life to them when inside the game world.</p>
-              <p>With that, I decided that it was time to create a video for the other members of the Game Design team documenting how to use the system themselves.</p>
-              <figure>
-                <iframe width="720" height="576" src="https://www.youtube.com/embed/5ib1l_IWW4I" title="LT Dialogue Documentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <figcaption>Self-made Video documenting the Dialogue System.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Video showcasing the Skeletal Mesh swap.</figcaption>
             </figure>
-              <p>Speaking of animations, I would need to give at least a tentative list of animations that the animation team would have to create for all the characters that will be featured, including some ones unique to the Player Character to make them stand out.</p>
-              <p>Back to the Miro Board, I and the other members of the Game Design team went to work on a rough game design document, my contributions to it being detailing mechanics such as the dialogue system and character animations.</p>
-              <figure>
-                <img src="../../images/screenies/lt/miro_gdd1.png" alt="Da Miro." width="720px">
-                <figcaption>Screenshot showing my excerpt from the rough GDD.</figcaption>
-              </figure>
-              <p>It was around this same time that we'd made contact with our team member from the Sound Design course, and we decided to conduct a meeting with them, seeing as they're both at completely different campus and they had no idea how much work that us on both the Game Design and Animation side had done yet.</p>
-              <p>The meeting was conducted over Discord and largely consisted of coming to an agreement/general idea as to what sound effects would be required, what style the sound effects should be (Realistic or Stylized/Cartoony), what materials could be used to generate sound effects (e.g: What surfaces will the Player be expected to walk on?), any music and the intended mood/feeling of said music.</p>
-              <p>Following this meeting, I and other Game Design members got to work on composing a list of sound effects for the designer to create.</p>
-              <figure>
-                <img src="../../images/screenies/lt/miro_soundList.png" alt="Da Sound List." width="720px">
-                <figcaption>Screenshot showing my excerpt from the rough GDD.</figcaption>
-              </figure>
-              <p>With a sound list done, I decided to go back to the project to implement another mechanic which you've seen on the screenshot of the GDD, the "Party" system.</p>
-              <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">PARTY OF PAIN</p>
-              </aside>
-              <p>The Party System was both a pain and somehow also not that hard to implement, mainly because I had seen <a href="https://www.youtube.com/watch?v=nMOganG-YqU">this tutorial by Josh Clark</a> and figured that I can use parts of it to make a system where the Player can interact with an NPC, ask the NPC to follow them and later telling them to go back to where they were initially.</p>
-              <p>When you get down to it, a potential party member consists of these components.</p>
-              <p><li>A Character Actor for the idle/non-party NPC.</li>
-              <li>A separate Character Class for the version of the NPC that is in the Player's Party.</li>
-              <li>A Struct that contains variables that drive various aspects of the Party Member, including their name, sprite and animation blueprint.</li>
-              <li>A Pawn Blueprint that acts as a spawner for the Party Version of the NPC, which works via communication with the Level Blueprint.</li>
-              <li>A Blueprint Interface that acts as a way for other blueprints to communicate with the Level Blueprint using a Name Input, similar to the Dialogue System and its branches.</li>
-              <li>An AI Controller that makes the AI follow the Player by going to their current location with a distance buffer so that they don't clip into the Player.</li></p>
-              <p>With all of that, we now have an NPC that can follow the Player on request, and also return to their original position on request.</p>
-              <figure>
-                <video width="720" height="576" controls>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/nodes/makoto1.png" alt="Da Nodes." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot showing part of the code for the mesh swap, when the Player selects dialogue option "0"/the first option available, the mesh is swapped by getting the component's owner and their skeletal mesh.</figcaption>
+            </figure>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">A FLAT SOUND</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">I knew from the presentation (and from what you may have read above) that the game would consist of animated 2D characters so I set about learning a key plugin for the Unreal Engine that would help facilitate that, PaperZD.</p>
+            <p class="text-light text-start fs-5">PaperZD is a plugin that greatly expands the capabilities of Unreal's existing 2D toolset, for example, allowing for the creation of sprite actors with animation blueprints, similar to regular skeletal meshes, a feature that I would make use of to create dummy/test sprites for now, until the animation team get some proper character sprites done.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/dummySprites.gif" alt="Da Sprites." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Animated screenshot showing the dummy sprites in Editor.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">The Dialogue system can then be modified to play a specified animation for whenever the characters are talking, which should add some extra life to them when inside the game world.</p>
+            <p class="text-light text-start fs-5">With that, I decided that it was time to create a video for the other members of the Game Design team documenting how to use the system themselves.</p>
+            <figure class="figure">
+              <iframe width="720" height="576" src="https://www.youtube.com/embed/5ib1l_IWW4I" title="LT Dialogue Documentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-ruffle-polyfilled=""></iframe>
+              <figcaption class="figure-caption text-light fst-italic">Self-made Video documenting the Dialogue System.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">Speaking of animations, I would need to give at least a tentative list of animations that the animation team would have to create for all the characters that will be featured, including some ones unique to the Player Character to make them stand out.</p>
+            <p class="text-light text-start fs-5">Back to the Miro Board, I and the other members of the Game Design team went to work on a rough game design document, my contributions to it being detailing mechanics such as the dialogue system and character animations.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/miro_gdd1.png" alt="Da GDD." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot showing my excerpt from the rough GDD.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">It was around this same time that we'd made contact with our team member from the Sound Design course, and we decided to conduct a meeting with them, seeing as they're both at completely different campus and they had no idea how much work that us on both the Game Design and Animation side had done yet.</p>
+            <p class="text-light text-start fs-5">The meeting was conducted over Discord and largely consisted of coming to an agreement/general idea as to what sound effects would be required, what style the sound effects should be (Realistic or Stylized/Cartoony), what materials could be used to generate sound effects (e.g: What surfaces will the Player be expected to walk on?), any music and the intended mood/feeling of said music.</p>
+            <p class="text-light text-start fs-5">Following this meeting, I and other Game Design members got to work on composing a list of sound effects for the designer to create.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/miro_soundList.png" alt="Da GDD." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot showing the excerpt from the rough GDD created for the Sound Designer.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">With a sound list done, I decided to go back to the project to implement another mechanic which you've seen on the screenshot of the GDD, the "Party" system.</p>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">PARTY OF PAIN</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">The Party System was both a pain and somehow also not that hard to implement, mainly because I had seen <a href="https://www.youtube.com/watch?v=nMOganG-YqU">this tutorial by Josh Clark</a> and figured that I can use parts of it to make a system where the Player can interact with an NPC, ask the NPC to follow them and later telling them to go back to where they were initially.</p>
+            <p class="text-light text-start fs-5">When you get down to it, a potential party member consists of these components.</p>
+            <li class="text-light text-start fs-5">A Character Actor for the idle/non-party NPC.</li>
+            <li class="text-light text-start fs-5">A separate Character Class for the version of the NPC that is in the Player's Party.</li>
+            <li class="text-light text-start fs-5">A Struct that contains variables that drive various aspects of the Party Member, including their name, sprite and animation blueprint.</li>
+            <li class="text-light text-start fs-5">A Pawn Blueprint that acts as a spawner for the Party Version of the NPC, which works via communication with the Level Blueprint.</li>
+            <li class="text-light text-start fs-5">A Blueprint Interface that acts as a way for other blueprints to communicate with the Level Blueprint using a Name Input, similar to the Dialogue System and its branches.</li>
+            <li class="text-light text-start fs-5">An AI Controller that makes the AI follow the Player by going to their current location with a distance buffer so that they don't clip into the Player.</li>
+            <br>
+            <p class="text-light text-start fs-5">With all of that, we now have an NPC that can follow the Player on request, and also return to their original position on request.</p>
+            <figure class="figure">
+              <video width="720" height="576" controls="">
                   <source src="../../videos/LT_PartyMember.mp4" type="video/mp4">
                   Your Browser does not support the video type (somehow).
                 </video>
-                <figcaption>Video showcasing the Party System in action.</figcaption>
-              </figure>
-              <p>What's that? You want to see the code?</p>
-              <p>Ok, fine...</p>
-              <figure>
-                <img src="../../images/screenies/lt/nodes/partyNPC_1partynpcpossess.png" alt="Da Sound List." width="720px">
-                <figcaption>Screenshot showing partial code for the Party Version of the NPC being possessed by the AI Controller.</figcaption>
-              </figure>
-              <figure>
-                <iframe width="720" height="576" src="https://blueprintue.com/render/fkub1fc2/" scrolling="no" allowfullscreen></iframe>
-                <figcaption>Interactive Element showing the primary funtion for the Pawn Spawner class.</figcaption>
-              </figure>
-              <figure>
-                <iframe width="720" height="576" src="https://blueprintue.com/render/ppx17bif/" scrolling="no" allowfullscreen></iframe>
-                <figcaption>Interactive Element showing the Level Blueprint code both spawning the Party NPC and hiding the original by forcing it into the floor.</figcaption>
-              </figure>
-              <figure>
-                <iframe width="720" height="576" src="https://blueprintue.com/render/e5bjmecn/" scrolling="no" allowfullscreen></iframe>
-                <figcaption>Interactive Element showing the code for the AI Controller.</figcaption>
-              </figure>
-              <p>While this new party system/mechanic works fine, I recognized an issue rather quickly, how would it hand the Player being teleported to another area, or if the go to a new level entirely?</p>
-              <p>Well, the latter issue can be solved buy just keeping the game on one level, using the World Partition system to load and unload areas as necessary, and the first issue is also solved rather easily.</p>
-              <p>The "AI MoveTo" node that you can see in the AI Controller's code has an output that fires whenever the AI's pathfinding fails, so we can just use that to teleport the NPC to the Player if they can't path to them, with some offset to prevent any clipping.</p>
-              <figure>
-                <iframe width="720" height="576" src="https://blueprintue.com/render/xy35fa01/" scrolling="no" allowfullscreen></iframe>
-                <figcaption>Interactive Element showing the new code for the AI Controller.</figcaption>
-              </figure>
-              <figure>
-                <video width="720" height="576" controls>
+              <figcaption class="figure-caption text-light fst-italic">Video showcasing the Party System in action.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">What's that? You want to see the code?</p>
+            <p class="text-light text-start fs-5">Ok, fine...</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/nodes/partyNPC_1partynpcpossess.png" alt="Da Nodes." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot showing partial code for the Party Version of the NPC being possessed by the AI Controller.</figcaption>
+            </figure>
+            <figure class="figure">
+              <div id="PawnSpawner" class="carousel slide pointer-event">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../../images/screenies/lt/nodes/Post-OSA/PawnSpawner1.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../../images/screenies/lt/nodes/Post-OSA/PawnSpawner2.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#PawnSpawner" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#PawnSpawner" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <figcaption class="figure-caption text-light fst-italic">Interactive Element showing the primary funtion for the Pawn Spawner class.</figcaption>
+            </figure>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/nodes/Post-OSA/LevelBlueprintDoSomething.png" alt="Da Nodes." width="1200px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot showing the Level Blueprint code both spawning the Party NPC and hiding the original by forcing it into the floor.</figcaption>
+            </figure>
+            <figure class="figure">
+              <div id="AIController1" class="carousel slide pointer-event">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../../images/screenies/lt/nodes/Post-OSA/AIController_MoveTo1.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../../images/screenies/lt/nodes/Post-OSA/AIController_MoveTo2.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#AIController1" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#AIController1" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <figcaption class="figure-caption text-light fst-italic">Interactive Element showing the code for the AI Controller.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">While this new party system/mechanic works fine, I recognized an issue rather quickly, how would it hand the Player being teleported to another area, or if the go to a new level entirely?</p>
+            <p class="text-light text-start fs-5">Well, the latter issue can be solved buy just keeping the game on one level, using the World Partition system to load and unload areas as necessary, and the first issue is also solved rather easily.</p>
+            <p class="text-light text-start fs-5">The "AI MoveTo" node that you can see in the AI Controller's code has an output that fires whenever the AI's pathfinding fails, so we can just use that to teleport the NPC to the Player if they can't path to them, with some offset to prevent any clipping.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/nodes/Post-OSA/AIController_MoveTo3.png" alt="Da Nodes." width="1200px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot showing the new code for the AI Controller.</figcaption>
+            </figure>
+            <figure class="figure">
+              <video width="720" height="576" controls="">
                   <source src="../../videos/LT_AITeleport.mp4" type="video/mp4">
                   Your Browser does not support the video type (somehow).
                 </video>
-                <figcaption>Video showcasing the World Partition and AI Teleportation.</figcaption>
-              </figure>
-              <p>Although, don't get too attached to this "Party" System, I'll get to why later.</p>
-              <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">EAR CANDY</p>
-              </aside>
-              <p>Around the same time that I solved the AI Teleportation conundrum, our Sound Designer had completed and subsequently provided us with a batch of sound effects, most of which were intended for the User Interface, so I set about implementing a few for now, just to get a feel for how they'll preform in-game.</p>
-              <figure>
-                <video width="720" height="576" controls>
+              <figcaption class="figure-caption text-light fst-italic">Video showcasing the World Partition and AI Teleportation.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">Although, don't get too attached to this "Party" System, I'll get to why later.</p>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">EAR CANDY</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">Around the same time that I solved the AI Teleportation conundrum, our Sound Designer had completed and subsequently provided us with a batch of sound effects, most of which were intended for the User Interface, so I set about implementing a few for now, just to get a feel for how they'll preform in-game.</p>
+            <figure class="figure">
+              <video width="720" height="576" controls="">
                   <source src="../../videos/LT_Sounds1.mp4" type="video/mp4">
                   Your Browser does not support the video type (somehow).
                 </video>
-                <figcaption>Video from later in development showcasing some of the implemented sound effects.</figcaption>
-              </figure>
-              <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">STOCKPILE</p>
-              </aside>
-              <p>In the rough Game Design Document that the team had made on Miro, there was mention of the Player needing to buy a new Fishing Rod (The In-Game Explanation being that they're an NPC that mans a fishing minigame), so I thought, how about adding an Inventory system?</p>
-              <p>Especially if there is ever a need for the Player to find more items to progress, we can use the system to check if the Player has a required item.</p>
-              <p>Using a <a href="https://www.youtube.com/watch?v=b2atcZWYi3E">tutorial by Unreal University</a>, I had an Inventory implemented for the Player, using components and a separate interaction system, that's right there are now two interaction systems working in unison, one that was initially created for the Dialogue System and now one for any Inventory Items that the Player could collect, very cool, definitely not cursed at all.</p>
-              <figure>
-                <img src="../../images/screenies/lt/InventorySystem.gif" alt="Da Inventory." width="720px">
-                <figcaption>Animated image showing the Inventory System in action.</figcaption>
-              </figure>
-              <p>But don't get attached to this system either because...</p>
-              <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">PRIORITY SHIFT</p>
-              </aside>
-              <p>After the Inventory System was implemented, I spent a week ironing out a few bugs that I had noticed with all of the systems interacting with one another, the key problem was with Player input, there were various instances of the game no longer accepting inputs after interacting with nothing, if the Player was moving when going to talk to someone then they would keep moving even without any key presses, etc.</p>
-              <p>But after that, the middle of the semester came running out from behind the bushes with a knife, screaming, and before I knew it, I was thrust into doing a presentation for the lecturers.</p>
-              <p>During this mid-semester presentation with the lecturers, which was done a half team capacity but don't worry about it, the main concern that the lecturers had was that our priorities were going in the wrong direction, with my especially drifting towards adding systems such as the "Party" and Inventory instead of prototyping any of the mechanics that the Player would be using to progress.</p>
-              <p>So after that presentation, I and the other members in attendance that day went to the Miro board and began hashing out a "Beat Sheet", which gives a play-by-play of how the story and gameplay will pan out from beginning to the end.</p>
-              <p>Also with this Beat Sheet came the opportunity for us to decide what to work on, what not to work on, and what to scrap. This included the "Party" and the Inventory systems, for the former, the new Beat Sheet outlined a game where you wouldn't need to drag along any other NPCs and the latter because I could accomplish essentially the same goals using Unreal's "Gameplay Tag" system, wherein I can apply tags to the Player and other actors and trigger events based on which tags are currently applied, such as the Player having a Tag for whenever they're talking or having their Fishing Rod, etc.</p>
-              <p>With the Beat Sheet more or less complete, I got back to work.</p>
-              <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">GONE FISHING</p>
-              </aside>
-              <p>To start, I begun work on creating a Trello Board for the purpose of project management and so that we could more easily keep track of each others progress.</p>
-              <figure>
-                <img src="../../images/screenies/lt/Trello1.png" alt="Da Trello." width="720px">
-                <figcaption>Screenshot of the Trello Board.</figcaption>
-              </figure>
-              <p>Now back to the game, I decided to begin working on prototyping the main mechanic for the Player outside of the Dialogue System, their character's fishing rod and it being uses as a method of solving puzzles.</p>
-              <p>My idea for implementation is not unlike point-and-click adventure games, where you'd click on an item or press a keybind and then click on the element that you wish to interact with, luckily this is relatively easy to implement.</p>
-              <p>For starters, I needed a way for the Player to switch between the state of using the fishing rod and not using the fishing rod, which was done with an Enumerator and a Function that can be called inside the Player's Blueprint, in the state where the Player is using the fishing rod, their cursor is made to appear and they can click wherever on the screen to try and use their fishing rod.</p>
-              <p>Like those point-and-click games, I also wanted the elements to glow/gain an outline to indicate that they can be interacted with using the fishing rod, with the creation of a new Player Controller class that has mouse hover events enabled, it was possible by just having the intended actor have an "Overlay Material" applied to them whenever the Player's mouse hovered over.</p>
-              <figure>
-                <video width="720" height="576" controls>
+              <figcaption class="figure-caption text-light fst-italic">Video from later in development showcasing some of the implemented sound effects.</figcaption>
+            </figure>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">STOCKPILE</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">In the rough Game Design Document that the team had made on Miro, there was mention of the Player needing to buy a new Fishing Rod (The In-Game Explanation being that they're an NPC that mans a fishing minigame), so I thought, how about adding an Inventory system?</p>
+            <p class="text-light text-start fs-5">Especially if there is ever a need for the Player to find more items to progress, we can use the system to check if the Player has a required item.</p>
+            <p class="text-light text-start fs-5">Using a <a href="https://www.youtube.com/watch?v=b2atcZWYi3E">tutorial by Unreal University</a>, I had an Inventory implemented for the Player, using components and a separate interaction system, that's right there are now two interaction systems working in unison, one that was initially created for the Dialogue System and now one for any Inventory Items that the Player could collect, very cool, definitely not cursed at all.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/InventorySystem.gif" alt="Da Inventory." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Animated image showing the Inventory System in action.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">But don't get attached to this system either because...</p>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">PRIORITY SHIFT</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">After the Inventory System was implemented, I spent a week ironing out a few bugs that I had noticed with all of the systems interacting with one another, the key problem was with Player input, there were various instances of the game no longer accepting inputs after interacting with nothing, if the Player was moving when going to talk to someone then they would keep moving even without any key presses, etc.</p>
+            <p class="text-light text-start fs-5">But after that, the middle of the semester came running out from behind the bushes with a knife, screaming, and before I knew it, I was thrust into doing a presentation for the lecturers.</p>
+            <p class="text-light text-start fs-5">During this mid-semester presentation with the lecturers, which was done a half team capacity but don't worry about it, the main concern that the lecturers had was that our priorities were going in the wrong direction, with my especially drifting towards adding systems such as the "Party" and Inventory instead of prototyping any of the mechanics that the Player would be using to progress.</p>
+            <p class="text-light text-start fs-5">So after that presentation, I and the other members in attendance that day went to the Miro board and began hashing out a "Beat Sheet", which gives a play-by-play of how the story and gameplay will pan out from beginning to the end.</p>
+            <p class="text-light text-start fs-5">Also with this Beat Sheet came the opportunity for us to decide what to work on, what not to work on, and what to scrap. This included the "Party" and the Inventory systems, for the former, the new Beat Sheet outlined a game where you wouldn't need to drag along any other NPCs and the latter because I could accomplish essentially the same goals using Unreal's "Gameplay Tag" system, wherein I can apply tags to the Player and other actors and trigger events based on which tags are currently applied, such as the Player having a Tag for whenever they're talking or having their Fishing Rod, etc.</p>
+            <p class="text-light text-start fs-5">With the Beat Sheet more or less complete, I got back to work.</p>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">GONE FISHING</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">To start, I begun work on creating a Trello Board for the purpose of project management and so that we could more easily keep track of each others progress.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/Trello1.png" alt="Da Trello." width="1000px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the Trello Board.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">Now back to the game, I decided to begin working on prototyping the main mechanic for the Player outside of the Dialogue System, their character's fishing rod and it being uses as a method of solving puzzles.</p>
+            <p class="text-light text-start fs-5">My idea for implementation is not unlike point-and-click adventure games, where you'd click on an item or press a keybind and then click on the element that you wish to interact with, luckily this is relatively easy to implement.</p>
+            <p class="text-light text-start fs-5">For starters, I needed a way for the Player to switch between the state of using the fishing rod and not using the fishing rod, which was done with an Enumerator and a Function that can be called inside the Player's Blueprint, in the state where the Player is using the fishing rod, their cursor is made to appear and they can click wherever on the screen to try and use their fishing rod.</p>
+            <p class="text-light text-start fs-5">Like those point-and-click games, I also wanted the elements to glow/gain an outline to indicate that they can be interacted with using the fishing rod, with the creation of a new Player Controller class that has mouse hover events enabled, it was possible by just having the intended actor have an "Overlay Material" applied to them whenever the Player's mouse hovered over.</p>
+            <figure class="figure">
+              <video width="720" height="576" controls="">
                   <source src="../../videos/LT_RodProto.mp4" type="video/mp4">
                   Your Browser does not support the video type (somehow).
                 </video>
-                <figcaption>Video showcasing the Fishing Rod in action.</figcaption>
-              </figure>
-              <p>There was also the matter of using the Gameplay Tag system to make sure that Players can't use the Fishing Rod while Talking to other actors, or if they have no Fishing Rod.</p>
-              <figure>
-                <iframe width="720" height="576" src="https://blueprintue.com/render/k19gmjlb/" scrolling="no" allowfullscreen></iframe>
-                <figcaption>Interactive Element showing the code within the Player Blueprint for both switching states and using the Fishing Rod.</figcaption>
-              </figure>
-              <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">OVERLAYING WITH A BIG SPLINED STEP</p>
-              </aside>
-              <p>Following the scrapping of the Inventory and "Party" systems, our Sound Designer had sent over some sound effects to use for footsteps, with different sounding steps corresponding to different materials, these materials being based on what we had came to a general idea as to what type of surfaces the Player Character would be walking on.</p>
-              <p>To actually implement these sounds into Unreal with the intended functionality, I had to make usage of the Surface Types and Physical Material tools that come with the Unreal Engine.</p>
-              <p>First, I had to define what surfaces will be used by the Physical Materials within the Project Settings.</p>
-              <figure>
-                <img src="../../images/screenies/lt/PhysSurfaces.png" alt="Da Surfaces." width="720px">
-                <figcaption>Screenshot of the Physical Surface Types listed in the Project Settings.</figcaption>
-              </figure>
-              <p>After that, came the creation of Physical Material Blueprints that link to these Surface Types.</p>
-              <figure>
-                <img src="../../images/screenies/lt/PhysMatContentDrawer.png" alt="Da Mats." width="720px">
-                <figcaption>Screenshot of the Physical Materials within the Content Drawer.</figcaption>
-              </figure>
-              <p>Then with the Player's Animation Blueprint, I can send a Notify Signal that will fire a line trace to the ground from the Player's current position, get the Surface Type of a Material after assigning it an appropriate Physical Material and then play the sound effect associated with that Surface Type.</p>
-              <figure>
-                <iframe width="720" height="576" src="https://blueprintue.com/render/2xb-csvj/" scrolling="no" allowfullscreen></iframe>
-                <figcaption>Interactive Element showing the notify code that allows for the footstep sounds to play.</figcaption>
-              </figure>
-              <figure>
-                <video width="720" height="576" controls>
+              <figcaption class="figure-caption text-light fst-italic">Video showcasing the Fishing Rod in action.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">There was also the matter of using the Gameplay Tag system to make sure that Players can't use the Fishing Rod while Talking to other actors, or if they have no Fishing Rod.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/nodes/Post-OSA/PBFishingRod.png" alt="Da Nodes." width="1200px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot showing the code within the Player Blueprint for both switching states and using the Fishing Rod.</figcaption>
+            </figure>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">OVERLAYING WITH A BIG SPLINED STEP</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">Following the scrapping of the Inventory and "Party" systems, our Sound Designer had sent over some sound effects to use for footsteps, with different sounding steps corresponding to different materials, these materials being based on what we had came to a general idea as to what type of surfaces the Player Character would be walking on.</p>
+            <p class="text-light text-start fs-5">To actually implement these sounds into Unreal with the intended functionality, I had to make usage of the Surface Types and Physical Material tools that come with the Unreal Engine.</p>
+            <p class="text-light text-start fs-5">First, I had to define what surfaces will be used by the Physical Materials within the Project Settings.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/PhysSurfaces.png" alt="Da Surface Types." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the Physical Surface Types listed in the Project Settings.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">After that, came the creation of Physical Material Blueprints that link to these Surface Types.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/PhysMatContentDrawer.png" alt="Da PhysMats." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the Physical Materials within the Content Drawer.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">Then with the Player's Animation Blueprint, I can send a Notify Signal that will fire a line trace to the ground from the Player's current position, get the Surface Type of a Material after assigning it an appropriate Physical Material and then play the sound effect associated with that Surface Type.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/nodes/Post-OSA/FootstepNotify.png" alt="Da Nodes." width="1200px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot showing the notify code that allows for the footstep sounds to play.</figcaption>
+            </figure>
+            <figure class="figure">
+              <video width="720" height="576" controls="">
                   <source src="../../videos/LT_OverlayFootstepsSpline.mp4" type="video/mp4">
                   Your Browser does not support the video type (somehow).
                 </video>
-                <figcaption>Video showcasing the Footstep Sounds (and other elements that have yet to be mentioned) in action.</figcaption>
-              </figure>
-              <p>You may have noticed that the camera in the beginning of the video is a lot more mobile than it was in previous videos you've seen so far.</p>
-              <p>Now that's because in the middle of implementing both the footstep sounds and the UI Overlay that you can also see in the above video, a thought had come to me, what if some of the locations in the game end up being too big for a simple static camera?</p>
-              <p>The answer to that problem was a "Spline-Based" Camera, wherein a Camera moves along a Spline Path, moving to the point that is the closest to the Player.</p>
-              <figure>
-                <img src="../../images/screenies/lt/SplineActor.png" alt="Da Spline." width="720px">
-                <figcaption>Screenshot of the Spline within the Test Level.</figcaption>
-              </figure>
-              <p>Within the Player Blueprint, I have it so every tick, the Camera is attached to the Spline and always moving to the point closest to the Player.</p>
-              <figure>
-                <iframe width="720" height="576" src="https://blueprintue.com/render/uw6-sq16/" scrolling="no" allowfullscreen></iframe>
-                <figcaption>Interactive Element showing the code for the Player's Camera being attached to the Spline.</figcaption>
-              </figure>
-              <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">AYY MAMA</p>
-              </aside>
-              <p>After a good amount of work, one of the members of the Animation team had produced a 3D modelled interior of a Restaurant, the home domain of one of the NPC characters, in this case, "Lobby" the Lobster.</p>
-              <p>With haste, I begun work on getting this interior model implemented into the Test Level so that we can test scale, lighting and other aspects.</p>
-              <p>One issue with this Interior was that that all of the objects in the interior was exported as separate static meshes which wasn't ideal and would thankful be rectified later when we got a more final model.</p>
-              <figure>
-                <img src="../../images/screenies/lt/TestRestaurantModel1.png" alt="Da Restaurant." width="720px">
-                <figcaption>Screenshot of the Restaurant Interior implemented in-engine.</figcaption>
-              </figure>
-              <p>After that was all said and done, I decided to replace that ugly dummy sprite for the Player with one of our actual Player Character, Olive, quickly grabbing one of the sketches from the Animation team and slapping it on in place of the dummy sprite as I await for the actual sprites to be completed.</p>
-              <figure>
-                <img src="../../images/screenies/lt/TestRestaurantModel2.png" alt="Da Restaurant." width="720px">
-                <figcaption>Screenshot showing the new temp Player sprite.</figcaption>
-              </figure>
-              <p>At one point, a lecturer made a pass by me working and made a comment about the lighting seen in the Restaurant's interior and suggested that something should be done to make the shadows appear less harsh, luckily I knew just the thing, a Post-Process Material that brightens up any meshes with a Custom Render Depth to them.</p>
-              <figure>
-                <img src="../../images/screenies/lt/TestRestaurantModel3.png" alt="Da Restaurant." width="720px">
-                <figcaption>Screenshot showing the Post-Process Material in action (and a new temp Olive sprite, he's got colour now!).</figcaption>
-              </figure>
-              <p>Don't worry it'll look better with actual textures, trust me.</p>
-              <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">CABLE MANAGEMENT</p>
-              </aside>
-              <p>To expand on the Player's fishing mechanic, a lecturer gave me the suggestion to add a cable to the fishing rod mechanic, that way there is a more visual representation of what the Player Character is striking with their fishing rod, as well as addressing a potential issue that may rise with the Player's Animations not exactly lining up with the Player's Actions</p>
-              <p>To achieve this, a "Cable Component" is created by the intended actor that attaches its end point to the Player.</p>
-              <figure>
-                <img src="../../images/screenies/lt/CableComponent.png" alt="Da Cable." width="720px">
-                <figcaption>Screenshot showing the Cable Component being attached to both the Fishable Actor and the Player.</figcaption>
-              </figure>
-              <p>It was a bit of a pain to get this working the way that I wanted, initially it was the Player that would create the Cable Component and attach it to the intended actor, but when attempting to destroy the component whenever the actor's function is completed, it would not and would instead remain on the Player and Actor.</p>
-              <p>This is largely due to the fact that components can only be destroyed by the actor that is creating it, even when attempting to destroy the component inside the Player's blueprint, there was no easy way to find and destroy the component, but, having the Actor create and destroy the component instead of the Player worked flawlessly.</p>
-              <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">INTO YOUR FACES</p>
-              </aside>
-              <p>I've made only a brief mention of UI just above, but at this point in development, I decided to put more focus behind it, especially after the other Game Design and Animation team members got done cooking up some wireframes in Figma.</p>
-              <figure>
-                <img src="../../images/screenies/lt/UIWireframe1.png" alt="Da UI." width="720px">
-                <figcaption>UI Wireframe created by another Game Design Team Member.</figcaption>
-              </figure>
-              <p>I started with the portrait that you can see in the bottom left corner, I wanted this to both act as the location as to where the Speaker Images will reside as well as a button that the Player can click to enter the state where they're using the fishing rod.</p>
-              <p>Slight problem, the area in the UI Overlay isn't a complete circle, there are some parts that give it a more abstract shape, luckily this is easy to adapt to.</p>
-              <p>In Unreal's Widget Tools, the "Retainer Box" has the option for an "Effect Material" which will apply an effect to whatever is inside, in this case, a mask which will dictate how the image is displayed.</p>
-              <p>Creating a Black and White mask in the shape of the desired area, where the white area indicates where the image will be drawn and turning it into a User Interface Material, I was able to add it to a retainer box and the image(s) are displayed properly within the UI.</p>
-              <figure>
-                <img src="../../images/screenies/lt/nodes/ProfileMaterial.png" alt="Da Material." width="720px">
-                <figcaption>Screenshot of the code behind the Mask/Effect Material.</figcaption>
-              </figure>
-              <figure>
-                <img src="../../images/screenies/lt/ProfileMatWidget.png" alt="Da Widget." width="720px">
-                <figcaption>Screenshot of the Effect Material being used inside a Retainer Box.</figcaption>
-              </figure>
-              <figure>
-                <img src="../../images/screenies/lt/ProfileMatAction.png" alt="Da Widget." width="720px">
-                <figcaption>Screenshot of the Effect Material in action.</figcaption>
-              </figure>
-              <p>I also took the opportunity to shuffle around the other elements of the Dialogue window to better match the wireframes.</p>
-              <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">CAT WALKS INTO DINER</p>
-              </aside>
-              <p>During the week where I implemented the Effect Material for the UI, the Animation team was kicking into high gear as I was given a suite of walking animations for the Player Character and a brand-spanking-new Restaurant interior model.</p>
-              <figure>
-                <img src="../../images/screenies/lt/MC_-_Olive_walk.gif" alt="Da Widget." width="480px">
-                <figcaption>Animation of the Player Character (Olive)'s left facing walk cycle.</figcaption>
-              </figure>
-              <p>I was provided with a set of walking animations that face in two different directions, using PaperZD's Animation Blueprints, I can set it so the correct directional animation is used based on the direction the Player is moving.</p>
-              <figure>
-                <img src="../../images/screenies/lt/DirectionalAnimation.png" alt="Da Directional Animation." width="720px">
-                <figcaption>Screenshot of the Player Animation Blueprint showing the setup of the Directional Animation.</figcaption>
-              </figure>
-              <figure>
-                <img src="../../images/screenies/lt/nodes/OliveWalkState.png" alt="Da State Machine." width="720px">
-                <figcaption>Screenshot of the State Machine code that drives the directional animation.</figcaption>
-              </figure>
-              <figure>
-                <img src="../../images/screenies/lt/oliveWalk.gif" alt="Da Walk." width="720px">
-                <figcaption>Animated Image of the State Machine in action.</figcaption>
-              </figure>
-              <p>Taking notes from other titles such as the 2D Pokemon games, the Player Character's animation blueprint was modified to slow down the animation whenever they're running up against a wall, to give the player character more of an existence within the game world, being affected by walls that would realistically slow them down.</p>
-              <p>To do this, I had to change the code of the Animation Blueprint that you can see above, instead of using state machines, all animations would be handled within the main Animation Blueprint graph.</p>
-              <figure>
-                <img src="../../images/screenies/lt/nodes/AnimBPNew.png" alt="Da Nodes." width="720px">
-                <figcaption>Screenshot of the new Animation Blueprint.</figcaption>
-              </figure>
-              <p>This new Animation Blueprint make usage of both a newly created boolean variable and pure function made within the Player's Blueprint, the boolean is set to true whenever the Player presses a movement key and the pure function checks if the Player is pressing a movement key but their velocity value is lower than a threshold of 50 units/s.</p>
-              <p>If the function returns true, then the play rate of the Player's walking animation is slowed down, producing the desired result.</p>
-              <figure>
-                <img src="../../images/screenies/lt/walkIntoWall.gif" alt="Da Walk." width="720px">
-                <figcaption>Animated image of the result of the Animation Blueprint changes.</figcaption>
-              </figure>
-              <p>Now let's talk about that new Restaurant interior, for starters, it was exported as one whole model this time which greatly helps with keeping the file structure of the project clean and the textures for it were finalized and were also sent over for me to convert into Unreal's material system.</p>
-              <p>And the result...</p>
-              <figure>
-                <img src="../../images/screenies/lt/newRestaurant.png" alt="Da Restaurant." width="720px">
-                <figcaption>Screenshot of the new Restaurant Interior...and a temp sprite of its owner.</figcaption>
-              </figure>
-              <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">FEAR AND LOATHING</p>
-              </aside>
-              <p>After the Restaurant, came the Gear Shop, owned and ran by the apathy-filled racoon named Rocco.</p>
-              <p>Like the Restaurant, the interior was made by members of the Animation team and I was handling the implementation, which went off without a hitch!</p>
-              <figure>
-                <img src="../../images/screenies/lt/newGearShop.png" alt="Da Gear Shop." width="720px">
-                <figcaption>Screenshot of the Gear Shop Interior with some (censored) temp dialogue from the owner, Rocco.</figcaption>
-              </figure>
-              <p>It was around this time where we and other groups were doing playtesting of each others games. For these sessions, I had to quickly create both temporary dialogue for both Lobby and Rocco, as well as implement ways for the Player to access their interiors and experience most if not all of the mechanics that were currently implemented.</p>
-              <p>We knew that after these sessions, we would have people from the industry coming down to playtest, so the current test map would not be enough to be worthy of being presented.</p>
-              <p>With that in mind, I had set out a short list of aspects of the game that I believe should be complete by the time of the industry playtest, with aspects such as the main hub level at the very least, implemented and playable in time.</p>
-              <p>One of the Level Designers had a small issue with working within Unreal as for one, they didn't have the right version installed (5.5) and for some reason weren't able to correct that, so had to create the level in Unreal 5.4, when they sent the level files over, it opened...</p>
-              <figure>
-                <img src="../../images/screenies/lt/bigOlNothing.png" alt="Da Nothing." width="720px">
-                <figcaption>Screenshot of the "Hub ""Level""".</figcaption>
-              </figure>
-              <p>A great, big, wad of nothing!</p>
-              <p>Luckily, this was easy to address, instead of sending me the level files, they were able to send me the project that they used to create the level in order to convert it to an Unreal 5.5 project and then import the level into the project, which worked a lot better.</p>
-              <p>After rescaling the level to properly fit the Player's size, the Hub level was implemented!</p>
-              <figure>
-                <img src="../../images/screenies/lt/HubLevel1.png" alt="Da Hub." width="720px">
-                <figcaption>Screenshot of the untextured Hub Level.</figcaption>
-              </figure>
-              <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">DAMN THIS BLOG IS LONG</p>
-              </aside>
-              <p>After the Hub level was implemented, I quickly put some teleport triggers to the Restaurant and Gear Shop interiors so that the people coming in from the industry playtest would have more than just the Hub level to walk around.</p>
-              <p>The feedback given from the industry playtests did give some insight as to how to approach the game's development with the current timeframe, mainly just getting at least the first third of the game complete and seeing what can be done from there.</p>
-              <p>After the playtest, one of the animators had finally finished the walking and idle animations for all of the NPCs, so I quickly go to work implementing them, giving them Character Blueprints and implementing them into the level, no dialogue components yet, I wanted to leave that up to the member doing the narrative.</p>
-              <figure>
-                <img src="../../images/screenies/lt/newNPCs.png" alt="Da Hub." width="720px">
-                <figcaption>Screenshot from later in development showing 2 of the newly implemented NPCs.</figcaption>
-              </figure>
-              <p>After the rest of the NPCs were implemented, another Animation team member had more exterior models, this time of the Fishing Dock/Port that the Player starts in and the exterior model of the Lobster's Restaurant, although before they came back with newer, much better models of the two locations, I had only implemented the fishing dock.</p>
-              <figure>
-                <img src="../../images/screenies/lt/blenderOldDock.png" alt="Da Dock." width="720px">
-                <figcaption>Screenshot of the now old Fishing Dock model within Blender.</figcaption>
-              </figure>
-              <p>Due to the Player's capsule collider, I had to keep requesting that the dock be made wider so that the Player would stop getting snagged on the fence or end up phasing through it some how, luckily this was addressed when the newer model came in and was implemented.</p>
-              <figure>
-                <img src="../../images/screenies/lt/newDock.png" alt="Da Dock." width="720px">
-                <figcaption>Screenshot of the new Dock model in-game.</figcaption>
-              </figure>
-              <p>I also implemented the Restaurant's exterior model after getting the Dock in the game, initially there was an issue where the Animation team member had sent me the wrong file but that was quickly addressed and was easily implemented and linked with the rest of the exterior parts of the level.</p>
-              <figure>
-                <img src="../../images/screenies/lt/newTown.png" alt="Da Town." width="720px">
-                <figcaption>Screenshot of the new Restaurant Exterior/Town/Whatever model in-game.</figcaption>
-              </figure>
-              <p>When showing off these new exteriors in-game, the Animation team member responsible raised a concern where the Post-Processing caused the exterior to appear to bright.</p>
-              <p>To attempt to address this concern, I disabled the exterior model's "Custom RenderDepth Pass" which leaves it unaffected by the post-processing and begun fumbling around with the Directional Light and its associated values.</p>
-              <figure>
-                <img src="../../images/screenies/lt/newTownDarker.png" alt="Da Town." width="720px">
-                <figcaption>Screenshot of the darker lighting.</figcaption>
-              </figure>
-              <p>But, ultimately it came down to the Animation team member deciding to de-saturate the Base Colour of their exterior models and sending the modified textures to me to replace the original.</p>
-              <figure>
-                <img src="../../images/screenies/lt/deSaturate.png" alt="Da Town." width="720px">
-                <figcaption>Screenshot of the desatruated textures in action.</figcaption>
-              </figure>
-              <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">ALL FOR THE RECORD</p>
-              </aside>
-              <p>At the time I'm writing this section of the blog, it is currently the 9th of May, the Deadline for the Game Design Team's assessment is the 13th.</p>
-              <p>At this point in time, the narrative and any of the potential scripting that comes with it have yet to be implemented.</p>
-              <p>I think it's safe to say that the project is not going to be submitted complete.</p>
-              <p>I shoulder some of the blame for this, with the role that I play in the project's development and the responsibilities that I have inherited, I essentially became the de-facto Project Lead but I made no real effort to exert control and ensure that the other team members were working on the project in the downtime between on-campus sessions.</p>
-              <p>But that does not mean that the rest of the Team has been slacking, the majority of the team has been working hard, getting important parts such as the UI, Sound Design and Levels done but I do wish that at least I or some other leading member could've had more oversight and control as to how fast they should be doing their work.</p>
-              <p>But enough of all the sappy, slightly sad, diatribes because the Sound Design and Animation team members have a shorter deadline than the Game Design team and they're going to need some footage of their work in action to submit.</p>
-              <figure>
-                <iframe width="720" height="576" src="https://www.youtube.com/embed/V9q2lSMKEz8" title="Closure - Launch Title - Animation Team Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <figcaption>Video recorded for the Animation Team.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Video showcasing the Footstep Sounds (and other elements that have yet to be mentioned) in action.</figcaption>
             </figure>
-            <figure>
-                <iframe width="720" height="576" src="https://www.youtube.com/embed/IixIjukMzz0" title="Closure - Launch Title - Sound Team Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <figcaption>Video recorded for the Sound Team.</figcaption>
+            <p class="text-light text-start fs-5">You may have noticed that the camera in the beginning of the video is a lot more mobile than it was in previous videos you've seen so far.</p>
+            <p class="text-light text-start fs-5">Now that's because in the middle of implementing both the footstep sounds and the UI Overlay that you can also see in the above video, a thought had come to me, what if some of the locations in the game end up being too big for a simple static camera?</p>
+            <p class="text-light text-start fs-5">The answer to that problem was a "Spline-Based" Camera, wherein a Camera moves along a Spline Path, moving to the point that is the closest to the Player.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/SplineActor.png" alt="Da Spline." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the Spline within the Test Level.</figcaption>
             </figure>
-            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">INSERT JOKING WORDPLAY ABOUT BUSTS</p>
-            </aside>
-            <p>After those videos were created, one of the Animation team members had make new versions of the little speaker images that you've been seeing in the bottom right corner of the screen, these new ones are special in the sense that they extend past the boundary of the overlay.</p>
-            <figure>
-                <img src="../../images/screenies/lt/newSpeakerAnimation.gif" alt="Da Speaker." width="720px">
-                <figcaption>Concept animation of the new Speaker UI animation in action, provided by the Animation team.</figcaption>
+            <p class="text-light text-start fs-5">Within the Player Blueprint, I have it so every tick, the Camera is attached to the Spline and always moving to the point closest to the Player.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/nodes/Post-OSA/CameraSpline.png" alt="Da Nodes." width="1200px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot showing the code for the Player's Camera being attached to the Spline.</figcaption>
             </figure>
-            <p>To implement this into the game require some modifications to the Dialogue Component so that it can support the animations, which were implemented by ways of making a spritesheet out of the frames of each speaker's talking animation and creating a User Interface Material that goes through the spritesheet, much like how the regular Flipbook animations are made.</P>
-            <figure>
-                <img src="../../images/screenies/lt/nodes/speakerUIMAT.png" alt="Da Speaker." width="720px">
-                <figcaption>Screenshot of the User Interface Material for the Speaker Image Animation.</figcaption>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">AYY MAMA</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">After a good amount of work, one of the members of the Animation team had produced a 3D modelled interior of a Restaurant, the home domain of one of the NPC characters, in this case, "Lobby" the Lobster.</p>
+            <p class="text-light text-start fs-5">With haste, I begun work on getting this interior model implemented into the Test Level so that we can test scale, lighting and other aspects.</p>
+            <p class="text-light text-start fs-5">One issue with this Interior was that that all of the objects in the interior was exported as separate static meshes which wasn't ideal and would thankful be rectified later when we got a more final model.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/TestRestaurantModel1.png" alt="Da Interior." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the Restaurant Interior implemented in-engine.</figcaption>
             </figure>
-            <p>For the modifications made the Dialogue Component, I added an input for the Add Dialogue function that allows for I or other members to select a Material for the Speaker Image, similar to the original Speaker Image system you saw all the back at the start of this blog. I then had to update almost all of the existing child components to take advantage of the new system, yay...</p>
-            <figure>
-                <img src="../../images/screenies/lt/newSpeakerInGame.gif" alt="Da Speaker." width="720px">
-                <figcaption>Animated Image of the new Speaker Images implemented In-Game.</figcaption>
+            <p class="text-light text-start fs-5">After that was all said and done, I decided to replace that ugly dummy sprite for the Player with one of our actual Player Character, Olive, quickly grabbing one of the sketches from the Animation team and slapping it on in place of the dummy sprite as I await for the actual sprites to be completed.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/TestRestaurantModel2.png" alt="Da Interior." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot showing the new temp Player sprite.</figcaption>
             </figure>
-            <p>It is currently the 12th of May, as of writing this part, I've just finished giving the last of the implemented NPCs a "temporary" dialogue component so at least you can talk to everyone in the game, which is nice.</p>
-            <p>I don't think I've mentioned this yet, but I've had a "Countdown to Destruction" implemented since the start of the project, it's just that I haven't found any way to communicate it naturally to the Player until those working on the UI had implemented a menu which displays a newspaper that's meant to act as news about the In-Game world but also takes inspiration as to how some games may try to format their update posts like newspapers/posts.</p>
-            <figure>
-                <img src="../../images/screenies/lt/Newspaper__1_.PNG" alt="Da Paper." width="720px">
-                <figcaption>Image of the Newspaper that can be displayed in the UI.</figcaption>
+            <p class="text-light text-start fs-5">At one point, a lecturer made a pass by me working and made a comment about the lighting seen in the Restaurant's interior and suggested that something should be done to make the shadows appear less harsh, luckily I knew just the thing, a Post-Process Material that brightens up any meshes with a Custom Render Depth to them.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/TestRestaurantModel3.png" alt="Da Interior." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot showing the Post-Process Material in action (and a new temp Olive sprite, he's got colour now!).</figcaption>
             </figure>
-            <p>Using this, I placed the Countdown where the 00:00 can be seen in the above image, and have it start counting down and have the newspaper show when the game starts up, giving the Player immediate context as to what is going on and given the stakes as they're being timed.</p>
-            <figure>
-                <img src="../../images/screenies/lt/newspaperINGAME.gif" alt="Da Paper." width="720px">
-                <figcaption>Animated Image of the Newspaper working In-Game.</figcaption>
+            <p class="text-light text-start fs-5">Don't worry it'll look better with actual textures, trust me.</p>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">CABLE MANAGEMENT</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">To expand on the Player's fishing mechanic, a lecturer gave me the suggestion to add a cable to the fishing rod mechanic, that way there is a more visual representation of what the Player Character is striking with their fishing rod, as well as addressing a potential issue that may rise with the Player's Animations not exactly lining up with the Player's Actions.</p>
+            <p class="text-light text-start fs-5">To achieve this, a "Cable Component" is created by the intended actor that attaches its end point to the Player.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/CableComponent.png" alt="Da Cable." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot showing the Cable Component being attached to both the Fishable Actor and the Player.</figcaption>
             </figure>
-            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-                <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">10% OFF EVERY WORD</p>
-            </aside>
-            <p>This blog is now over double of the listed word count as listed on the Module Guide, I expect my mark to overflow to a negative integer but apart from that, it's over.</p>
-            <p>While the game isn't "complete", I'm still happy with it, happy to have worked with some great people and happy that I got to write what is quite possibly the longest blog that I have ever written.</p>
-            <p>Could things have gone better? Absolutely.</p>
-            <p>Would I change how I and the rest of the team would go about development? Definitely.</p>
-            <p>Do I regret working on the project? No.</p>
-            <p>In the end, that's all that matters, thanks for taking the time out of your day to read out this multi-page long mountain of word vomit, I'll leave you off with the last message that I sent to the Group Discord before submission.</p>
-            <figure>
-                <img src="../../images/screenies/lt/TheLastMessage.png" alt="Da Message." width="720px">
-                <figcaption>Screenshot of the Last Message.</figcaption>
+            <p class="text-light text-start fs-5">It was a bit of a pain to get this working the way that I wanted, initially it was the Player that would create the Cable Component and attach it to the intended actor, but when attempting to destroy the component whenever the actor's function is completed, it would not and would instead remain on the Player and Actor.</p>
+            <p class="text-light text-start fs-5">This is largely due to the fact that components can only be destroyed by the actor that is creating it, even when attempting to destroy the component inside the Player's blueprint, there was no easy way to find and destroy the component, but, having the Actor create and destroy the component instead of the Player worked flawlessly.</p>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">INTO YOUR FACES</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">I've made only a brief mention of UI just above, but at this point in development, I decided to put more focus behind it, especially after the other Game Design and Animation team members got done cooking up some wireframes in Figma.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/UIWireframe1.png" alt="Da UI." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">UI Wireframe created by another Game Design Team Member.</figcaption>
             </figure>
-            <p>Frog Blast the Vent Core!</p>
-            <table width="100%" border="0">
-              <tbody>
-                <tr>
-                  <td>
-                    <a href="#">
-                      <i class="fa-solid fa-up-long" aria-hidden="true"></i>
-                      Back to Top
-                      <i class="fa-solid fa-up-long" aria-hidden="true"></i>
-                    </a>
-                  </td>
-                  <td align="right">
-                    <a href="../../index.html">
-                      <i class="fa-solid fa-house" aria-hidden="true"></i>
-                      Back to Home Page
-                      <i class="fa-solid fa-house" aria-hidden="true"></i>
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <p class="text-light text-start fs-5">I started with the portrait that you can see in the bottom left corner, I wanted this to both act as the location as to where the Speaker Images will reside as well as a button that the Player can click to enter the state where they're using the fishing rod.</p>
+            <p class="text-light text-start fs-5">Slight problem, the area in the UI Overlay isn't a complete circle, there are some parts that give it a more abstract shape, luckily this is easy to adapt to.</p>
+            <p class="text-light text-start fs-5">In Unreal's Widget Tools, the "Retainer Box" has the option for an "Effect Material" which will apply an effect to whatever is inside, in this case, a mask which will dictate how the image is displayed.</p>
+            <p class="text-light text-start fs-5">Creating a Black and White mask in the shape of the desired area, where the white area indicates where the image will be drawn and turning it into a User Interface Material, I was able to add it to a retainer box and the image(s) are displayed properly within the UI.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/nodes/ProfileMaterial.png" alt="Da Material." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the code behind the Mask/Effect Material.</figcaption>
+            </figure>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/ProfileMatWidget.png" alt="Da Widget." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the Effect Material being used inside a Retainer Box.</figcaption>
+            </figure>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/ProfileMatAction.png" alt="Da Widget." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the Effect Material in action.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">I also took the opportunity to shuffle around the other elements of the Dialogue window to better match the wireframes.</p>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">CAT WALKS INTO DINER</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">During the week where I implemented the Effect Material for the UI, the Animation team was kicking into high gear as I was given a suite of walking animations for the Player Character and a brand-spanking-new Restaurant interior model.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/MC_-_Olive_walk.gif" alt="Da Olive." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Animation of the Player Character (Olive)'s left facing walk cycle.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">I was provided with a set of walking animations that face in two different directions, using PaperZD's Animation Blueprints, I can set it so the correct directional animation is used based on the direction the Player is moving.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/DirectionalAnimation.png" alt="Da Directional Animation." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the Player Animation Blueprint showing the setup of the Directional Animation.</figcaption>
+            </figure>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/nodes/OliveWalkState.png" alt="Da State Machine." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the State Machine code that drives the directional animation.</figcaption>
+            </figure>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/oliveWalk.gif" alt="Da Walk." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Animated Image of the State Machine in action.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">Taking notes from other titles such as the 2D Pokemon games, the Player Character's animation blueprint was modified to slow down the animation whenever they're running up against a wall, to give the player character more of an existence within the game world, being affected by walls that would realistically slow them down.</p>
+            <p class="text-light text-start fs-5">To do this, I had to change the code of the Animation Blueprint that you can see above, instead of using state machines, all animations would be handled within the main Animation Blueprint graph.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/nodes/AnimBPNew.png" alt="Da Nodes." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the new Animation Blueprint.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">This new Animation Blueprint make usage of both a newly created boolean variable and pure function made within the Player's Blueprint, the boolean is set to true whenever the Player presses a movement key and the pure function checks if the Player is pressing a movement key but their velocity value is lower than a threshold of 50 units/s.</p>
+            <p class="text-light text-start fs-5">If the function returns true, then the play rate of the Player's walking animation is slowed down, producing the desired result.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/walkIntoWall.gif" alt="Da Walk." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Animated image of the result of the Animation Blueprint changes.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">Now let's talk about that new Restaurant interior, for starters, it was exported as one whole model this time which greatly helps with keeping the file structure of the project clean and the textures for it were finalized and were also sent over for me to convert into Unreal's material system.</p>
+            <p class="text-light text-start fs-5">And the result...</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/newRestaurant.png" alt="Da Restaurant." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the new Restaurant Interior...and a temp sprite of its owner.</figcaption>
+            </figure>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">FEAR AND LOATHING</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">After the Restaurant, came the Gear Shop, owned and ran by the apathy-filled racoon named Rocco.</p>
+            <p class="text-light text-start fs-5">Like the Restaurant, the interior was made by members of the Animation team and I was handling the implementation, which went off without a hitch!</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/newGearShop.png" alt="Da Gear Shop." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the Gear Shop Interior with some (censored) temp dialogue from the owner, Rocco.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">It was around this time where we and other groups were doing playtesting of each others games. For these sessions, I had to quickly create both temporary dialogue for both Lobby and Rocco, as well as implement ways for the Player to access their interiors and experience most if not all of the mechanics that were currently implemented.</p>
+            <p class="text-light text-start fs-5">We knew that after these sessions, we would have people from the industry coming down to playtest, so the current test map would not be enough to be worthy of being presented.</p>
+            <p class="text-light text-start fs-5">With that in mind, I had set out a short list of aspects of the game that I believe should be complete by the time of the industry playtest, with aspects such as the main hub level at the very least, implemented and playable in time.</p>
+            <p class="text-light text-start fs-5">One of the Level Designers had a small issue with working within Unreal as for one, they didn't have the right version installed (5.5) and for some reason weren't able to correct that, so had to create the level in Unreal 5.4, when they sent the level files over, it opened...</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/bigOlNothing.png" alt="Da Nothing." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the "Hub ""Level""".</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">A great, big, wad of nothing!</p>
+            <p class="text-light text-start fs-5">Luckily, this was easy to address, instead of sending me the level files, they were able to send me the project that they used to create the level in order to convert it to an Unreal 5.5 project and then import the level into the project, which worked a lot better.</p>
+            <p class="text-light text-start fs-5">After rescaling the level to properly fit the Player's size, the Hub level was implemented!</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/HubLevel1.png" alt="Da Hub." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the untextured Hub Level.</figcaption>
+            </figure>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">DAMN THIS BLOG IS LONG</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">After the Hub level was implemented, I quickly put some teleport triggers to the Restaurant and Gear Shop interiors so that the people coming in from the industry playtest would have more than just the Hub level to walk around.</p>
+            <p class="text-light text-start fs-5">The feedback given from the industry playtests did give some insight as to how to approach the game's development with the current timeframe, mainly just getting at least the first third of the game complete and seeing what can be done from there.</p>
+            <p class="text-light text-start fs-5">After the playtest, one of the animators had finally finished the walking and idle animations for all of the NPCs, so I quickly go to work implementing them, giving them Character Blueprints and implementing them into the level, no dialogue components yet, I wanted to leave that up to the member doing the narrative.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/newNPCs.png" alt="Da Hub." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot from later in development showing 2 of the newly implemented NPCs.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">After the rest of the NPCs were implemented, another Animation team member had more exterior models, this time of the Fishing Dock/Port that the Player starts in and the exterior model of the Lobster's Restaurant, although before they came back with newer, much better models of the two locations, I had only implemented the fishing dock.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/blenderOldDock.png" alt="Da Dock." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the now old Fishing Dock model within Blender.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">Due to the Player's capsule collider, I had to keep requesting that the dock be made wider so that the Player would stop getting snagged on the fence or end up phasing through it some how, luckily this was addressed when the newer model came in and was implemented.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/newDock.png" alt="Da Dock." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the new Dock model in-game.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">I also implemented the Restaurant's exterior model after getting the Dock in the game, initially there was an issue where the Animation team member had sent me the wrong file but that was quickly addressed and was easily implemented and linked with the rest of the exterior parts of the level.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/newTown.png" alt="Da Town." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the new Restaurant Exterior/Town/Whatever model in-game.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">When showing off these new exteriors in-game, the Animation team member responsible raised a concern where the Post-Processing caused the exterior to appear to bright.</p>
+            <p class="text-light text-start fs-5">To attempt to address this concern, I disabled the exterior model's "Custom RenderDepth Pass" which leaves it unaffected by the post-processing and begun fumbling around with the Directional Light and its associated values.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/newTownDarker.png" alt="Da Town." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the darker lighting.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">But, ultimately it came down to the Animation team member deciding to de-saturate the Base Colour of their exterior models and sending the modified textures to me to replace the original.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/deSaturate.png" alt="Da Town." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the desatruated textures in action.</figcaption>
+            </figure>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">ALL FOR THE RECORD</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">At the time I'm writing this section of the blog, it is currently the 9th of May, the Deadline for the Game Design Team's assessment is the 13th.</p>
+            <p class="text-light text-start fs-5">At this point in time, the narrative and any of the potential scripting that comes with it have yet to be implemented.</p>
+            <p class="text-light text-start fs-5">I think it's safe to say that the project is not going to be submitted complete.</p>
+            <p class="text-light text-start fs-5">I shoulder some of the blame for this, with the role that I play in the project's development and the responsibilities that I have inherited, I essentially became the de-facto Project Lead but I made no real effort to exert control and ensure that the other team members were working on the project in the downtime between on-campus sessions.</p>
+            <p class="text-light text-start fs-5">But that does not mean that the rest of the Team has been slacking, the majority of the team has been working hard, getting important parts such as the UI, Sound Design and Levels done but I do wish that at least I or some other leading member could've had more oversight and control as to how fast they should be doing their work.</p>
+            <p class="text-light text-start fs-5">But enough of all the sappy, slightly sad, diatribes because the Sound Design and Animation team members have a shorter deadline than the Game Design team and they're going to need some footage of their work in action to submit.</p>
+            <figure class="figure">
+              <iframe width="720" height="576" src="https://www.youtube.com/embed/V9q2lSMKEz8" title="Closure - Launch Title - Animation Team Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-ruffle-polyfilled=""></iframe>
+              <figcaption class="figure-caption text-light fst-italic">Video recorded for the Animation Team.</figcaption>
+            </figure>
+            <figure class="figure">
+              <iframe width="720" height="576" src="https://www.youtube.com/embed/IixIjukMzz0" title="Closure - Launch Title - Sound Team Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-ruffle-polyfilled=""></iframe>
+              <figcaption class="figure-caption text-light fst-italic">Video recorded for the Sound Team.</figcaption>
+            </figure>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">INSERT JOKING WORDPLAY ABOUT BUSTS</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">After those videos were created, one of the Animation team members had make new versions of the little speaker images that you've been seeing in the bottom right corner of the screen, these new ones are special in the sense that they extend past the boundary of the overlay.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/newSpeakerAnimation.gif" alt="Da Speaker." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Concept animation of the new Speaker UI animation in action, provided by the Animation team.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">To implement this into the game require some modifications to the Dialogue Component so that it can support the animations, which were implemented by ways of making a spritesheet out of the frames of each speaker's talking animation and creating a User Interface Material that goes through the spritesheet, much like how the regular Flipbook animations are made.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/nodes/speakerUIMAT.png" alt="Da Speaker." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the User Interface Material for the Speaker Image Animation.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">For the modifications made the Dialogue Component, I added an input for the Add Dialogue function that allows for I or other members to select a Material for the Speaker Image, similar to the original Speaker Image system you saw all the back at the start of this blog. I then had to update almost all of the existing child components to take advantage of the new system, yay...</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/newSpeakerInGame.gif" alt="Da Speaker." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Animated Image of the new Speaker Images implemented In-Game.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">It is currently the 12th of May, as of writing this part, I've just finished giving the last of the implemented NPCs a "temporary" dialogue component so at least you can talk to everyone in the game, which is nice.</p>
+            <p class="text-light text-start fs-5">I don't think I've mentioned this yet, but I've had a "Countdown to Destruction" implemented since the start of the project, it's just that I haven't found any way to communicate it naturally to the Player until those working on the UI had implemented a menu which displays a newspaper that's meant to act as news about the In-Game world but also takes inspiration as to how some games may try to format their update posts like newspapers/posts.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/Newspaper__1_.PNG" alt="Da Newspaper." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Image of the Newspaper that can be displayed in the UI.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">Using this, I placed the Countdown where the 00:00 can be seen in the above image, and have it start counting down and have the newspaper show when the game starts up, giving the Player immediate context as to what is going on and given the stakes as they're being timed.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/newspaperINGAME.gif" alt="Da Newspaper." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Animated Image of the Newspaper working In-Game.</figcaption>
+            </figure>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">10% OFF EVERY WORD</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">This blog is now over double of the listed word count as listed on the Module Guide, I expect my mark to overflow to a negative integer but apart from that, it's over.</p>
+            <p class="text-light text-start fs-5">While the game isn't "complete", I'm still happy with it, happy to have worked with some great people and happy that I got to write what is quite possibly the longest blog that I have ever written.</p>
+            <p class="text-light text-start fs-5">Could things have gone better? Absolutely.</p>
+            <p class="text-light text-start fs-5">Would I change how I and the rest of the team would go about development? Definitely.</p>
+            <p class="text-light text-start fs-5">Do I regret working on the project? No.</p>
+            <p class="text-light text-start fs-5">In the end, that's all that matters, thanks for taking the time out of your day to read out this multi-page long mountain of word vomit, I'll leave you off with the last message that I sent to the Group Discord before submission.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/lt/TheLastMessage.png" alt="Da Last Message." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the Last Message.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">Frog Blast the Vent Core!</p>
+            <div class="row p-0 pb-0 pe-lg-0 pt-lg-1 pb-lg-1 align-items-center rounded-3 shadow" style="background-color: #2a252c;">
+              <a class="fs-5 fw-bold" href="../../index.html"><i class="fa-solid fa-house"></i>HEAD BACK HOME<i class="fa-solid fa-house"></i></a>
+            </div>
+            <br>
+          </div>
         </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     </body>
 </html>

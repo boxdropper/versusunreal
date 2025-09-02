@@ -1,109 +1,92 @@
 <html>
     <head>
      <title>Versus Unreal - Foundations</title>
+     <!-- Bootstrap Core CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <link href="../../styles/blog.css" rel="stylesheet" type="text/css" media="all">
      <link rel="icon" type="images/x-icon" href="../../images/favicon.ico">
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta property="og:type" content="website">
-     <meta property="og:title" content="Blog">
-     <style>
-        body 
-  {
-    @media only screen and (orientation : landscape)
-    {
-      background: url("../../images/back/Foundation.png") no-repeat center center fixed; background-size:cover;
-    }
-  }
-     </style>   
+     <meta property="og:title" content="Blog">   
     </head>
     <body>
-        <div class="content">
-            <p style="text-align: center;">
-                <img src="../../images/headers/270924.png" alt="construction joke" title="construction joke">
-            </p>
-            <div class="blogheader">
-              <h3>Date: 27th September 2024</h3>
+        <div class="px-4 text-center" style="background-image: url(../../images/back/Foundation.webp); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+          <div class="container px-5 shadow-lg" style="background-color: #1f1f1f; filter: drop-shadow(0 0 0.75rem black);">
+            <img class="img-fluid mb-4" src="../../images/headers/270924.png" alt="Versus Unreal" loading="lazy">
+            <h3 class="text-light fw-bold">Date: 27th September 2024</h3>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">BUILDING FROM THE WAIST UP</h3>
             </div>
-            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-              <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">BUILDING FROM THE WAIST UP</p>
-            </aside>
-            <p>Getting started in Level Design using the Unreal Engine, in this module specifically, isn't as painful as I initially believed.</p>
-            <p>For starters, we're given a "Template Project" that we'll be using to construct a level and the mechanics within the template, I'll have to consider when planning, designing and testing a level. This Template Project also comes with a Level that showcases the various AI related features included, such as Patrol Points, being able to take cover behind tagged objects, calling in Reinforcements, etc.</p>
-            <figure>
+            <br>
+            <p class="text-light text-start fs-5">Getting started in Level Design using the Unreal Engine, in this module specifically, isn't as painful as I initially believed.</p>
+            <p class="text-light text-start fs-5">For starters, we're given a "Template Project" that we'll be using to construct a level and the mechanics within the template, I'll have to consider when planning, designing and testing a level. This Template Project also comes with a Level that showcases the various AI related features included, such as Patrol Points, being able to take cover behind tagged objects, calling in Reinforcements, etc.</p>
+            <figure class="figure">
               <img src="../../images/back/TPLDS.png" alt="Temp my plate." width="720px">
-              <figcaption>Screenshot of the Template Project's test map, mainly showing the AI Patrol Points.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of the Template Project's test map, mainly showing the AI Patrol Points.</figcaption>
             </figure>
-            <p>Using the knowledge gained from running around this test map, we're given a task to create a small "blockout" level, intended to resemble an alleyway, which is something that I had somehow failed to notice during the beginning of creating my level but with some quick additions, I could try to pass it off as a back area/alleyway, that is, if I didn't just tell you right now. Oh well.</p>
-            <figure>
+            <p class="text-light text-start fs-5">Using the knowledge gained from running around this test map, we're given a task to create a small "blockout" level, intended to resemble an alleyway, which is something that I had somehow failed to notice during the beginning of creating my level but with some quick additions, I could try to pass it off as a back area/alleyway, that is, if I didn't just tell you right now. Oh well.</p>
+            <figure class="figure">
               <img src="../../images/screenies/HighresScreenshot00006.png" alt="Look out below." width="720px">
-              <figcaption>Top-down view of the created level, take note of the central structure, every level can benefit from a central structure right?</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Top-down view of the created level, take note of the central structure, every level can benefit from a central structure right?</figcaption>
             </figure>
-            <p>This level was constructed using a combination of Unreal Engine's "CubeGrid" Tool to divide the area where the Player spawns and the area that I have designated the "Combat Arena" and also the various Blockout Assets that were included inside the Template Project which included Barriers, Fences, Walls, Stairs, Floors, Static Vehicles, Boxes of various sizes, etc.</p>
-            <figure class="floatleft">
-              <img src="../../images/screenies/HighresScreenshot00005.png" alt="wow, it's like minecraft." width="350px">
-              <figcaption>A small "Metric Gym" with an indicator for the Player's Height.</figcaption>
+            <p class="text-light text-start fs-5">This level was constructed using a combination of Unreal Engine's "CubeGrid" Tool to divide the area where the Player spawns and the area that I have designated the "Combat Arena" and also the various Blockout Assets that were included inside the Template Project which included Barriers, Fences, Walls, Stairs, Floors, Static Vehicles, Boxes of various sizes, etc.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/HighresScreenshot00005.png" alt="wow, it's like minecraft." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">A small "Metric Gym" with an indicator for the Player's Height.</figcaption>
             </figure>
-            <p>But before I truly got started on that Combat Arena, I wanted to try and gauge the height of the Player Character, that way I don't accidentally make structures or cover spots either too big or too small.</p>
-            <p>To do that, I created this small structure made out of cube stairs that, while also act as a way to get the maximum height that the Player can mantle, is also here to get a near-approximate height of the Player Character, in Level Design, this is called a "Metric Gym" and I had actually created this long before I would actually be asked to create one, albiet one with a lot more structures to gauge some min and max values for Player Movement Mechanics.</p>
-            <p>Having something like this, this early own, also means that if I have any free time, I can create some other levels and could quickly turn to this and copy it to other levels so that everything stays somewhat consistent, nothing too big, nothing too small.</p>
-            <p>But now back to the Combat Arena.</p>
-            <aside style="padding: 5px; background: rgb(177,119,42); background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%);">
-              <p style="text-shadow: 2px 2px 0px #000; font-weight: 1000; font-size: 35px; line-height: 0.05em;">IMPROVISED KNOWLEDGE</p>
-            </aside>
-            <p>As mentioned in the previous entry, I have some base level knowledge of Level Design and I tried to apply that when making this arena, while also trying to make some decisions that I felt was logical for the benefit of the Player.</p>
-            <figure>
+            <p class="text-light text-start fs-5">But before I truly got started on that Combat Arena, I wanted to try and gauge the height of the Player Character, that way I don't accidentally make structures or cover spots either too big or too small.</p>
+            <p class="text-light text-start fs-5">To do that, I created this small structure made out of cube stairs that, while also act as a way to get the maximum height that the Player can mantle, is also here to get a near-approximate height of the Player Character, in Level Design, this is called a "Metric Gym" and I had actually created this long before I would actually be asked to create one, albiet one with a lot more structures to gauge some min and max values for Player Movement Mechanics.</p>
+            <p class="text-light text-start fs-5">Having something like this, this early own, also means that if I have any free time, I can create some other levels and could quickly turn to this and copy it to other levels so that everything stays somewhat consistent, nothing too big, nothing too small.</p>
+            <p class="text-light text-start fs-5">But now back to the Combat Arena.</p>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgba(177,119,42,1) 0%, rgba(218,176,2,1) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">IMPROVISED KNOWLEDGE</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">As mentioned in the previous entry, I have some base level knowledge of Level Design and I tried to apply that when making this arena, while also trying to make some decisions that I felt was logical for the benefit of the Player.</p>
+            <figure class="figure">
               <img src="../../images/screenies/HighresScreenshot00007.png" alt="No Wheelchairs allowed." width="720px">
-              <figcaption>Corner view of the Combat Arena, showing some slight elevation of the central structure.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Corner view of the Combat Arena, showing some slight elevation of the central structure.</figcaption>
             </figure>
-            <p>As you can see here, I opted to give some elevation to the center of the level, the reason for this being that I believed that just having the arena be a flat plane with some cover wouldn't be as engaging and/or interesting, I wanted the Player to actually move around the arena, not just sit in one spot for an extended period of time, this elevated structure makes the player go, "What is that?, Can I go up there?, I want to go up there.", "Get me up there!", and with the walls covering most of it, there is also an incentive to run up there as another way to get to cover.</p>
-            <figure>
+            <p class="text-light text-start fs-5">As you can see here, I opted to give some elevation to the center of the level, the reason for this being that I believed that just having the arena be a flat plane with some cover wouldn't be as engaging and/or interesting, I wanted the Player to actually move around the arena, not just sit in one spot for an extended period of time, this elevated structure makes the player go, "What is that?, Can I go up there?, I want to go up there.", "Get me up there!", and with the walls covering most of it, there is also an incentive to run up there as another way to get to cover.</p>
+            <figure class="figure">
               <img src="../../images/screenies/HighresScreenshot00002.png" alt="Better to have a compass." width="720px">
-              <figcaption>Inside the central structure, showing a certain number of boxes on either side of the pole.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Inside the central structure, showing a certain number of boxes on either side of the pole.</figcaption>
             </figure>
-            <p>Here's the inside of the central structure, you can see I have placed some boxes in the middle, three small boxes on the left, one long box on the right, these aren't just here for Line-of-Sight breaks, I've intended for them to act as a way for the Player to know what way their going.</p>
-            <p>Now, having saying that you might be confused, seeing as the level itself is pretty simple, there is no way that the Player could get lost but, imagine if this level had much more time put into it, to the point where it is easier for the Player to get lost, now these boxes have more of a purpose, one quick look and the Player immediately knows which way is which.</p>
-            <figure>
+            <p class="text-light text-start fs-5">Here's the inside of the central structure, you can see I have placed some boxes in the middle, three small boxes on the left, one long box on the right, these aren't just here for Line-of-Sight breaks, I've intended for them to act as a way for the Player to know what way their going.</p>
+            <p class="text-light text-start fs-5">Now, having saying that you might be confused, seeing as the level itself is pretty simple, there is no way that the Player could get lost but, imagine if this level had much more time put into it, to the point where it is easier for the Player to get lost, now these boxes have more of a purpose, one quick look and the Player immediately knows which way is which.</p>
+            <figure class="figure">
               <img src="../../images/screenies/HighresScreenshot00008.png" alt="Not dead in 5 seconds." width="720px">
-              <figcaption>The cover just outside the door that the Player walks through.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">The cover just outside the door that the Player walks through.</figcaption>
             </figure>
-            <p>The inclusion of a clear cover spot right as the Player walks through the door is pretty clear in hindsight, as well, getting spotted and gunned down by enemies almost immediately upon entering a new location is almost never fun, plus this cover also acts as a way for the Player to slow down and get a good read on the environment and their options for moving in and out of cover.</p>
-            <p>They walk through the door and take cover, they can see the first two enemies on either side, they look at the areas around those two enemies, weigh their options and move accordingly.</p>
-            <figure>
+            <p class="text-light text-start fs-5">The inclusion of a clear cover spot right as the Player walks through the door is pretty clear in hindsight, as well, getting spotted and gunned down by enemies almost immediately upon entering a new location is almost never fun, plus this cover also acts as a way for the Player to slow down and get a good read on the environment and their options for moving in and out of cover.</p>
+            <p class="text-light text-start fs-5">They walk through the door and take cover, they can see the first two enemies on either side, they look at the areas around those two enemies, weigh their options and move accordingly.</p>
+            <figure class="figure">
               <img src="../../images/screenies/HighresScreenshot00001.png" alt="Suitable for Kids under 12." width="720px">
-              <figcaption>A Shotgunner Enemy behind cover that they can use.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">A Shotgunner Enemy behind cover that they can use.</figcaption>
             </figure>
-            <p>Various pieces of cover around the level are tagged in a way that the Enemies can also make use of them as cover, just like the Player, this adds a good bit of dynamic action where the roles get reversed, the Player becomes the Enemy and the Enemy becomes the Player hiding behind cover, if that makes any sense.</p>
-            <figure>
+            <p class="text-light text-start fs-5">Various pieces of cover around the level are tagged in a way that the Enemies can also make use of them as cover, just like the Player, this adds a good bit of dynamic action where the roles get reversed, the Player becomes the Enemy and the Enemy becomes the Player hiding behind cover, if that makes any sense.</p>
+            <figure class="figure">
               <img src="../../images/screenies/HighresScreenshot00009.png" alt="Say goodbye to your brain." width="720px">
-              <figcaption>Two Snipers on top of a trailer, pointed at the door.</figcaption>
+              <figcaption class="figure-caption text-light fst-italic">Two Snipers on top of a trailer, pointed at the door.</figcaption>
             </figure>
-            <p>As a quick way of ensuring that the Player will actually attempt to take cover as the walk through the door, I've placed a duo of snipers on a trailer that's tall enough that One: They Player can immediately see them when they walk in. & Two: They can see the Player as soon as they enter, moving their lasers to follow the Player, forcing the Player into cover to avoid getting shot.</p>
-            <p>Now comes time to show off some gameplay of the map, which you can view below:</p>
-            <figure>
-              <iframe width="854" height="480" src="https://www.youtube.com/embed/fAR08-nUWpE" title="LD - Some Foundations - Created Level" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              <figcaption>Gameplay video of the Level.</figcaption>
+            <p class="text-light text-start fs-5">As a quick way of ensuring that the Player will actually attempt to take cover as the walk through the door, I've placed a duo of snipers on a trailer that's tall enough that One: They Player can immediately see them when they walk in. & Two: They can see the Player as soon as they enter, moving their lasers to follow the Player, forcing the Player into cover to avoid getting shot.</p>
+            <p class="text-light text-start fs-5">Now comes time to show off some gameplay of the map, which you can view below:</p>
+            <figure class="figure">
+              <iframe width="854" height="480" src="https://www.youtube.com/embed/fAR08-nUWpE" title="LD - Some Foundations - Created Level" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-ruffle-polyfilled=""></iframe>
+              <figcaption class="figure-caption text-light fst-italic">Gameplay video of the Level.</figcaption>
             </figure>
-            <table width="100%" border="0">
-              <tbody>
-                <tr>
-                  <td>
-                    <a href="#">
-                      <i class="fa-solid fa-up-long" aria-hidden="true"></i>
-                      Back to Top
-                      <i class="fa-solid fa-up-long" aria-hidden="true"></i>
-                    </a>
-                  </td>
-                  <td align="right">
-                    <a href="../../index.html">
-                      <i class="fa-solid fa-house" aria-hidden="true"></i>
-                      Back to Home Page
-                      <i class="fa-solid fa-house" aria-hidden="true"></i>
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="row p-0 pb-0 pe-lg-0 pt-lg-1 pb-lg-1 align-items-center rounded-3 shadow" style="background-color: #2a252c;">
+              <a class="fs-5 fw-bold" href="../../index.html"><i class="fa-solid fa-house"></i>HEAD BACK HOME<i class="fa-solid fa-house"></i></a>
+            </div>
+            <br>
+          </div>
         </div>
     </body>
 </html>
