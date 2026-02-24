@@ -21,7 +21,7 @@
           <div class="container px-5 shadow-lg" style="background-color: #1f1f1f; filter: drop-shadow(0 0 0.75rem black);">
             <img class="img-fluid mb-4" src="../../images/headers/100226.png" alt="DARK!" loading="lazy">
             <h3 class="text-light fw-bold">Entry Started: 10th February 2026</h3>
-            <h3 class="text-light fw-bold">Last Edited: 10th February 2026</h3>
+            <h3 class="text-light fw-bold">Last Edited: 24th February 2026</h3>
             <br>
             <div class="row p-4 pb-4 pe-lg-0 pt-lg-3 align-items-center rounded-3 shadow" style="background-color: #300f0f;">
               <h3 class="text-light fw-bold fs-1">External Documents</h3>
@@ -138,6 +138,26 @@
             <p class="text-light text-start fs-5">SMT had hooked me with its wide variety of stories, characters, locations, themes, music and many other factors that slowly morphed it into one of my favourite RPG series.</p>
             <p class="text-light text-start fs-5">This also provided me with the opportunity to work on my writing chops for the story of NDark.</p>
             <p class="text-light text-start fs-5">Mainly due to me having to write mission briefings for any levels that I make that aren't test levels, I would have to learn to write in a way that is enderring while also providing context as to what is going on, who all the major players are, what the objectives are, why are we going to the place that we're going, when will the fog take us, etc.</p>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgb(85, 0, 0) 0%, rgb(158, 0, 0) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">ARS GRATIA ARTIS</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">An intention of mine was for NDark to have a similiar level of graphical fidelity to games such as GoldenEye and Perfect Dark, including low resolution textures, low polygon count models, etc.</p>
+            <p class="text-light text-start fs-5">The first step that I had taken to achieve the desired look was the usage of a Third-Party plugin/suite of assets, in this case, <a href="https://marcis.itch.io/psxfx" target="_blank">Marcis's Retro Graphics (also known as PSXFX)</a>.</p>
+            <p class="text-light text-start fs-5">Using this plugin, I'm able to limit the colours to try and match the Nintendo 64's 24-bit colour depth and incorporate various Nintendo 64-like effects and features such as Fog, Vertex Lighting, etc.</p>
+            <!-- TODO: INSERT SOME RETRO GRAPHICS WORK HERE -->
+            <p class="text-light text-start fs-5">The onus was still on me however, to source textures and adjust them to fit the desired look, so I dove into free texture sites like cc0textures and PolyHaven and found appropriate textures in import into the project.</p>
+            <p class="text-light text-start fs-5">But all of the textures from these sites are only available in 1K resolution or higher, I don't know if you know this, but the Nintendo 64 had only 4 MB of Rambus DRAM by default and a Coprocessor Chip clocked at 62.5 MHz for graphics. This means that having multiple 1K textures is pretty much impossible for a regular Nintendo 64 to handle, so I need to downsize.</p>
+            <p class="text-light text-start fs-5">Luckily, Unreal Engine comes with some texture import settings that allow me to change the resolution of the textures to a much more modest 256x256 resolution.</p>
+            <!-- TODO: INSERT 256 TEXTURES HERE -->
+            <p class="text-light text-start fs-5">This "philosophy" also extends to the weapon models, all of the weapons in NDark have low polygon counts and feature a 256x256 resolution texture.</p>
+            <!-- TODO: INSERT WEAPON TEXTURE STUFF HERE -->
+            <p class="text-light text-start fs-5">The weapon muzzle flashes & bullet casings were another creation of Marcis, this time from their <a href="https://marcis.itch.io/retro-particles-lens-flares" target="_blank">Retro Particles</a> set.</p>
+            <p class="text-light text-start fs-5">These particle effects were set to fire/appear at specific points within a weapon's firing animations, those and all other weapon animations, models and textures were created by Me in Blender.</p>
+            <!-- TODO: INSERT BLENDER WEAPON ANIMATION WORK HERE -->
+            <p class="text-light text-start fs-5">One point of feedback that I had received in regards to the pistol reload animations was that it reminded the lecturers about Perfect Dark and its reload animations, which typically features the weapon coming up to let the magazine fall out before the rest of the reload animation.</p>
+            <p class="text-light text-start fs-5">This was something that I would later try and lean in more to when animating other types of weapons such as SMGs and Shotguns.</p>
+            <!-- TODO: INSERT SMG OR SHOTGUN RELOADS HERE -->
             <div class="row p-0 pb-0 pe-lg-0 pt-lg-1 pb-lg-1 align-items-center rounded-3 shadow" style="background-color: #2a252c;">
               <a class="fs-5 fw-bold" href="../../index.html"><i class="fa-solid fa-house"></i>HEAD BACK HOME<i class="fa-solid fa-house"></i></a>
             </div>
