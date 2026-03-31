@@ -159,6 +159,23 @@
             <p class="text-light text-start fs-5">One point of feedback that I had received in regards to the pistol reload animations was that it reminded the lecturers about Perfect Dark and its reload animations, which typically features the weapon coming up to let the magazine fall out before the rest of the reload animation.</p>
             <p class="text-light text-start fs-5">This was something that I would later try and lean in more to when animating other types of weapons such as SMGs and Shotguns.</p>
             <!-- TODO: INSERT SMG OR SHOTGUN RELOADS HERE -->
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgb(85, 0, 0) 0%, rgb(158, 0, 0) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">IN REGIONE CAECORUM REX EST LUSCUS</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">Being inspired by GoldenEye and Perfect Dark also lead me to attempt to, at the very least, emulate certain mechanics, especially in regards to the Player Controller and how they use weapons.</p>
+            <p class="text-light text-start fs-5">One of these mechanics is the "fine-aim", where the Player is standing still and their crosshair is converted into a free aiming cursor that the weapon follows, allowing for more accurate shots to be made.</p>
+            <!-- TODO: INSERT GOLDENEYE AIMING GIF -->
+            <p class="text-light text-start fs-5">Recreating this in the Unreal Engine for NDark proved to be the hardest mechanic that I have implemented to date, it involved converting the player's mouse's position into a 2D vector so that it can be used as the position value for a crosshair widget.</p>
+            <p class="text-light text-start fs-5">Then, converting the mouse's position again, this time to world space so that it can be used as the new start point for any weapon firing functions.</p>
+            <p class="text-light text-start fs-5">Following that, a near constantly firing function that updates the rotation of the player's viewmodel to match the position of the free-aim crosshair.</p>
+            <!-- TODO: INSERT NDARK AIMING GIF -->
+            <p class="text-light text-start fs-5">It was a long and slightly painful process, but with it implemented, it opened the door for me to implement mechanics that tie into this one in a way that is fun/engaging to players, mechanics including easier headshots on enemies, precision shots on destructable objects, etc.</p>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgb(85, 0, 0) 0%, rgb(158, 0, 0) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">FINIS ORIGINE PENDET</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">My experience with Retro/Classic games doesn't stop at just playing, I often find myself tinkering with the games, altering their content, playing around with community made modifications and tools.</p>
             <div class="row p-0 pb-0 pe-lg-0 pt-lg-1 pb-lg-1 align-items-center rounded-3 shadow" style="background-color: #2a252c;">
               <a class="fs-5 fw-bold" href="../../index.html"><i class="fa-solid fa-house"></i>HEAD BACK HOME<i class="fa-solid fa-house"></i></a>
             </div>
