@@ -176,6 +176,15 @@
             </div>
             <br>
             <p class="text-light text-start fs-5">My experience with Retro/Classic games doesn't stop at just playing, I often find myself tinkering with the games, altering their content, playing around with community made modifications and tools.</p>
+            <p class="text-light text-start fs-5">Among these retro games are ones that have been created using the first ever version of the Unreal Engine.</p>
+            <p class="text-light text-start fs-5">While looking through the editing tools for the original Unreal Engine, I came across its trigger system.</p>
+            <!-- TODO: INSERT IMAGE OF UNREAL 1 TRIGGERS -->
+            <p class="text-light text-start fs-5">How these triggers work is that they are assigned both a "Tag" and an "Event", whenever a trigger is activated, it "fires" its "Event", which means that any entity that has a "Tag" value that matches the trigger's "Event" value, is fired, this is used for automatic doors, waking enemies from sleep/idle, activating scripted sequences, etc.</p>
+            <!-- TODO: INSERT GRAB THE MILK -->
+            <p class="text-light text-start fs-5">This system was very interesting to me the first time I was able to fully grasp it, and I wondered if I could re-create this setup in Unreal Engine 5 for NDark, as a way of speeding up the level scripting process.</p>
+            <p class="text-light text-start fs-5">It was suprisingly easy (probably because the system itself was pretty simple), mainly requiring a Blueprint Interface to serve as the dispatcher for any actors that I wanted to be affected by any and all triggers, and combining UE5's existing actor tag system with a new "Event" variable to match the UE1 trigger behaviour as close as possible.</p>
+            <!-- TODO: INSERT NDARK TRIGGER WORK -->
+            
             <div class="row p-0 pb-0 pe-lg-0 pt-lg-1 pb-lg-1 align-items-center rounded-3 shadow" style="background-color: #2a252c;">
               <a class="fs-5 fw-bold" href="../../index.html"><i class="fa-solid fa-house"></i>HEAD BACK HOME<i class="fa-solid fa-house"></i></a>
             </div>
