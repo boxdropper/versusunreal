@@ -21,7 +21,7 @@
           <div class="container px-5 shadow-lg" style="background-color: #1f1f1f; filter: drop-shadow(0 0 0.75rem black);">
             <img class="img-fluid mb-4" src="../../images/headers/100226.png" alt="DARK!" loading="lazy">
             <h3 class="text-light fw-bold">Entry Started: 10th February 2026</h3>
-            <h3 class="text-light fw-bold">Last Edited: 24th February 2026</h3>
+            <h3 class="text-light fw-bold">Last Edited: 21st April 2026</h3>
             <br>
             <div class="row p-4 pb-4 pe-lg-0 pt-lg-3 align-items-center rounded-3 shadow" style="background-color: #300f0f;">
               <h3 class="text-light fw-bold fs-1">External Documents</h3>
@@ -184,7 +184,27 @@
             <p class="text-light text-start fs-5">This system was very interesting to me the first time I was able to fully grasp it, and I wondered if I could re-create this setup in Unreal Engine 5 for NDark, as a way of speeding up the level scripting process.</p>
             <p class="text-light text-start fs-5">It was suprisingly easy (probably because the system itself was pretty simple), mainly requiring a Blueprint Interface to serve as the dispatcher for any actors that I wanted to be affected by any and all triggers, and combining UE5's existing actor tag system with a new "Event" variable to match the UE1 trigger behaviour as close as possible.</p>
             <!-- TODO: INSERT NDARK TRIGGER WORK -->
-            
+            <p class="text-light text-start fs-5">With this, I can more easily understand level scripting and be able to have actors trigger events in a level, all in the editor view, without having to go between the Level Blueprint and Editor.</p>
+            <p class="text-light text-start fs-5">Speaking of Levels, let's get into those...</p>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgb(85, 0, 0) 0%, rgb(158, 0, 0) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">QUA PATET ORBIS</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">Level Design in the modern game development space, to me, kinda sucks.</p>
+            <p class="text-light text-start fs-5">I'm more familliar with the old ways, back with the Source Engine where all of the Level, the blockouts, scripting, lighting, etc, were all as self contained within the engine and its editing kit as possible.</p>
+            <!-- TODO: INSERT SOURCE ENGINE EDITING -->
+            <p class="text-light text-start fs-5">In the modern day, while there may still be <em>blockouts</em> of levels made in engine and the scripting may be handled and authored in engine, the rest of the work is donr largely in outside software, mainly modelling software like 3DS Max or Blender and then <em>imported</em> into the engine.</p>
+            <p class="text-light text-start fs-5">The Unreal Engine follows this modern philosophy, while there are tools within the engine that allow for the creation of elements such as vast, mountainous environments or quick and dirty grey-boxes, it's largely expecting you to create the final version of your levels' environments outside of the Unreal Editor.</p>
+            <p class="text-light text-start fs-5">I was sort of dreading having to create levels for NOBELIUM_DARK if it meant that I had to deal with this workflow, but, in the background, there was someone who was working on a solution.</p>
+            <p class="text-light text-start fs-5">In March of 2020, Valve had released Half-Life: Alyx, their "killer app" for Virtual Reality fully built in their brand new "Source 2" engine, sometime after the release of the game, Valve had made the "Workshop Tools" for the game publically available, included within, was their new version of the Hammer World Editor.</p>
+            <!-- TODO: INSERT HAMMER 5 -->
+            <p class="text-light text-start fs-5">While this new Hammer Editor followed the modern convention of Level Creation by operating with Mesh Geometry instead of Brush Geometry, the actual mesh creation process, and the features surrounding it, allows someone to create fully detailed environments all within the editor, down to the door frames.</p>
+            <p class="text-light text-start fs-5">Things got even better in 2023 with the launch of Counter-Strike 2, its version of the Hammer Editor allowed for people to create models such as props, within the editor and then export them to a useable format.</p>
+            <!-- TODO: INSERT CHRIS BRYANT TWEETS ABOUT HAMMER 5 -->
+            <p class="text-light text-start fs-5">It's tweets like this that got people who use other engines, namely Unreal, a little bit jealous that you could make environments this easily in Source 2, one of those people decided that they would try and essentially re-create Hammer's mesh creation process in the Unreal Engine, and distribute it as a Plugin, that plugin would be named "Scythe" and it's the plugin that I used for creating levels in NOBELIUM_DARK.</p>
+            <!-- TODO: INSERT NDARK LEVEL IN-DEV -->
+            <p class="text-light text-start fs-5">Working with Scythe was simply better than Unreal's base tools, by orders of magnitude, it makes the mesh creation process so much more seamless, I can create complex, curved geometry, such as a 3-way-corridor in a sewer with ease, something that I could never even dream of creating using the base tools.</p>
+            <!-- TODO: INSERT DEMO GAIDEN SEWER MESH -->
             <div class="row p-0 pb-0 pe-lg-0 pt-lg-1 pb-lg-1 align-items-center rounded-3 shadow" style="background-color: #2a252c;">
               <a class="fs-5 fw-bold" href="../../index.html"><i class="fa-solid fa-house"></i>HEAD BACK HOME<i class="fa-solid fa-house"></i></a>
             </div>
