@@ -21,7 +21,7 @@
           <div class="container px-5 shadow-lg" style="background-color: #1f1f1f; filter: drop-shadow(0 0 0.75rem black);">
             <img class="img-fluid mb-4" src="../../images/headers/100226.png" alt="DARK!" loading="lazy">
             <h3 class="text-light fw-bold">Entry Started: 10th February 2026</h3>
-            <h3 class="text-light fw-bold">Last Edited: 21st April 2026</h3>
+            <h3 class="text-light fw-bold">Last Edited: 1st May 2026</h3>
             <br>
             <div class="row p-4 pb-4 pe-lg-0 pt-lg-3 align-items-center rounded-3 shadow" style="background-color: #300f0f;">
               <h3 class="text-light fw-bold fs-1">External Documents</h3>
@@ -136,7 +136,13 @@
             <p class="text-light text-start fs-5">The first thing that I worked on for this Unreal Engine version of NDark was the Weapon System, primarily because I felt it was important to get the guns right, that they feel fun to use, before getting into more of the broader gameplay aspects.</p>
             <!-- TODO: INSERT FOOTAGE OF WEAPONS IN ACTION -->
             <p class="text-light text-start fs-5">A previous, non-University related experiment of mine was to place a weapon's <em>data</em> inside a Data Asset, meaning its Skeletal Model, Animations, Sound Effects, Fire Rate & Damage Numbers, etc, are stored in an almost spreadsheet like format and individual variables can be pulled from to suit whatever is required.</p>
-            <!-- TODO: INSERT UNNAMED GUNMAN FOOTAGE HERE -->
+            <figure class="figure">
+              <video width="720" height="576" controls="">
+                  <source src="../../videos/MP_UNGM.mp4" type="video/mp4">
+                  Your Browser does not support the video type (somehow).
+              </video>
+              <figcaption class="figure-caption text-light fst-italic">Silent Video showcasing the weapons of "Unnamed Gunman", the system used to handle the weapons would later be replicated and refined for NDark.</figcaption>
+            </figure>
             <p class="text-light text-start fs-5">For NDark, I wished to take this further, by moving all weapon related functions into a separate Actor Component, providing another layer of separation from the Player Blueprint, where in my previous projects, all the primary weapon code resided with any NPC weapons having their own separate mountain of code.</p>
             <p class="text-light text-start fs-5">It became a common element within NDark where, if a piece of code could be applied to multiple actors instead of one, I would try to find a way to make sure that multiple actors could use that piece of code, mainly through the usage of Actor Components, "Manager" Actors, etc.</p>
             <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgb(85, 0, 0) 0%, rgb(158, 0, 0) 100%)">
