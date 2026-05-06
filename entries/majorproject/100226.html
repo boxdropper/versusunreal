@@ -152,7 +152,10 @@
             <p class="text-light text-start fs-5">But for now let's talk about the intended setting and narrative for NDark, you can already get a solid idea as to the foundation of the story thanks to the subtitle "The Spy at The End of The World".</p>
             <p class="text-light text-start fs-5">If I wanted to describe the story of NDark in a short of a sentence as possible, it would be: "Spy completes contract work while slowly discovering a conspiracy involving the Occult, the Underworld and the End of The World as it enters its endgame."</p>
             <p class="text-light text-start fs-5">The primary inspiration for this narrative comes from the "Shin Megami Tensei" (SMT) franchise and its themes of religion mixing with science-fiction and the occult.</p>
-            <!-- TODO: INSERT SOME SMT HERE HEE HO! -->
+            <figure class="figure">
+              <img src="../../images/screenies/MP/smt_2.webp" alt="Da Megami Tensei." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Primary SMT-based inspiration for NDark was Shin Megami Tensei 2, with its near-future setting and plot focusing on a war between gods and demons.</figcaption>
+            </figure>
             <p class="text-light text-start fs-5">I had been getting more and more into SMT due to it being the parent franchise of "Persona", which is much more well known in the west.</p>
             <p class="text-light text-start fs-5">SMT had hooked me with its wide variety of stories, characters, locations, themes, music and many other factors that slowly morphed it into one of my favourite RPG series.</p>
             <p class="text-light text-start fs-5">This also provided me with the opportunity to work on my writing chops for the story of NDark.</p>
@@ -168,16 +171,31 @@
             <p class="text-light text-start fs-5">The onus was still on me however, to source textures and adjust them to fit the desired look, so I dove into free texture sites like cc0textures and PolyHaven and found appropriate textures in import into the project.</p>
             <p class="text-light text-start fs-5">But all of the textures from these sites are only available in 1K resolution or higher, I don't know if you know this, but the Nintendo 64 had only 4 MB of Rambus DRAM by default and a Coprocessor Chip clocked at 62.5 MHz for graphics. This means that having multiple 1K textures is pretty much impossible for a regular Nintendo 64 to handle, so I need to downsize.</p>
             <p class="text-light text-start fs-5">Luckily, Unreal Engine comes with some texture import settings that allow me to change the resolution of the textures to a much more modest 256x256 resolution.</p>
-            <!-- TODO: INSERT 256 TEXTURES HERE -->
+            <figure class="figure">
+              <img src="../../images/screenies/MP/NDark_256.png" alt="Da Textures." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Image of a level of NDark, using materials that feature 1K resolution textures reduced down to 256x256 or lower.</figcaption>
+            </figure>
             <p class="text-light text-start fs-5">This "philosophy" also extends to the weapon models, all of the weapons in NDark have low polygon counts and feature a 256x256 resolution texture.</p>
-            <!-- TODO: INSERT WEAPON TEXTURE STUFF HERE -->
+            <figure class="figure">
+              <img src="../../images/screenies/MP/NDark_Jericho_work.png" alt="Da Jericho." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Image of the starter pistol in NDark (Jericho) in Blender, UV'd and textured.</figcaption>
+            </figure>
             <p class="text-light text-start fs-5">The actual modelling and texturing of the weapons was done using a photo of a real gun as a reference, and the modelling a rough approximation of the weapon using as few primatives as possible, then using that same photo reference to create the texture, in the digital equivalent of cutting pieces out of a magazine to stick into a scrapbook.</p>
             <p class="text-light text-start fs-5">The weapon muzzle flashes & bullet casings were another creation of Marcis, this time from their <a href="https://marcis.itch.io/retro-particles-lens-flares" target="_blank">Retro Particles</a> set.</p>
             <p class="text-light text-start fs-5">These particle effects were set to fire/appear at specific points within a weapon's firing animations, those and all other weapon animations, models and textures were created by Me in Blender.</p>
-            <!-- TODO: INSERT BLENDER WEAPON ANIMATION WORK HERE -->
+            <figure class="figure">
+              <img src="../../images/screenies/MP/NDark_Blender_Shotgun_reload.gif" alt="Da Blender." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Animated Image of the NDark Shotgun (USAS-12)'s reload animation in Blender.</figcaption>
+            </figure>
             <p class="text-light text-start fs-5">One point of feedback that I had received in regards to the pistol reload animations was that it reminded the lecturers about Perfect Dark and its reload animations, which typically features the weapon coming up to let the magazine fall out before the rest of the reload animation.</p>
             <p class="text-light text-start fs-5">This was something that I would later try and lean in more to when animating other types of weapons such as SMGs and Shotguns.</p>
-            <!-- TODO: INSERT SMG OR SHOTGUN RELOADS HERE -->
+            <figure class="figure">
+              <img src="../../images/screenies/MP/NDark_SMG_reload.gif" alt="Da Minebea." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Animated Image of the NDark SMG (Minebea PM-9)'s fire and reload animations.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">My main regret with using the Retro Graphics plugin is that the vertex lighting system is very finicky and picky about what and when to light up a scene, there is a limit on how many lights can interact with a mesh, any lights above that limit will refuse to light anything.</p>
+            <p class="text-light text-start fs-5">This resulted in a constant dance where I would keep tinkering with the light actor's settings in an attempt to coax it into working with me.</p>
+            <p class="text-light text-start fs-5">The end result was that some areas in NDark's levels aren't lit in the way that I truly wanted them to be lit, some areas may be too dark, others may be overbrightened.</p>
             <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgb(85, 0, 0) 0%, rgb(158, 0, 0) 100%)">
               <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">IN REGIONE CAECORUM REX EST LUSCUS</h3>
             </div>
@@ -191,7 +209,10 @@
             <p class="text-light text-start fs-5">Recreating this in the Unreal Engine for NDark proved to be the hardest mechanic that I have implemented to date, it involved converting the player's mouse's position into a 2D vector so that it can be used as the position value for a crosshair widget.</p>
             <p class="text-light text-start fs-5">Then, converting the mouse's position again, this time to world space so that it can be used as the new start point for any weapon firing functions.</p>
             <p class="text-light text-start fs-5">Following that, a near constantly firing function that updates the rotation of the player's viewmodel to match the position of the free-aim crosshair.</p>
-            <!-- TODO: INSERT NDARK AIMING GIF -->
+            <figure class="figure">
+              <img src="../../images/screenies/MP/NDark_Aim.gif" alt="Da Aiming." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Animated Image of NDark's aiming system in action.</figcaption>
+            </figure>
             <p class="text-light text-start fs-5">It was a long and slightly painful process, but with it implemented, it opened the door for me to implement mechanics that tie into this one in a way that is fun/engaging to players, mechanics including easier headshots on enemies, precision shots on destructable objects, etc.</p>
             <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgb(85, 0, 0) 0%, rgb(158, 0, 0) 100%)">
               <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">FINIS ORIGINE PENDET</h3>
@@ -200,12 +221,53 @@
             <p class="text-light text-start fs-5">My experience with Retro/Classic games doesn't stop at just playing, I often find myself tinkering with the games, altering their content, playing around with community made modifications and tools.</p>
             <p class="text-light text-start fs-5">Among these retro games are ones that have been created using the first ever version of the Unreal Engine.</p>
             <p class="text-light text-start fs-5">While looking through the editing tools for the original Unreal Engine, I came across its trigger system.</p>
-            <!-- TODO: INSERT IMAGE OF UNREAL 1 TRIGGERS -->
+            <figure class="figure">
+              <img src="../../images/screenies/MP/dnf01.png" alt="Da DukeEd." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Image of multiple types of Unreal Engine 1 Triggers.</figcaption>
+            </figure>
             <p class="text-light text-start fs-5">How these triggers work is that they are assigned both a "Tag" and an "Event", whenever a trigger is activated, it "fires" its "Event", which means that any entity that has a "Tag" value that matches the trigger's "Event" value, is fired, this is used for automatic doors, waking enemies from sleep/idle, activating scripted sequences, etc.</p>
-            <!-- TODO: INSERT GRAB THE MILK -->
+            <figure class="figure">
+              <div id="GrabTheMilk" class="carousel slide pointer-event">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../../images/screenies/MP/GtM_1.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../../images/screenies/MP/GtM_2.gif" class="d-block w-100" alt="...">
+                  </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#GrabTheMilk" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#GrabTheMilk" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <figcaption class="figure-caption text-light fst-italic">Interactive Element showing development of "Grab the Milk", a modification for POSTAL 2 that I made as an experiment in working with other Unreal Engine versions.</figcaption>
+            </figure>
             <p class="text-light text-start fs-5">This system was very interesting to me the first time I was able to fully grasp it, and I wondered if I could re-create this setup in Unreal Engine 5 for NDark, as a way of speeding up the level scripting process.</p>
             <p class="text-light text-start fs-5">It was suprisingly easy (probably because the system itself was pretty simple), mainly requiring a Blueprint Interface to serve as the dispatcher for any actors that I wanted to be affected by any and all triggers, and combining UE5's existing actor tag system with a new "Event" variable to match the UE1 trigger behaviour as close as possible.</p>
-            <!-- TODO: INSERT NDARK TRIGGER WORK -->
+            <figure class="figure">
+              <div id="NDarkTrigger" class="carousel slide pointer-event">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../../images/screenies/MP/NDark_Trig1.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../../images/screenies/MP/NDark_Trig2.gif" class="d-block w-100" alt="...">
+                  </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#NDarkTrigger" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#NDarkTrigger" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <figcaption class="figure-caption text-light fst-italic">Interactive Element showing the Unreal Engine 1 Trigger system re-implemented in Unreal Engine 5 for NDark.</figcaption>
+            </figure>
             <p class="text-light text-start fs-5">With this, I can more easily understand level scripting and be able to have actors trigger events in a level, all in the editor view, without having to go between the Level Blueprint and Editor.</p>
             <p class="text-light text-start fs-5">Speaking of Levels, let's get into those...</p>
             <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgb(85, 0, 0) 0%, rgb(158, 0, 0) 100%)">
@@ -214,7 +276,10 @@
             <br>
             <p class="text-light text-start fs-5">Level Design in the modern game development space, to me, kinda sucks.</p>
             <p class="text-light text-start fs-5">I'm more familliar with the old ways, back with the Source Engine where all of the Level, the blockouts, scripting, lighting, etc, were all as self contained within the engine and its editing kit as possible.</p>
-            <!-- TODO: INSERT SOURCE ENGINE EDITING -->
+            <figure class="figure">
+              <img src="../../images/screenies/MP/HPP1.png" alt="Da Hammer." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Screenshot of an Input/Output chain in "triplepuzzle", a Source Engine map I made.</figcaption>
+            </figure>
             <p class="text-light text-start fs-5">In the modern day, while there may still be <em>blockouts</em> of levels made in engine and the scripting may be handled and authored in engine, the rest of the work is donr largely in outside software, mainly modelling software like 3DS Max or Blender and then <em>imported</em> into the engine.</p>
             <p class="text-light text-start fs-5">The Unreal Engine follows this modern philosophy, while there are tools within the engine that allow for the creation of elements such as vast, mountainous environments or quick and dirty grey-boxes, it's largely expecting you to create the final version of your levels' environments outside of the Unreal Editor.</p>
             <p class="text-light text-start fs-5">I was sort of dreading having to create levels for NOBELIUM_DARK if it meant that I had to deal with this workflow, but, in the background, there was someone who was working on a solution.</p>
@@ -225,7 +290,33 @@
             </figure>
             <p class="text-light text-start fs-5">While this new Hammer Editor followed the modern convention of Level Creation by operating with Mesh Geometry instead of Brush Geometry, the actual mesh creation process, and the features surrounding it, allows someone to create fully detailed environments all within the editor, down to the door frames.</p>
             <p class="text-light text-start fs-5">Things got even better in 2023 with the launch of Counter-Strike 2, its version of the Hammer Editor allowed for people to create models such as props, within the editor and then export them to a useable format.</p>
-            <!-- TODO: INSERT CHRIS BRYANT TWEETS ABOUT HAMMER 5 -->
+            <figure class="figure">
+              <div id="ChrisBryant" class="carousel slide pointer-event">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../../images/screenies/MP/chris/chris1.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../../images/screenies/MP/chris/chris2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../../images/screenies/MP/chris/chris3.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../../images/screenies/MP/chris/chris4.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#ChrisBryant" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#ChrisBryant" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <figcaption class="figure-caption text-light fst-italic">Interactive Element showing tweets by game developer Chris Bryant using Hammer 5.</figcaption>
+            </figure>
             <p class="text-light text-start fs-5">It's tweets like this that got people who use other engines, namely Unreal, a little bit jealous that you could make environments this easily in Source 2, one of those people decided that they would try and essentially re-create Hammer's mesh creation process in the Unreal Engine, and distribute it as a Plugin, that plugin would be named "Scythe" and it's the plugin that I used for creating levels in NOBELIUM_DARK.</p>
             <figure class="figure">
               <img src="../../images/screenies/MP/DemoGaidenInDev.png" alt="Da Level." width="720px">
@@ -236,6 +327,24 @@
               <img src="../../images/screenies/MP/SewerMesh.png" alt="Da Sewer." width="720px">
               <figcaption class="figure-caption text-light fst-italic">Work-in-Progress Mesh of a Sewer Tunnel in NDark, created using Scythe.</figcaption>
             </figure>
+            <p class="text-light text-start fs-5">It is thanks to Scythe that I have been considering sticking with the Unreal Engine for the long term, after this is all over, purely because designing environments is just so much less of a pain.</p>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgb(85, 0, 0) 0%, rgb(158, 0, 0) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">DRAMATIS PERSONAE</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">Another element of NDark's gameplay that I was excited to tackle was NPC/Enemy AI. I had seen and read through a presentation about AI in FPS games created by members of Valve, and it had some interesting points when it comes to creating engaging AI.</p>
+            <ul class="align-items-start px-4" style="color: #e7e7e7">
+              <li class="text-start">
+                <p class="text-light text-start fs-5">Providing the illusion of thought and decision making with appropriate sound and animation cues.</p>
+              </li>
+              <li>
+                <p class="text-light text-start fs-5">Performing tasks based on certain variables/factors.</p>
+              </li>
+              <li>
+                <p class="text-light text-start fs-5">Knowing when to purposely "dumb down" an AI to give the Player some breathing room.</p>
+              </li>
+            </ul>
+            <p class="text-light text-start fs-5">Level Design in the modern game development space, to me, kinda sucks.</p>
             <div class="row p-0 pb-0 pe-lg-0 pt-lg-1 pb-lg-1 align-items-center rounded-3 shadow" style="background-color: #2a252c;">
               <a class="fs-5 fw-bold" href="../../index.html"><i class="fa-solid fa-house"></i>HEAD BACK HOME<i class="fa-solid fa-house"></i></a>
             </div>
