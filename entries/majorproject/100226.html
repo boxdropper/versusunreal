@@ -180,7 +180,7 @@
               <img src="../../images/screenies/MP/NDark_Jericho_work.png" alt="Da Jericho." width="720px">
               <figcaption class="figure-caption text-light fst-italic">Image of the starter pistol in NDark (Jericho) in Blender, UV'd and textured.</figcaption>
             </figure>
-            <p class="text-light text-start fs-5">The actual modelling and texturing of the weapons was done using a photo of a real gun as a reference, and the modelling a rough approximation of the weapon using as few primatives as possible, then using that same photo reference to create the texture, in the digital equivalent of cutting pieces out of a magazine to stick into a scrapbook.</p>
+            <p class="text-light text-start fs-5">The actual modelling and texturing of the weapons was done using a photo of a real gun as a reference, and the modelling a rough approximation of the weapon using as few primatives as possible, then using that same photo reference to create the texture, in the digital equivalent of cutting pieces out of a magazine to stick into a scrapbook, pretty fun because of how simple it is.</p>
             <p class="text-light text-start fs-5">The weapon muzzle flashes & bullet casings were another creation of Marcis, this time from their <a href="https://marcis.itch.io/retro-particles-lens-flares" target="_blank">Retro Particles</a> set.</p>
             <p class="text-light text-start fs-5">These particle effects were set to fire/appear at specific points within a weapon's firing animations, those and all other weapon animations, models and textures were created by Me in Blender.</p>
             <figure class="figure">
@@ -344,7 +344,65 @@
                 <p class="text-light text-start fs-5">Knowing when to purposely "dumb down" an AI to give the Player some breathing room.</p>
               </li>
             </ul>
-            <p class="text-light text-start fs-5">Level Design in the modern game development space, to me, kinda sucks.</p>
+            <p class="text-light text-start fs-5">With these and other tenets in mind, I got to work on a single enemy that could stand idle, patrol around pre-placed points in a level, spot the Player and call out to them, shoot at the Player, run after the Player if they run out of sight, search nearby enemies for the Player, etc.</p>
+            <figure class="figure">
+              <div id="NDarkAIWork" class="carousel slide pointer-event">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../../images/screenies/MP/NDark_Ai_Patrol.gif" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../../images/screenies/MP/NDark_AI_SpotPlayer.gif" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#NDarkAIWork" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#NDarkAIWork" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <figcaption class="figure-caption text-light fst-italic">Interactive Element showing the Enemy AI both Patroling and Spotting and Searching for the Player.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">There was a lot of going back and fourth between tweaking various behaviours and tasks that the AI could preform and going back into the Editor to test, sometimes the Enemy was too dumb to be engaging, sometimes the Enemy was a bit too good at their job.</p>
+            <p class="text-light text-start fs-5">But after the work was done, it came time to place them in a level, and even now, I still struggle to find a sweet spot in the amount of enemies that the Player could be reasonably expected to take on in one go. Well in cases like this, you only learn by doing, hopefully it all works out in the end.</p>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgb(85, 0, 0) 0%, rgb(158, 0, 0) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">DURANTE MUNERE</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">Let me pivot back to levels to talk about the first of the two available levels in NDark, "Demo Offices".</p>
+            <figure class="figure">
+              <iframe width="640" height="480" src="https://www.youtube.com/embed/wWYQnwHHDB0" title="NDark - Pre-Break Playthrough" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <figcaption class="figure-caption text-light fst-italic">YouTube Video showing the Demo Office level/NDark Game Build as of November 2025.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">Outside of the Developer/Test Map, Demo Offices was the first level created specifically for NDark, and would be where I put Scythe to the test of creating a level and comparing my experience with designing levels for KYABETSU.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/MP/DemoOffices1.png" alt="Da Offices." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Image of Demo Offices in Editor.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">As you have most likely surmised, it was no contest, working on Demo Offices using Scythe was instantly better than using CubeGrid for KYABETSU.</p>
+            <p class="text-light text-start fs-5">But back to Demo Offices itself, the main inspirations came largely from the same sources as KYABETSU, mainly Perfect Dark and its first level, dataDyne Infiltration.</p>
+            <p class="text-light text-start fs-5">But there is a lot more different when compared to KYABETSU which was a poor-man's recreation of the Perfect Dark level, Demo Offices in NDark uses a wholly original layout, starting the Player in an Elevator and having traverse down a spiral staircase to an under level to their objective.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/MP/DemoOffices2.png" alt="Da Offices." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Image of Demo Offices' Spiral Staircase in Editor.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">Funny story, when getting feedback from lecturers, one made note of how the spiral staircase was a notable call back to old-school FPS games like Perfect Dark, which is funny because the inclusion of the spiral staircase was done without any inspiration from Perfect Dark, at least not conciously, I can't say for certain, but it is pretty funny to think that I had successfully recreated a notable feature of old-school FPS design completely by accident.</p>
+            <p class="text-light text-start fs-5">Moving on, heading downstairs takes the Player to a room where they are expected to use the aiming system in order to progress, aided with a prompt to activate it.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/MP/DemoOffices3.png" alt="Da Offices." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Image of Demo Offices' Bottom Floor Bottle room.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">There used to be a lot more bottles on these shelves, calling back to the little easter egg in Perfect Dark's Carrington Villa level, but feedback from lecturers made it so that less bottles were on these shelves and in hindsight, yeah, that was the right call.</p>
+            <p class="text-light text-start fs-5">Beyond those oddly coloured doors lies...</p>
+            <figure class="figure">
+              <img src="../../images/screenies/MP/DemoOffices4.png" alt="Da Offices." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Image of Demo Offices' "Dream Hallway".</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">An area I like to call the "Dream Hallway", inspired by the opening of the orignial Shin Megami Tensei, the Player walks through an area that they're not quite sure is real or not, eventually meeting someone that has a conversation with them that leads to the end of the level.</p>
+            <p class="text-light text-start fs-5">Upon reflection, I didn't really do a good job in communicating exactly what this hallway was designed to represent as all the Player sees is that they walk into a new room that looks like this and think it some weird area that doesn't fit instead of a waking dream world that they've stumbled into.</p>
             <div class="row p-0 pb-0 pe-lg-0 pt-lg-1 pb-lg-1 align-items-center rounded-3 shadow" style="background-color: #2a252c;">
               <a class="fs-5 fw-bold" href="../../index.html"><i class="fa-solid fa-house"></i>HEAD BACK HOME<i class="fa-solid fa-house"></i></a>
             </div>
