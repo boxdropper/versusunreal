@@ -404,6 +404,14 @@
             <p class="text-light text-start fs-5">An area I like to call the "Dream Hallway", inspired by the opening of the orignial Shin Megami Tensei, the Player walks through an area that they're not quite sure is real or not, eventually meeting someone that has a conversation with them that leads to the end of the level.</p>
             <p class="text-light text-start fs-5">Upon reflection, I didn't really do a good job in communicating exactly what this hallway was designed to represent as all the Player sees is that they walk into a new room that looks like this and think it some weird area that doesn't fit instead of a waking dream world that they've stumbled into.</p>
             <p class="text-light text-start fs-5">Demo Offices was the only level that I could complete in time for internal playtesting, that being playtesting by other peopole within the University and it went really well.</p>
+            <p class="text-light text-start fs-5">But before moving on, there is an element, or rather, elements inside of Demo Offices that I want to discuss.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/MP/DO_CamSecMan.png" alt="Da Security." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Image of Demo Offices' lone Security Camera and its accompanying "Security Manager".</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">This is a Security Camera, and next to it, bearing the likeness of former 3D Realms co-founder George Broussard is the "Security Manager".</p>
+            <p class="text-light text-start fs-5">This setup is how I force an element of "Stealth" into NDark as if the Camera manages to stare you down and peer into your soul, it sends a signal to the Security Manager to tell any Enemies linked to it that a Camera has spotted the Player and that they should promptly run them down.</p>
+            <p class="text-light text-start fs-5">Fun Fact, this setup was among the first few elements of "AI" that I had programmed for NDark, as the Camera has their own AI Tasks and Behaviour Tree to control its swinging motion, ability to follow the Player's movement if it spots them and being able to return to its default state if the Player successfully ducks out of sight in time.</p>
             <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgb(85, 0, 0) 0%, rgb(158, 0, 0) 100%)">
               <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">PLAUDITE, CIVES</h3>
             </div>
@@ -529,6 +537,27 @@
             </figure>
             <p class="text-light text-start fs-5">The Player is left up to interpret what this all means. Why does this mansion have this scary looking portrait? Why are there chains coming out of it? Why does this room look like what it is?</p>
             <p class="text-light text-start fs-5">Is it a cop out method of storytelling? Oh, absolutely. Is it cool? I think so.</p>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgb(85, 0, 0) 0%, rgb(158, 0, 0) 100%)">
+              <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">OBJECTS OF ATTRACTION</h3>
+            </div>
+            <br>
+            <p class="text-light text-start fs-5">Spent all of this time talking about the Player and their objectives and I haven't even discussed how the Objective system in NDark even works.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/MP/OBJ_Manager.png" alt="Da Manager." width="720px">
+              <figcaption class="figure-caption text-light fst-italic">Image of NDark's "Objective Manager" actor</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">This little trigger marked with an exclamation point is the "Objective Manager", it is an actor that is placed in every level that contains the data for all the objectives in each level, including what type of objective it is, what actors to track for that objective, the name of the objective, any tags or trigger events that need to be tracked, etc.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/MP/OBJ_Manager_Details.png" alt="Da Manager." width="50%">
+              <figcaption class="figure-caption text-light fst-italic">Image of the Objective Manager's Details Panel, showing the data structure of the mission objectives</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">The Objectives start out as a blank "struct", a <em>structure</em> of variables that can then be referenced in other blueprints, in this case, the objective manager.</p>
+            <figure class="figure">
+              <img src="../../images/screenies/MP/OBJ_Manager_Code.png" alt="Da Manager." width="100%">
+              <figcaption class="figure-caption text-light fst-italic">Image of the Objective Manager's Blueprint code handling how the "Destroy Actor" Objective is initialised on Level Load.</figcaption>
+            </figure>
+            <p class="text-light text-start fs-5">Everytime an objective actor, volume, etc, is acted upon by the Player, it sends a signal to the objective manager to check and see if the requirements for a particular objective are met, and then sets that specific objective to complete if so.</p>
+            <p class="text-light text-start fs-5">This was suprisingly easy to do, I had previously heard horror stories about other Unreal Engine developers having to deal with structs and how they can break and render your code inoperable if you look at it funny, but thankfully that wasn't the case for me during NDark's development.</p>
             <div class="row p-4 pb-0 pe-lg-0 pt-lg-2 align-items-center rounded-3 shadow" style="background: linear-gradient(0deg, rgb(85, 0, 0) 0%, rgb(158, 0, 0) 100%)">
               <h3 class="text-start text-light fs-1" style="text-shadow: 2px 2px 0px #000; font-weight: 1000;">THERE WILL BE ANOTHER TIME</h3>
             </div>
